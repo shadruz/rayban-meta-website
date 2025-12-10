@@ -71,6 +71,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -80,6 +81,9 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 a {
@@ -815,6 +819,47 @@ textarea {
     font-size: var(--font-size-base);
     color: var(--color-text-secondary);
     line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: var(--space-2xl) 0;
+    }
+
+    .features .container {
+        padding: 0 var(--space-sm);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xs);
+    }
+
+    .feature-card {
+        padding: var(--space-sm);
+        border-radius: var(--radius-md);
+    }
+
+    .feature-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: var(--space-sm);
+    }
+
+    .feature-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .feature-card h3 {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-xs);
+    }
+
+    .feature-card p {
+        font-size: var(--font-size-xs);
+        line-height: 1.5;
+    }
 }
 
 /* ========================================
