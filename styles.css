@@ -271,7 +271,7 @@ textarea {
     display: flex;
     align-items: center;
     padding-top: 72px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero-bg {
@@ -440,11 +440,18 @@ textarea {
 
     .hero-image {
         display: flex;
+        justify-content: center;
         margin-top: var(--space-2xl);
+        position: relative;
     }
 
     .hero-glasses-img {
-        max-width: 300px;
+        max-width: 280px;
+    }
+
+    .hero-image-glow {
+        width: 200px;
+        height: 200px;
     }
 
     .hero-hotline {
@@ -556,19 +563,43 @@ textarea {
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-md);
+        gap: var(--space-sm);
     }
 
     .product-card {
-        padding: var(--space-md);
+        padding: var(--space-sm);
+    }
+
+    .product-image {
+        aspect-ratio: 1/1;
+        margin-bottom: var(--space-sm);
     }
 
     .product-name {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-xs);
+    }
+
+    .product-color {
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--space-sm);
     }
 
     .price-current {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-base);
+    }
+
+    .product-prices {
+        margin-bottom: var(--space-sm);
+    }
+
+    .price-row .price-current {
+        font-size: var(--font-size-sm);
+    }
+
+    .product-card .btn {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--font-size-xs);
     }
 }
 
