@@ -439,7 +439,17 @@ textarea {
     }
 
     .hero-image {
-        display: none;
+        display: flex;
+        margin-top: var(--space-2xl);
+    }
+
+    .hero-glasses-img {
+        max-width: 300px;
+    }
+
+    .hero-hotline {
+        justify-content: center;
+        display: flex;
     }
 }
 
@@ -541,6 +551,25 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .product-card {
+        padding: var(--space-md);
+    }
+
+    .product-name {
+        font-size: var(--font-size-base);
+    }
+
+    .price-current {
+        font-size: var(--font-size-lg);
+    }
 }
 
 .product-card {
