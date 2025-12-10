@@ -513,13 +513,13 @@ function renderProducts() {
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-color">${description}</p>
                 <div class="product-prices">
-                    <div class="price-row">
-                        <span class="price-current">${formatPrice(product.prices.retail)}</span>
-                        <span class="price-label">${t('catalog.retail')}</span>
-                    </div>
                     <div class="price-row price-wholesale">
                         <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
                         <span class="price-label">${t('catalog.wholesale')}</span>
+                    </div>
+                    <div class="price-row price-retail">
+                        <span class="price-current">${formatPrice(product.prices.retail)}</span>
+                        <span class="price-label">${t('catalog.retail')}</span>
                     </div>
                 </div>
                 <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>

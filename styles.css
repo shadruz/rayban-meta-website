@@ -579,75 +579,95 @@ textarea {
 
 @media (max-width: 768px) {
     .catalog {
-        padding: var(--space-2xl) 0;
+        padding: var(--space-xl) 0;
     }
 
     .catalog .container {
-        padding: 0 var(--space-sm);
+        padding: 0 var(--space-xs);
     }
 
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-xs);
+        gap: 4px;
     }
 
     .product-card {
-        padding: var(--space-xs);
+        padding: 6px;
     }
 
     .product-image {
         aspect-ratio: 1/1;
-        margin-bottom: var(--space-xs);
+        margin-bottom: 4px;
         border-radius: var(--radius-sm);
     }
 
     .product-badge {
-        font-size: 0.6rem;
-        padding: 2px 4px;
-        margin-bottom: var(--space-xs);
+        font-size: 0.55rem;
+        padding: 1px 3px;
+        margin-bottom: 3px;
     }
 
     .product-name {
-        font-size: var(--font-size-xs);
-        margin-bottom: 2px;
-        line-height: 1.3;
+        font-size: 0.7rem;
+        margin-bottom: 1px;
+        line-height: 1.2;
     }
 
     .product-color {
-        font-size: 0.65rem;
-        margin-bottom: var(--space-xs);
-    }
-
-    .price-current {
-        font-size: var(--font-size-sm);
+        font-size: 0.6rem;
+        margin-bottom: 4px;
+        line-height: 1.2;
     }
 
     .product-prices {
-        margin-bottom: var(--space-xs);
-        gap: 2px;
+        margin-bottom: 4px;
+        gap: 1px;
     }
 
     .price-row .price-current {
-        font-size: var(--font-size-xs);
+        font-size: 0.65rem;
     }
 
+    .price-row .price-label {
+        font-size: 0.5rem;
+    }
+
+    /* Mobile: wholesale prominent, retail faded */
     .price-row.price-wholesale .price-current {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    .price-row.price-retail .price-current {
+        font-size: 0.55rem;
     }
 
     .product-card .btn {
-        padding: var(--space-xs) var(--space-sm);
-        font-size: 0.65rem;
+        padding: 4px 6px;
+        font-size: 0.55rem;
     }
 
     .price-info-banner {
-        padding: var(--space-sm);
-        font-size: var(--font-size-xs);
-        margin-bottom: var(--space-lg);
+        padding: var(--space-xs);
+        font-size: 0.65rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .price-info-banner svg {
+        width: 14px;
+        height: 14px;
     }
 
     .section-header {
-        margin-bottom: var(--space-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .section-header p {
+        font-size: var(--font-size-sm);
     }
 }
 
@@ -1209,11 +1229,22 @@ textarea {
     font-weight: 600;
 }
 
+/* Wholesale price - prominent (shown first) */
 .price-row.price-wholesale {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .price-row.price-wholesale .price-current {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+}
+
+/* Retail price - faded (shown second) */
+.price-row.price-retail {
+    opacity: 0.6;
+}
+
+.price-row.price-retail .price-current {
     font-size: var(--font-size-base);
 }
 
