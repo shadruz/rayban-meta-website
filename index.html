@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray-Ban Meta | Оптовые поставки умных очков</title>
+    <meta name="description"
+        content="Официальный оптовый поставщик Ray-Ban Meta. Умные очки с камерой, AI и премиум звуком. От 10 штук.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-ray">RAY-BAN</span>
+                <span class="logo-meta">META</span>
+            </a>
+            <div class="nav-links">
+                <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
+                <a href="#features" data-i18n="nav.features">Характеристики</a>
+            </div>
+            <div class="nav-right">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="uz">UZ</button>
+                </div>
+                <!-- Cart Button -->
+                <button class="cart-btn" id="cartBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
+        <a href="#features" data-i18n="nav.features">Характеристики</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge">Оптовые поставки</div>
+                <h1 data-i18n="hero.title">Умные очки<br><span class="gradient-text" data-i18n="hero.titleAccent">нового
+                        поколения</span></h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Ray-Ban Meta — стильные очки с камерой,
+                    AI-ассистентом и премиум звуком. Официальные поставки для бизнеса от 10 единиц.</p>
+                <div class="hero-hotline">
+                    <a href="tel:+998992999900" class="hotline-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                            height="18">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span data-i18n="hero.hotline">Горячая линия:</span> +998 99 299 99 00
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary" data-i18n="hero.btnCatalog">Смотреть каталог</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="hero.btnFeatures">Узнать больше</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">12MP</span>
+                        <span class="stat-label" data-i18n="hero.statCamera">Камера</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">4+ <span data-i18n="hero.statHours">ч</span></span>
+                        <span class="stat-label" data-i18n="hero.statBattery">Батарея</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">AI</span>
+                        <span class="stat-label">Meta AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-glow"></div>
+                <img src="hero-glasses.png" alt="Ray-Ban Meta" class="hero-glasses-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="catalog.title">Каталог</h2>
+                <p data-i18n="catalog.subtitle">Выберите модель Ray-Ban Meta для вашего бизнеса</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="catalog-filters">
+                <div class="filter-group">
+                    <span class="filter-label" data-i18n="catalog.condition">Состояние:</span>
+                    <div class="toggle-buttons" id="conditionToggle">
+                        <button class="toggle-btn active" data-condition="new" data-i18n="catalog.new">Новые</button>
+                        <button class="toggle-btn" data-condition="refurbished">Refurbished</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Info Banner -->
+            <div class="price-info-banner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="16" x2="12" y2="12" />
+                    <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+                <span data-i18n="catalog.priceInfo">При заказе от 10 шт. автоматически применяется оптовая цена</span>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="features.title">Возможности</h2>
+                <p data-i18n="features.subtitle">Технологии будущего в классическом дизайне Ray-Ban</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.camera">12MP Камера</h3>
+                    <p data-i18n="features.cameraDesc">Ультраширокоугольная камера для фото и видео. Снимайте моменты
+                        без телефона в руках.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                            <line x1="12" y1="19" x2="12" y2="22" />
+                        </svg>
+                    </div>
+                    <h3>Meta AI</h3>
+                    <p data-i18n="features.aiDesc">Голосовой ассистент с искусственным интеллектом. Просто скажите "Hey
+                        Meta".</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18V5l12-2v13" />
+                            <circle cx="6" cy="18" r="3" />
+                            <circle cx="18" cy="16" r="3" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.sound">Премиум звук</h3>
+                    <p data-i18n="features.soundDesc">Встроенные динамики с открытым дизайном. Слушайте музыку и
+                        принимайте звонки.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="6" width="18" height="12" rx="2" />
+                            <line x1="23" y1="10" x2="23" y2="14" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.battery">4+ часов работы</h3>
+                    <p data-i18n="features.batteryDesc">До 4 часов активного использования. Зарядный кейс дает еще 32
+                        часа дополнительно.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.streaming">Стриминг</h3>
+                    <p data-i18n="features.streamingDesc">Прямые трансляции в Instagram и Facebook одним касанием.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.privacy">Приватность</h3>
+                    <p data-i18n="features.privacyDesc">LED-индикатор при записи. Физическая кнопка отключения камеры и
+                        микрофона.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-ray">RAY-BAN</span>
+                        <span class="logo-meta">META</span>
+                    </a>
+                    <p data-i18n="footer.desc">Официальные оптовые поставки умных очков Ray-Ban Meta</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
+                    <a href="#features" data-i18n="nav.features">Характеристики</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ray-Ban Meta. <span data-i18n="footer.rights">Все права защищены.</span></p>
+                <div class="exchange-rate-indicator">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span data-i18n="rate.label">Курс ЦБ:</span>
+                    <span id="exchangeRateValue">1 USD = ... сум</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3 data-i18n="cart.title">Корзина</h3>
+            <button class="cart-close" id="cartClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be rendered here -->
+        </div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            <p data-i18n="cart.empty">Корзина пуста</p>
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-pricing-info" id="cartPricingInfo">
+                <!-- Pricing info will be shown here -->
+            </div>
+            <div class="cart-total">
+                <span data-i18n="cart.total">Итого:</span>
+                <span class="cart-total-value" id="cartTotalValue">$0</span>
+            </div>
+            <button class="btn btn-secondary cart-clear" id="cartClear" data-i18n="cart.clear">Очистить всё</button>
+            <button class="btn btn-primary btn-full" id="checkoutBtn" data-i18n="cart.checkout">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 data-i18n="checkout.title">Оформление заказа</h3>
+                <button class="modal-close" id="modalClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="order-summary" id="orderSummary">
+                    <!-- Order summary will be rendered here -->
+                </div>
+                <form class="checkout-form" id="checkoutForm">
+                    <div class="form-group">
+                        <label for="customerName" data-i18n="checkout.name">Имя</label>
+                        <input type="text" id="customerName" name="name" required
+                            data-i18n-placeholder="checkout.namePlaceholder" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone" data-i18n="checkout.phone">Телефон</label>
+                        <input type="tel" id="customerPhone" name="phone" required placeholder="+998 (__) ___-__-__">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerTelegram">Telegram</label>
+                        <input type="text" id="customerTelegram" name="telegram" placeholder="@username">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="checkout.submit">Отправить
+                        заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <!-- Floating Contact Button -->
+    <div class="contact-fab">
+        <button class="fab-main" id="fabMain">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </button>
+        <div class="fab-options" id="fabOptions">
+            <a href="tel:+998992999900" class="fab-option fab-phone" data-i18n-title="contact.call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span data-i18n="contact.call">Позвонить</span>
+            </a>
+            <a href="https://t.me/your_username" target="_blank" class="fab-option fab-telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                </svg>
+                <span>Telegram</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
