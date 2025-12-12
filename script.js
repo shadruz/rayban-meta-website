@@ -784,7 +784,7 @@ ${priceType}
 // ========================================
 // Send Order via Telegram Direct Message
 // ========================================
-const TELEGRAM_USERNAME = 'shadruz_m'; // Your personal Telegram username
+const TELEGRAM_USERNAME = 'techgeek_uz'; // Your personal Telegram username
 
 document.getElementById('sendViaTelegram').addEventListener('click', function () {
     const customerName = document.getElementById('customerName').value.trim();
