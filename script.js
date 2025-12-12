@@ -782,16 +782,50 @@ ${priceType}
 }
 
 // ========================================
+// Telegram Login Handler
+// ========================================
+let verifiedTelegramUser = null;
+
+function onTelegramAuth(user) {
+    console.log('Telegram auth success:', user);
+    verifiedTelegramUser = user;
+
+    // Hide auth section, show form
+    document.getElementById('telegramAuthSection').style.display = 'none';
+    document.getElementById('checkoutForm').style.display = 'block';
+
+    // Show verified user info
+    const userInfo = document.getElementById('verifiedUserInfo');
+    userInfo.innerHTML = `
+        <strong>${user.first_name}${user.last_name ? ' ' + user.last_name : ''}</strong>
+        ${user.username ? '<br>@' + user.username : ''}
+    `;
+
+    // Store data in hidden field
+    document.getElementById('telegramData').value = JSON.stringify(user);
+}
+
+// Make function global for Telegram widget callback
+window.onTelegramAuth = onTelegramAuth;
+
+// ========================================
 // Checkout Form Submit
 // ========================================
 checkoutForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(checkoutForm);
-    const data = Object.fromEntries(formData);
+    if (!verifiedTelegramUser) {
+        showToast('Пожалуйста, войдите через Telegram');
+        return;
+    }
 
     const orderData = {
-        customer: data,
+        customer: {
+            name: `${verifiedTelegramUser.first_name}${verifiedTelegramUser.last_name ? ' ' + verifiedTelegramUser.last_name : ''}`,
+            telegram: verifiedTelegramUser.username ? '@' + verifiedTelegramUser.username : '',
+            telegram_id: verifiedTelegramUser.id,
+            phone: verifiedTelegramUser.phone_number || 'Привязан к Telegram'
+        },
         items: cart,
         total: getTotal(),
         isWholesale: getTotalItems() >= 10
@@ -809,7 +843,11 @@ checkoutForm.addEventListener('submit', async (e) => {
     closeCheckout();
     cart = [];
     updateCartUI();
-    checkoutForm.reset();
+
+    // Reset verification for next order
+    verifiedTelegramUser = null;
+    document.getElementById('telegramAuthSection').style.display = 'block';
+    document.getElementById('checkoutForm').style.display = 'none';
 
     showToast(t('checkout.success'));
 });
