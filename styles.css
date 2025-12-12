@@ -143,10 +143,16 @@ textarea {
 
 .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: var(--space-sm);
     font-weight: 700;
     font-size: var(--font-size-lg);
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .logo-ray {
