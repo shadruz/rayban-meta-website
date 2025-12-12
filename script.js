@@ -726,21 +726,85 @@ checkoutModal.addEventListener('click', (e) => {
 });
 
 // ========================================
+// Telegram Bot Configuration
+// ========================================
+const TELEGRAM_BOT_TOKEN = '8068572788:AAECuusnDI9tZzwzwoAkEmDVEMmJVLD2gZU';
+const TELEGRAM_CHAT_ID = '1798702419';
+
+async function sendToTelegram(orderData) {
+    const totalItems = getTotalItems();
+    const isWholesale = totalItems >= 10;
+    const priceType = isWholesale ? '🏷️ ОПТОВАЯ ЦЕНА' : '💰 Розничная цена';
+
+    // Build order items list
+    const itemsList = orderData.items.map(item => {
+        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
+        return `  • ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(price)}`;
+    }).join('\n');
+
+    const message = `
+🛒 *НОВЫЙ ЗАКАЗ!*
+
+👤 *Клиент:*
+• Имя: ${orderData.customer.name}
+• Телефон: ${orderData.customer.phone}
+${orderData.customer.telegram ? `• Telegram: ${orderData.customer.telegram}` : ''}
+
+📦 *Товары:*
+${itemsList}
+
+${priceType}
+📊 Всего товаров: ${totalItems} шт.
+💵 *ИТОГО: ${formatPrice(orderData.total)}*
+
+⏰ ${new Date().toLocaleString('ru-RU', { timeZone: 'Asia/Tashkent' })}
+    `.trim();
+
+    try {
+        const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                chat_id: TELEGRAM_CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown'
+            })
+        });
+
+        const result = await response.json();
+        return result.ok;
+    } catch (error) {
+        console.error('Failed to send to Telegram:', error);
+        return false;
+    }
+}
+
+// ========================================
 // Checkout Form Submit
 // ========================================
-checkoutForm.addEventListener('submit', (e) => {
+checkoutForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(checkoutForm);
     const data = Object.fromEntries(formData);
 
-    // Here you would send the order to your backend
-    console.log('Order submitted:', {
+    const orderData = {
         customer: data,
         items: cart,
         total: getTotal(),
         isWholesale: getTotalItems() >= 10
-    });
+    };
+
+    // Send to Telegram
+    const sent = await sendToTelegram(orderData);
+
+    if (sent) {
+        console.log('Order sent to Telegram successfully');
+    } else {
+        console.log('Order saved locally:', orderData);
+    }
 
     closeCheckout();
     cart = [];
