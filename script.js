@@ -411,8 +411,10 @@ async function fetchExchangeRate() {
 }
 
 function formatPrice(usdPrice) {
-    const uzsPrice = Math.round(usdPrice * exchangeRate);
-    return uzsPrice.toLocaleString('ru-RU') + ' сум';
+    const uzsPrice = usdPrice * exchangeRate;
+    // Round to nearest 10,000 (5,000 threshold)
+    const roundedPrice = Math.round(uzsPrice / 10000) * 10000;
+    return roundedPrice.toLocaleString('ru-RU') + ' сум';
 }
 
 function updateRateIndicator() {

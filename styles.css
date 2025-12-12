@@ -322,6 +322,15 @@ textarea {
     background-clip: text;
 }
 
+.hero-brand {
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: 0.02em;
+    opacity: 0.9;
+}
+
 .hero-subtitle {
     font-size: var(--font-size-lg);
     color: var(--color-text-secondary);
@@ -947,6 +956,12 @@ textarea {
     font-weight: 500;
     color: var(--color-text-secondary);
     margin-bottom: var(--space-sm);
+}
+
+.optional-hint {
+    font-weight: 400;
+    font-size: var(--font-size-xs);
+    opacity: 0.7;
 }
 
 .form-group input,
