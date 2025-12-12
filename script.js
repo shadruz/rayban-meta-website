@@ -782,74 +782,60 @@ ${priceType}
 }
 
 // ========================================
-// Telegram Login Handler
+// Send Order via Telegram Direct Message
 // ========================================
-let verifiedTelegramUser = null;
+const TELEGRAM_USERNAME = 'shadruz_m'; // Your personal Telegram username
 
-function onTelegramAuth(user) {
-    console.log('Telegram auth success:', user);
-    verifiedTelegramUser = user;
+document.getElementById('sendViaTelegram').addEventListener('click', function () {
+    const customerName = document.getElementById('customerName').value.trim();
 
-    // Hide auth section, show form
-    document.getElementById('telegramAuthSection').style.display = 'none';
-    document.getElementById('checkoutForm').style.display = 'block';
-
-    // Show verified user info
-    const userInfo = document.getElementById('verifiedUserInfo');
-    userInfo.innerHTML = `
-        <strong>${user.first_name}${user.last_name ? ' ' + user.last_name : ''}</strong>
-        ${user.username ? '<br>@' + user.username : ''}
-    `;
-
-    // Store data in hidden field
-    document.getElementById('telegramData').value = JSON.stringify(user);
-}
-
-// Make function global for Telegram widget callback
-window.onTelegramAuth = onTelegramAuth;
-
-// ========================================
-// Checkout Form Submit
-// ========================================
-checkoutForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    if (!verifiedTelegramUser) {
-        showToast('Пожалуйста, войдите через Telegram');
+    if (!customerName) {
+        showToast('Пожалуйста, введите ваше имя');
         return;
     }
 
-    const orderData = {
-        customer: {
-            name: `${verifiedTelegramUser.first_name}${verifiedTelegramUser.last_name ? ' ' + verifiedTelegramUser.last_name : ''}`,
-            telegram: verifiedTelegramUser.username ? '@' + verifiedTelegramUser.username : '',
-            telegram_id: verifiedTelegramUser.id,
-            phone: verifiedTelegramUser.phone_number || 'Привязан к Telegram'
-        },
+    const totalItems = getTotalItems();
+    const isWholesale = totalItems >= 10;
+    const priceType = isWholesale ? '🏷️ ОПТОВАЯ ЦЕНА' : '💰 Розничная цена';
+
+    // Build order message
+    const itemsList = cart.map(item => {
+        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
+        return `• ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(price)}`;
+    }).join('\n');
+
+    const message = `🛒 НОВЫЙ ЗАКАЗ с сайта TechGeek.uz
+
+👤 Имя: ${customerName}
+
+📦 Товары:
+${itemsList}
+
+${priceType}
+📊 Всего: ${totalItems} шт.
+💵 ИТОГО: ${formatPrice(getTotal())}`;
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // Open Telegram with pre-filled message
+    const telegramUrl = `https://t.me/${TELEGRAM_USERNAME}?text=${encodedMessage}`;
+    window.open(telegramUrl, '_blank');
+
+    // Also send notification to bot
+    sendToTelegram({
+        customer: { name: customerName, telegram: 'Отправлено через личное сообщение' },
         items: cart,
         total: getTotal(),
-        isWholesale: getTotalItems() >= 10
-    };
+        isWholesale: isWholesale
+    });
 
-    // Send to Telegram
-    const sent = await sendToTelegram(orderData);
-
-    if (sent) {
-        console.log('Order sent to Telegram successfully');
-    } else {
-        console.log('Order saved locally:', orderData);
-    }
-
+    // Clear cart
     closeCheckout();
     cart = [];
     updateCartUI();
 
-    // Reset verification for next order
-    verifiedTelegramUser = null;
-    document.getElementById('telegramAuthSection').style.display = 'block';
-    document.getElementById('checkoutForm').style.display = 'none';
-
-    showToast(t('checkout.success'));
+    showToast('Заказ открыт в Telegram! Отправьте сообщение.');
 });
 
 // ========================================

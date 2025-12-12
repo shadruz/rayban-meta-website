@@ -1028,6 +1028,45 @@ textarea {
     font-size: var(--font-size-base);
 }
 
+/* Telegram Send Section */
+.telegram-send-section {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.telegram-hint {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.btn-telegram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-md) var(--space-xl);
+    background: linear-gradient(135deg, #0088cc, #0099dd);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.btn-telegram:hover {
+    background: linear-gradient(135deg, #0077bb, #0088cc);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
+}
+
+.btn-telegram svg {
+    flex-shrink: 0;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
