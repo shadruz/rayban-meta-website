@@ -322,6 +322,11 @@
                         <input type="text" id="customerName" name="name" required
                             data-i18n-placeholder="checkout.namePlaceholder" placeholder="Ваше имя">
                     </div>
+                    <div class="form-group">
+                        <label for="customerPhone" data-i18n="checkout.phone">Телефон</label>
+                        <input type="tel" id="customerPhone" name="phone" required placeholder="+998 __ ___ __ __"
+                            pattern="\+[0-9]{12,13}" title="Введите номер в формате +998XXXXXXXXX">
+                    </div>
 
                     <div class="telegram-send-section">
                         <p class="telegram-hint">Нажмите кнопку ниже — откроется Telegram с вашим заказом</p>

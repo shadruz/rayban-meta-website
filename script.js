@@ -788,9 +788,17 @@ const TELEGRAM_USERNAME = 'techgeek_uz'; // Your personal Telegram username
 
 document.getElementById('sendViaTelegram').addEventListener('click', function () {
     const customerName = document.getElementById('customerName').value.trim();
+    const customerPhone = document.getElementById('customerPhone').value.trim();
 
     if (!customerName) {
         showToast('Пожалуйста, введите ваше имя');
+        return;
+    }
+
+    // Validate phone: must start with + and have 12-13 digits
+    const phoneRegex = /^\+[0-9]{12,13}$/;
+    if (!customerPhone || !phoneRegex.test(customerPhone)) {
+        showToast('Введите номер в формате +998XXXXXXXXX');
         return;
     }
 
@@ -807,6 +815,7 @@ document.getElementById('sendViaTelegram').addEventListener('click', function ()
     const message = `🛒 НОВЫЙ ЗАКАЗ с сайта TechGeek.uz
 
 👤 Имя: ${customerName}
+📞 Телефон: ${customerPhone}
 
 📦 Товары:
 ${itemsList}
