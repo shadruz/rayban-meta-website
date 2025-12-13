@@ -434,6 +434,73 @@ const products = [
         condition: 'refurbished',
         image: 'images/37.jpg',
         prices: { wholesale: 364, retail: 405 }
+    },
+    // ============ OAKLEY META HSTN ============
+    {
+        id: 43,
+        name: 'Oakley Meta HSTN',
+        variant: 'Black Clear',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_1.jpg',
+        prices: { wholesale: 425, retail: 450 }
+    },
+    {
+        id: 44,
+        name: 'Oakley Meta HSTN',
+        variant: 'Warm Grey Ruby Prizm',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_2.jpg',
+        prices: { wholesale: 425, retail: 450 }
+    },
+    {
+        id: 45,
+        name: 'Oakley Meta HSTN',
+        variant: 'Black Amethyst Chameleon',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_3.jpg',
+        prices: { wholesale: 505, retail: 530 }
+    },
+    {
+        id: 46,
+        name: 'Oakley Meta HSTN',
+        variant: 'Clear Grey Chameleon',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_4.jpg',
+        prices: { wholesale: 505, retail: 530 }
+    },
+    {
+        id: 47,
+        name: 'Oakley Meta HSTN',
+        variant: 'Black Polaroid',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_5.jpg',
+        prices: { wholesale: 480, retail: 500 }
+    },
+    {
+        id: 48,
+        name: 'Oakley Meta HSTN',
+        variant: 'Brown Smoke Deep Water Polaroid',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/oakley_6.jpg',
+        prices: { wholesale: 480, retail: 500 }
     }
 ];
 
@@ -558,7 +625,7 @@ function renderProducts() {
     let filteredProducts = [];
 
     if (currentCategory === 'rayban') {
-        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited');
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
     } else if (currentCategory === 'oakley') {
