@@ -580,6 +580,40 @@ const products = [
         category: 'garmin',
         image: 'images/garmin_3.jpg',
         prices: { wholesale: 600, retail: 600 }
+    },
+    // ============ WHOOP WRISTBANDS ============
+    {
+        id: 57,
+        name: 'Whoop Peak',
+        variant: 'with 12-month membership',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'whoop',
+        image: 'images/whoop_Whoop1.jpg',
+        prices: { wholesale: 240, retail: 290 }
+    },
+    {
+        id: 58,
+        name: 'Whoop One',
+        variant: 'with 12-month membership',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'whoop',
+        image: 'images/whoop_Whoop2.jpg',
+        prices: { wholesale: 215, retail: 240 }
+    },
+    {
+        id: 59,
+        name: 'Whoop Life',
+        variant: 'with 12-month membership',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'whoop',
+        image: 'images/whoop_Whoop3.jpg',
+        prices: { wholesale: 335, retail: 365 }
     }
 ];
 
@@ -704,13 +738,15 @@ function renderProducts() {
     let filteredProducts = [];
 
     if (currentCategory === 'rayban') {
-        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley');
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
     } else if (currentCategory === 'oakley') {
         filteredProducts = products.filter(p => p.category === 'oakley');
     } else if (currentCategory === 'garmin') {
         filteredProducts = products.filter(p => p.category === 'garmin');
+    } else if (currentCategory === 'whoop') {
+        filteredProducts = products.filter(p => p.category === 'whoop');
     } else if (currentCategory === 'refurbished') {
         filteredProducts = products.filter(p => p.condition === 'refurbished');
     }
