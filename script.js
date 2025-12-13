@@ -1,11 +1,11 @@
 // ========================================
 // Product Data - Full Catalog
-// Order: Gen 2 (Clear first) → Gen 1 (Clear first) → Refurbished
-// Shiny/Matte included in variant names
+// Image mapping: Message N = N.jpg
+// Display order: Gen 2 (Clear first) → Gen 1 (Clear first) → Refurbished (Clear first)
 // ========================================
 const products = [
     // ============ GEN 2 - WAYFARER ============
-    // Clear first, then others
+    // Clear first
     {
         id: 1,
         name: 'Ray-Ban Meta Wayfarer',
@@ -13,7 +13,7 @@ const products = [
         size: '50',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/12.jpg',
+        image: 'images/11.jpg',
         prices: { wholesale: 420, retail: 470 }
     },
     {
@@ -23,7 +23,7 @@ const products = [
         size: '53',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/12.jpg',
+        image: 'images/11.jpg',
         prices: { wholesale: 425, retail: 475 }
     },
     {
@@ -33,7 +33,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/11.jpg',
+        image: 'images/10.jpg',
         prices: { wholesale: 500, retail: 550 }
     },
     {
@@ -43,7 +43,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/14.jpg',
+        image: 'images/12.jpg',
         prices: { wholesale: 420, retail: 470 }
     },
     {
@@ -53,7 +53,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/15.jpg',
+        image: 'images/13.jpg',
         prices: { wholesale: 455, retail: 505 }
     },
     {
@@ -63,7 +63,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/16.jpg',
+        image: 'images/14.jpg',
         prices: { wholesale: 500, retail: 550 }
     },
     {
@@ -73,10 +73,11 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/13.jpg',
+        image: 'images/15.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     // ============ GEN 2 - HEADLINER ============
+    // Clear first
     {
         id: 8,
         name: 'Ray-Ban Meta Headliner',
@@ -84,7 +85,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/18.jpg',
+        image: 'images/17.jpg',
         prices: { wholesale: 420, retail: 470 }
     },
     {
@@ -94,7 +95,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/17.jpg',
+        image: 'images/16.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     {
@@ -104,7 +105,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/19.jpg',
+        image: 'images/18.jpg',
         prices: { wholesale: 420, retail: 470 }
     },
     {
@@ -114,7 +115,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/20.jpg',
+        image: 'images/19.jpg',
         prices: { wholesale: 455, retail: 505 }
     },
     {
@@ -124,7 +125,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/21.jpg',
+        image: 'images/20.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     {
@@ -134,7 +135,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/22.jpg',
+        image: 'images/21.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     // ============ GEN 2 - SKYLER ============
@@ -145,7 +146,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/23.jpg',
+        image: 'images/22.jpg',
         prices: { wholesale: 420, retail: 470 }
     },
     {
@@ -155,7 +156,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/24.jpg',
+        image: 'images/23.jpg',
         prices: { wholesale: 455, retail: 505 }
     },
     {
@@ -165,7 +166,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/25.jpg',
+        image: 'images/24.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     {
@@ -175,7 +176,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/26.jpg',
+        image: 'images/25.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     {
@@ -185,7 +186,7 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/27.jpg',
+        image: 'images/26.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     {
@@ -195,11 +196,11 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/28.jpg',
+        image: 'images/27.jpg',
         prices: { wholesale: 515, retail: 565 }
     },
     // ============ GEN 1 - WAYFARER ============
-    // Clear first, then others
+    // Clear first
     {
         id: 20,
         name: 'Ray-Ban Meta Wayfarer',
@@ -217,7 +218,7 @@ const products = [
         size: '53',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/3.jpg',
+        image: 'images/2.jpg',
         prices: { wholesale: 328, retail: 378 }
     },
     {
@@ -247,7 +248,7 @@ const products = [
         size: '50',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/4.jpg',
+        image: 'images/3.jpg',
         prices: { wholesale: 323, retail: 373 }
     },
     {
@@ -257,7 +258,7 @@ const products = [
         size: '53',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/5.jpg',
+        image: 'images/3.jpg',
         prices: { wholesale: 328, retail: 378 }
     },
     {
@@ -267,10 +268,11 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/6.jpg',
+        image: 'images/4.jpg',
         prices: { wholesale: 378, retail: 428 }
     },
     // ============ GEN 1 - SKYLER ============
+    // Clear first
     {
         id: 27,
         name: 'Ray-Ban Meta Skyler',
@@ -278,7 +280,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/9.jpg',
+        image: 'images/7.jpg',
         prices: { wholesale: 323, retail: 373 }
     },
     {
@@ -288,7 +290,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/7.jpg',
+        image: 'images/5.jpg',
         prices: { wholesale: 410, retail: 460 }
     },
     {
@@ -298,7 +300,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/8.jpg',
+        image: 'images/6.jpg',
         prices: { wholesale: 323, retail: 373 }
     },
     {
@@ -308,7 +310,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/10.jpg',
+        image: 'images/8.jpg',
         prices: { wholesale: 410, retail: 460 }
     },
     {
@@ -318,7 +320,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/10.jpg',
+        image: 'images/9.jpg',
         prices: { wholesale: 410, retail: 460 }
     },
     // ============ REFURBISHED (Gen 1) ============
@@ -330,7 +332,7 @@ const products = [
         size: '50',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/29.jpg',
+        image: 'images/28.jpg',
         prices: { wholesale: 281, retail: 320 }
     },
     {
@@ -340,7 +342,7 @@ const products = [
         size: '53',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/29.jpg',
+        image: 'images/28.jpg',
         prices: { wholesale: 281, retail: 320 }
     },
     {
@@ -350,7 +352,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/30.jpg',
+        image: 'images/29.jpg',
         prices: { wholesale: 281, retail: 320 }
     },
     {
@@ -360,7 +362,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/31.jpg',
+        image: 'images/30.jpg',
         prices: { wholesale: 315, retail: 355 }
     },
     {
@@ -370,7 +372,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/32.jpg',
+        image: 'images/31.jpg',
         prices: { wholesale: 368, retail: 410 }
     },
     {
@@ -380,7 +382,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/33.jpg',
+        image: 'images/32.jpg',
         prices: { wholesale: 364, retail: 405 }
     },
     {
@@ -390,7 +392,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/34.jpg',
+        image: 'images/33.jpg',
         prices: { wholesale: 323, retail: 365 }
     },
     {
@@ -400,7 +402,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/35.jpg',
+        image: 'images/34.jpg',
         prices: { wholesale: 323, retail: 365 }
     },
     {
@@ -410,7 +412,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/36.jpg',
+        image: 'images/35.jpg',
         prices: { wholesale: 364, retail: 405 }
     },
     {
@@ -420,7 +422,7 @@ const products = [
         size: '',
         generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/37.jpg',
+        image: 'images/36.jpg',
         prices: { wholesale: 364, retail: 405 }
     },
     {
