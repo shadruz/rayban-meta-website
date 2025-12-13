@@ -609,7 +609,7 @@ textarea {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--color-bg-card);
+    background: #1a1a2e;
     border: 1px solid var(--color-accent);
     border-top: none;
     border-radius: 0 0 var(--radius-md) var(--radius-md);
@@ -621,6 +621,7 @@ textarea {
     z-index: 100;
     max-height: 300px;
     overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .category-dropdown.open .category-dropdown-menu {
@@ -905,6 +906,13 @@ textarea {
     .toggle-btn {
         flex: 1;
         text-align: center;
+    }
+
+    /* Bigger cart buttons on mobile */
+    .product-card .btn {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--font-size-base);
+        min-height: 48px;
     }
 }
 
