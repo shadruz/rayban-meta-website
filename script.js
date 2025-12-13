@@ -502,6 +502,51 @@ const products = [
         image: 'images/oakley_6.jpg',
         prices: { wholesale: 480, retail: 500 }
     },
+    // ============ OAKLEY META VANGUARD ============
+    {
+        id: 52,
+        name: 'Oakley Meta Vanguard',
+        variant: 'Prizm Sapphire',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/vanguard_Vanguard1.jpg',
+        prices: { wholesale: 525, retail: 550 }
+    },
+    {
+        id: 53,
+        name: 'Oakley Meta Vanguard',
+        variant: 'Prizm 24K',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/vanguard_Vanguard2.jpg',
+        prices: { wholesale: 525, retail: 550 }
+    },
+    {
+        id: 54,
+        name: 'Oakley Meta Vanguard',
+        variant: 'Prizm Black',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/vanguard_Vanguard3.jpg',
+        prices: { wholesale: 525, retail: 550 }
+    },
+    {
+        id: 55,
+        name: 'Oakley Meta Vanguard',
+        variant: 'Prizm Road',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oakley',
+        image: 'images/vanguard_Vanguard4.jpg',
+        prices: { wholesale: 525, retail: 550 }
+    },
     // ============ GARMIN WATCHES ============
     {
         id: 49,
