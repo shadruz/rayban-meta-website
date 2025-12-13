@@ -667,7 +667,10 @@ function updateRateIndicator() {
 // DOM Elements
 // ========================================
 const productsGrid = document.getElementById('productsGrid');
-const categoryToggle = document.getElementById('categoryToggle');
+const categoryDropdown = document.getElementById('categoryDropdown');
+const categoryDropdownBtn = document.getElementById('categoryDropdownBtn');
+const categoryMenu = document.getElementById('categoryMenu');
+const selectedCategoryEl = document.getElementById('selectedCategory');
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const cartBtn = document.getElementById('cartBtn');
@@ -1129,22 +1132,38 @@ function showToast(message) {
 }
 
 // ========================================
-// Category Toggle
+// Category Dropdown
 // ========================================
-function setupToggle(container, callback) {
-    const buttons = container.querySelectorAll('.toggle-btn');
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            callback(btn.dataset);
-        });
-    });
-}
+// Toggle dropdown open/close
+categoryDropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    categoryDropdown.classList.toggle('open');
+});
 
-setupToggle(categoryToggle, (data) => {
-    currentCategory = data.category;
-    renderProducts();
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!categoryDropdown.contains(e.target)) {
+        categoryDropdown.classList.remove('open');
+    }
+});
+
+// Handle category selection
+categoryMenu.querySelectorAll('.category-option').forEach(option => {
+    option.addEventListener('click', () => {
+        // Update active state
+        categoryMenu.querySelectorAll('.category-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+
+        // Update selected text
+        selectedCategoryEl.textContent = option.textContent;
+
+        // Update current category and render
+        currentCategory = option.dataset.category;
+        renderProducts();
+
+        // Close dropdown
+        categoryDropdown.classList.remove('open');
+    });
 });
 
 // ========================================
