@@ -50,7 +50,7 @@ const translations = {
         'features.privacyDesc': 'LED-индикатор при записи. Физическая кнопка отключения камеры и микрофона.',
 
         // Footer
-        'footer.desc': 'Официальные оптовые поставки умных очков Ray-Ban Meta',
+        'footer.desc': 'Розничные и оптовые поставки из США, Европы, ОАЭ',
         'footer.rights': 'Все права защищены.',
 
         // Cart
@@ -127,7 +127,7 @@ const translations = {
         'features.privacyDesc': 'Yozish paytida LED indikatori. Kamera va mikrofonni o\'chirish uchun jismoniy tugma.',
 
         // Footer
-        'footer.desc': 'Ray-Ban Meta aqlli ko\'zoynaklarini rasmiy ulgurji yetkazib berish',
+        'footer.desc': 'AQSh, Yevropa, BAA dan chakana va ulgurji yetkazib berish',
         'footer.rights': 'Barcha huquqlar himoyalangan.',
 
         // Cart
