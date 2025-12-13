@@ -1,365 +1,436 @@
 // ========================================
 // Product Data - Full Catalog
-// Names and colors stay in English (not translated)
-// Order: Gen 2 first, then Gen 1, then Refurbished
+// Order: Gen 2 (Clear first) → Gen 1 (Clear first) → Refurbished
+// Shiny/Matte included in variant names
 // ========================================
 const products = [
-    // ============ NEW - GEN 2 (16 models) ============
-    // Wayfarer Gen 2
+    // ============ GEN 2 - WAYFARER ============
+    // Clear first, then others
     {
         id: 1,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Navy Blue',
-        size: '',
+        variant: 'Clear Matte',
+        size: '50',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_11_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/12.jpg',
+        prices: { wholesale: 420, retail: 470 }
     },
     {
         id: 2,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Clear',
-        size: '',
+        variant: 'Clear Matte',
+        size: '53',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_12_2025-12-09_00-50-37.jpg',
+        image: 'images/12.jpg',
         prices: { wholesale: 425, retail: 475 }
     },
     {
         id: 3,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Green',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_14_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 425, retail: 475 }
+        image: 'images/11.jpg',
+        prices: { wholesale: 500, retail: 550 }
     },
     {
         id: 4,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Black Polaroid',
+        variant: 'Shiny Green',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_15_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 460, retail: 510 }
+        image: 'images/14.jpg',
+        prices: { wholesale: 420, retail: 470 }
     },
     {
         id: 5,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Chameleon',
+        variant: 'Matte Polaroid Black',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_16_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/15.jpg',
+        prices: { wholesale: 455, retail: 505 }
     },
     {
         id: 6,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Chameleon Grey',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_13_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/16.jpg',
+        prices: { wholesale: 500, retail: 550 }
     },
-    // Skyler Gen 2
     {
         id: 7,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Polaroid',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_23_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 460, retail: 510 }
+        image: 'images/13.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
+    // ============ GEN 2 - HEADLINER ============
     {
         id: 8,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Green',
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Matte Clear',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_22_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 425, retail: 475 }
+        image: 'images/18.jpg',
+        prices: { wholesale: 420, retail: 470 }
     },
     {
         id: 9,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon White',
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_24_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/17.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
     {
         id: 10,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Green',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_25_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/19.jpg',
+        prices: { wholesale: 420, retail: 470 }
     },
     {
         id: 11,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Clear',
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Matte Polaroid',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_18_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 425, retail: 475 }
+        image: 'images/20.jpg',
+        prices: { wholesale: 455, retail: 505 }
     },
     {
         id: 12,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon Purple',
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_26_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/21.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
-    // Headliner Gen 2
     {
         id: 13,
         name: 'Ray-Ban Meta Headliner',
-        variant: 'Chameleon',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_17_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/22.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
+    // ============ GEN 2 - SKYLER ============
     {
         id: 14,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Green',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Green',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_19_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 425, retail: 475 }
+        image: 'images/23.jpg',
+        prices: { wholesale: 420, retail: 470 }
     },
     {
         id: 15,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Polaroid',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Polaroid Shiny Black',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_20_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 460, retail: 510 }
+        image: 'images/24.jpg',
+        prices: { wholesale: 455, retail: 505 }
     },
     {
         id: 16,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_21_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 520, retail: 570 }
+        image: 'images/25.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
-    // ============ NEW - GEN 1 (8 models) ============
-    // Wayfarer Gen 1
     {
         id: 17,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Clear',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
-        generation: 'Gen 1',
+        generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_2_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 340, retail: 390 }
+        image: 'images/26.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
     {
         id: 18,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
-        generation: 'Gen 1',
+        generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_1_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 413, retail: 463 }
+        image: 'images/27.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
     {
         id: 19,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Green',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
-        generation: 'Gen 1',
+        generation: 'Gen 2',
         condition: 'new',
-        image: 'images/photo_4_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 340, retail: 390 }
+        image: 'images/28.jpg',
+        prices: { wholesale: 515, retail: 565 }
     },
+    // ============ GEN 1 - WAYFARER ============
+    // Clear first, then others
     {
         id: 20,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Polaroid',
-        size: '',
+        variant: 'Shiny Clear',
+        size: '50',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/photo_6_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 380, retail: 430 }
+        image: 'images/2.jpg',
+        prices: { wholesale: 323, retail: 373 }
     },
-    // Skyler Gen 1
     {
         id: 21,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon White',
-        size: '',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Clear',
+        size: '53',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/photo_7_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 413, retail: 463 }
+        image: 'images/3.jpg',
+        prices: { wholesale: 328, retail: 378 }
     },
     {
         id: 22,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Green',
-        size: '',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Chameleon',
+        size: '50',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/photo_8_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 340, retail: 390 }
+        image: 'images/1.jpg',
+        prices: { wholesale: 410, retail: 460 }
     },
     {
         id: 23,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Clear',
-        size: '',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Chameleon',
+        size: '53',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/photo_9_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 340, retail: 390 }
+        image: 'images/1.jpg',
+        prices: { wholesale: 415, retail: 465 }
     },
     {
         id: 24,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon',
-        size: '',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Green',
+        size: '50',
         generation: 'Gen 1',
         condition: 'new',
-        image: 'images/photo_10_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 413, retail: 463 }
+        image: 'images/4.jpg',
+        prices: { wholesale: 323, retail: 373 }
     },
-    // ============ REFURBISHED ============
     {
         id: 25,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Clear',
-        size: '50',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_27_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 281, retail: 320 }
+        variant: 'Shiny Green',
+        size: '53',
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/5.jpg',
+        prices: { wholesale: 328, retail: 378 }
     },
     {
         id: 26,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Clear',
-        size: '53',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_28_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 281, retail: 320 }
+        variant: 'Matte Polaroid Black',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/6.jpg',
+        prices: { wholesale: 378, retail: 428 }
     },
+    // ============ GEN 1 - SKYLER ============
     {
         id: 27,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Green',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Clear',
         size: '',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_29_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 281, retail: 320 }
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/9.jpg',
+        prices: { wholesale: 323, retail: 373 }
     },
     {
         id: 28,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Polaroid',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_30_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 315, retail: 355 }
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/7.jpg',
+        prices: { wholesale: 410, retail: 460 }
     },
     {
         id: 29,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Green',
         size: '',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_31_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 368, retail: 410 }
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/8.jpg',
+        prices: { wholesale: 323, retail: 373 }
     },
     {
         id: 30,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Amethyst Chameleon',
         size: '',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_32_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 364, retail: 405 }
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/10.jpg',
+        prices: { wholesale: 410, retail: 460 }
     },
     {
         id: 31,
-        name: 'Ray-Ban Meta Wayfarer',
-        variant: '',
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
         size: '',
-        generation: '',
-        condition: 'refurbished',
-        image: 'images/photo_33_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 323, retail: 365 }
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/10.jpg',
+        prices: { wholesale: 410, retail: 460 }
     },
+    // ============ REFURBISHED (Gen 1) ============
+    // Clear first
     {
         id: 32,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: '',
-        size: '',
-        generation: '',
+        variant: 'Shiny Clear',
+        size: '50',
+        generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/photo_34_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 323, retail: 365 }
+        image: 'images/29.jpg',
+        prices: { wholesale: 281, retail: 320 }
     },
     {
         id: 33,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Chameleon',
-        size: '',
-        generation: '',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Clear',
+        size: '53',
+        generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/photo_35_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 364, retail: 405 }
+        image: 'images/29.jpg',
+        prices: { wholesale: 281, retail: 320 }
     },
     {
         id: 34,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Green',
         size: '',
-        generation: '',
+        generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/photo_36_2025-12-09_00-50-37.jpg',
-        prices: { wholesale: 364, retail: 405 }
+        image: 'images/30.jpg',
+        prices: { wholesale: 281, retail: 320 }
     },
     {
         id: 35,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Chameleon',
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Polaroid',
         size: '',
-        generation: '',
+        generation: 'Gen 1',
         condition: 'refurbished',
-        image: 'images/photo_37_2025-12-09_00-50-37.jpg',
+        image: 'images/31.jpg',
+        prices: { wholesale: 315, retail: 355 }
+    },
+    {
+        id: 36,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/32.jpg',
+        prices: { wholesale: 368, retail: 410 }
+    },
+    {
+        id: 37,
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Matte Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/33.jpg',
+        prices: { wholesale: 364, retail: 405 }
+    },
+    {
+        id: 38,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/34.jpg',
+        prices: { wholesale: 323, retail: 365 }
+    },
+    {
+        id: 39,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/35.jpg',
+        prices: { wholesale: 323, retail: 365 }
+    },
+    {
+        id: 40,
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/36.jpg',
+        prices: { wholesale: 364, retail: 405 }
+    },
+    {
+        id: 41,
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/37.jpg',
+        prices: { wholesale: 364, retail: 405 }
+    },
+    {
+        id: 42,
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'refurbished',
+        image: 'images/37.jpg',
         prices: { wholesale: 364, retail: 405 }
     }
 ];
