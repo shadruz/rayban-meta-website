@@ -803,6 +803,59 @@ textarea {
     }
 }
 
+/* Coming Soon Placeholder */
+.coming-soon-placeholder {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4xl) var(--space-xl);
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+
+.coming-soon-placeholder svg {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+    opacity: 0.5;
+}
+
+.coming-soon-placeholder h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.coming-soon-placeholder p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+/* Category Toggle Styles - Multiple buttons */
+.toggle-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: 4px;
+    border: 1px solid var(--color-border);
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .toggle-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .toggle-btn {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: var(--font-size-xs);
+    }
+}
+
 /* ========================================
    Features Section
 ======================================== */

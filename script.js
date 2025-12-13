@@ -381,7 +381,7 @@ const products = [
 // ========================================
 // State
 // ========================================
-let currentCondition = 'new';
+let currentCategory = 'rayban'; // rayban, rayban-limited, oakley, garmin, refurbished
 let currentLang = 'ru';
 let cart = [];
 
@@ -428,7 +428,7 @@ function updateRateIndicator() {
 // DOM Elements
 // ========================================
 const productsGrid = document.getElementById('productsGrid');
-const conditionToggle = document.getElementById('conditionToggle');
+const categoryToggle = document.getElementById('categoryToggle');
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const cartBtn = document.getElementById('cartBtn');
@@ -495,16 +495,44 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 // Render Products
 // ========================================
 function renderProducts() {
-    const filteredProducts = products.filter(p => p.condition === currentCondition);
+    // Filter products based on current category
+    let filteredProducts = [];
+
+    if (currentCategory === 'rayban') {
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited');
+    } else if (currentCategory === 'rayban-limited') {
+        filteredProducts = products.filter(p => p.category === 'limited');
+    } else if (currentCategory === 'oakley') {
+        filteredProducts = products.filter(p => p.category === 'oakley');
+    } else if (currentCategory === 'garmin') {
+        filteredProducts = products.filter(p => p.category === 'garmin');
+    } else if (currentCategory === 'refurbished') {
+        filteredProducts = products.filter(p => p.condition === 'refurbished');
+    }
+
+    // Show placeholder if no products in category
+    if (filteredProducts.length === 0) {
+        productsGrid.innerHTML = `
+            <div class="coming-soon-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                <h3>${t('catalog.comingSoon')}</h3>
+                <p>Скоро здесь появятся товары</p>
+            </div>
+        `;
+        return;
+    }
 
     productsGrid.innerHTML = filteredProducts.map(product => {
         const badgeClass = product.condition === 'new' ? 'new' : 'refurbished';
-        const badgeText = product.condition === 'new' ? t('catalog.new') : 'Refurbished';
+        let badgeText = product.condition === 'new' ? 'New' : 'Refurbished';
+        if (product.generation) badgeText = product.generation;
 
         // Build product description line
         let description = product.variant || '';
         if (product.size) description += ` (${product.size})`;
-        if (product.generation) description += ` • ${product.generation}`;
 
         return `
             <div class="product-card">
@@ -860,7 +888,7 @@ function showToast(message) {
 }
 
 // ========================================
-// Condition Toggle
+// Category Toggle
 // ========================================
 function setupToggle(container, callback) {
     const buttons = container.querySelectorAll('.toggle-btn');
@@ -873,8 +901,8 @@ function setupToggle(container, callback) {
     });
 }
 
-setupToggle(conditionToggle, (data) => {
-    currentCondition = data.condition;
+setupToggle(categoryToggle, (data) => {
+    currentCategory = data.category;
     renderProducts();
 });
 
