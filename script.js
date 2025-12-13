@@ -501,6 +501,40 @@ const products = [
         category: 'oakley',
         image: 'images/oakley_6.jpg',
         prices: { wholesale: 480, retail: 500 }
+    },
+    // ============ GARMIN WATCHES ============
+    {
+        id: 49,
+        name: 'Garmin Fenix 8',
+        variant: '47mm AMOLED Sapphire, Carbon Gray DLC Titanium',
+        size: 'Black/Pebble Gray Silicone Band',
+        generation: '',
+        condition: 'new',
+        category: 'garmin',
+        image: 'images/garmin_1.jpg',
+        prices: { wholesale: 1180, retail: 1180 }
+    },
+    {
+        id: 50,
+        name: 'Garmin Forerunner 165',
+        variant: '43mm',
+        size: 'Black/Slate Gray',
+        generation: '',
+        condition: 'new',
+        category: 'garmin',
+        image: 'images/garmin_2.jpg',
+        prices: { wholesale: 300, retail: 300 }
+    },
+    {
+        id: 51,
+        name: 'Garmin Forerunner 570',
+        variant: '47mm Slate Gray Aluminum',
+        size: 'Translucent Black/Black Band',
+        generation: '',
+        condition: 'new',
+        category: 'garmin',
+        image: 'images/garmin_3.jpg',
+        prices: { wholesale: 0, retail: 0 }
     }
 ];
 
