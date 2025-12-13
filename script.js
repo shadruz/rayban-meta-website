@@ -534,7 +534,7 @@ const products = [
         condition: 'new',
         category: 'garmin',
         image: 'images/garmin_3.jpg',
-        prices: { wholesale: 0, retail: 0 }
+        prices: { wholesale: 600, retail: 600 }
     }
 ];
 
