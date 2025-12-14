@@ -614,6 +614,40 @@ const products = [
         category: 'whoop',
         image: 'images/whoop_Whoop3.jpg',
         prices: { wholesale: 335, retail: 365 }
+    },
+    // PlayStation
+    {
+        id: 44,
+        name: 'PlayStation 5 Pro',
+        variant: 'Digital Edition',
+        size: '2TB SSD',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'NoBGpics/PS5pro-Photoroom.png',
+        prices: { wholesale: 680, retail: 750 }
+    },
+    {
+        id: 45,
+        name: 'PlayStation 5 Pro',
+        variant: 'with Disc Drive',
+        size: '2TB SSD',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'NoBGpics/PS5pro-Photoroom.png',
+        prices: { wholesale: 780, retail: 850 }
+    },
+    {
+        id: 46,
+        name: 'DualSense Edge',
+        variant: 'Wireless Controller',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'NoBGpics/PS5pro-Photoroom.png',
+        prices: { wholesale: 180, retail: 220 }
     }
 ];
 
@@ -661,6 +695,14 @@ const featuresData = {
             { icon: 'strain', title: 'Strain Coach', desc: 'Оптимальная нагрузка на день. Автоматическое определение и отслеживание тренировок.' },
             { icon: 'battery', title: '5 дней работы', desc: 'Батарея на 4-5 дней. Зарядка на запястье через водонепроницаемый powerpack.' },
             { icon: 'design', title: 'Без экрана', desc: 'Компактный дизайн на 33% меньше. IP68 (10м). Сменные ремешки SuperKnit и HydroKnit.' }
+        ],
+        playstation: [
+            { icon: 'display', title: '18 TFLOPS GPU', desc: 'Графика на 45% мощнее базовой PS5. 60 вычислительных блоков RDNA с поддержкой трассировки лучей.' },
+            { icon: 'ai', title: 'PSSR AI', desc: 'PlayStation Spectral Super Resolution — ИИ-апскейлинг для чёткой картинки в 4K и выше.' },
+            { icon: 'storage', title: '2 ТБ SSD', desc: 'Сверхбыстрый NVMe SSD на 2 ТБ. Скорость чтения 5.5 ГБ/с. Больше игр без удаления.' },
+            { icon: 'streaming', title: '8K / 120fps', desc: 'Поддержка 8K Ultra HD и 4K при 120 fps. Game Boost для обратной совместимости.' },
+            { icon: 'gps', title: 'Wi-Fi 7', desc: 'Новейший стандарт Wi-Fi 7 для быстрых загрузок и стабильного онлайн-гейминга.' },
+            { icon: 'sports', title: 'Ray Tracing 2x', desc: 'Улучшенная трассировка лучей в 2-3 раза быстрее. Реалистичные отражения и освещение.' }
         ]
     },
     uz: {
@@ -695,6 +737,14 @@ const featuresData = {
             { icon: 'strain', title: 'Strain Coach', desc: "Kun uchun optimal yuk. Mashqlarni avtomatik aniqlash va kuzatish." },
             { icon: 'battery', title: '5 kun ishlash', desc: "4-5 kunlik batareya. Suv o'tkazmaydigan powerpack orqali bilakda quvvatlash." },
             { icon: 'design', title: 'Ekransiz', desc: "33% kichikroq ixcham dizayn. IP68 (10m). SuperKnit va HydroKnit almashtiradigan tasmalar." }
+        ],
+        playstation: [
+            { icon: 'display', title: '18 TFLOPS GPU', desc: "Asosiy PS5 dan 45% kuchliroq grafika. Ray tracing bilan 60 ta RDNA hisoblash bloklari." },
+            { icon: 'ai', title: 'PSSR AI', desc: "PlayStation Spectral Super Resolution — 4K va undan yuqori aniq tasvir uchun AI apskeyling." },
+            { icon: 'storage', title: '2 TB SSD', desc: "2 TB da o'ta tez NVMe SSD. O'qish tezligi 5.5 GB/s. Ko'proq o'yinlar o'chirilmasdan." },
+            { icon: 'streaming', title: '8K / 120fps', desc: "8K Ultra HD va 120 fps da 4K qo'llab-quvvatlaydi. Orqaga moslik uchun Game Boost." },
+            { icon: 'gps', title: 'Wi-Fi 7', desc: "Tez yuklab olish va barqaror onlayn o'yin uchun eng yangi Wi-Fi 7 standarti." },
+            { icon: 'sports', title: 'Ray Tracing 2x', desc: "2-3 marta tezroq yaxshilangan nur kuzatuvi. Realistik akslar va yoritish." }
         ]
     }
 };
