@@ -615,40 +615,6 @@ const products = [
         image: 'images/whoop_Whoop3.jpg',
         prices: { wholesale: 335, retail: 365 }
     },
-    // PlayStation
-    {
-        id: 44,
-        name: 'PlayStation 5 Pro',
-        variant: 'Digital Edition',
-        size: '2TB SSD',
-        generation: '',
-        condition: 'new',
-        category: 'playstation',
-        image: 'NoBGpics/PS5pro-Photoroom.png',
-        prices: { wholesale: 680, retail: 750 }
-    },
-    {
-        id: 45,
-        name: 'PlayStation 5 Pro',
-        variant: 'with Disc Drive',
-        size: '2TB SSD',
-        generation: '',
-        condition: 'new',
-        category: 'playstation',
-        image: 'NoBGpics/PS5pro-Photoroom.png',
-        prices: { wholesale: 780, retail: 850 }
-    },
-    {
-        id: 46,
-        name: 'DualSense Edge',
-        variant: 'Wireless Controller',
-        size: '',
-        generation: '',
-        condition: 'new',
-        category: 'playstation',
-        image: 'NoBGpics/PS5pro-Photoroom.png',
-        prices: { wholesale: 180, retail: 220 }
-    }
 ];
 
 // ========================================
@@ -873,7 +839,7 @@ function renderProducts() {
     let filteredProducts = [];
 
     if (currentCategory === 'rayban') {
-        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop');
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
     } else if (currentCategory === 'oakley') {
@@ -882,6 +848,8 @@ function renderProducts() {
         filteredProducts = products.filter(p => p.category === 'garmin');
     } else if (currentCategory === 'whoop') {
         filteredProducts = products.filter(p => p.category === 'whoop');
+    } else if (currentCategory === 'playstation') {
+        filteredProducts = products.filter(p => p.category === 'playstation');
     } else if (currentCategory === 'refurbished') {
         filteredProducts = products.filter(p => p.condition === 'refurbished');
     }
