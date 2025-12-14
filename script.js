@@ -1391,3 +1391,25 @@ document.addEventListener('click', (e) => {
         contactFab.classList.remove('open');
     }
 });
+
+// ========================================
+// Hero Image Carousel
+// ========================================
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+function nextHeroSlide() {
+    // Add exit class to current slide
+    heroSlides[currentSlide].classList.add('exit');
+    heroSlides[currentSlide].classList.remove('active');
+
+    // Move to next slide
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+
+    // Activate next slide
+    heroSlides[currentSlide].classList.remove('exit');
+    heroSlides[currentSlide].classList.add('active');
+}
+
+// Auto-rotate every 2 seconds
+setInterval(nextHeroSlide, 2000);

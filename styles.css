@@ -419,13 +419,38 @@ textarea {
     border-radius: 50%;
 }
 
-.hero-glasses-img {
+.hero-carousel {
     position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-slide {
+    position: absolute;
     width: 100%;
     max-width: 500px;
     height: auto;
     filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease-in-out;
+    pointer-events: none;
     animation: floatGlasses 4s ease-in-out infinite;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.hero-slide.exit {
+    opacity: 0;
+    transform: translateX(-50px);
 }
 
 @keyframes floatGlasses {
@@ -438,6 +463,10 @@ textarea {
     50% {
         transform: translateY(-15px);
     }
+}
+
+.hero-slide.active {
+    animation: floatGlasses 4s ease-in-out infinite;
 }
 
 @media (max-width: 1024px) {
