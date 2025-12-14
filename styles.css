@@ -355,23 +355,25 @@ textarea {
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-sm) var(--space-lg);
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.2);
-    border-radius: var(--radius-full);
-    color: #22c55e;
-    font-size: var(--font-size-sm);
-    font-weight: 500;
+    background: rgba(227, 24, 55, 0.08);
+    border: 1px solid rgba(227, 24, 55, 0.25);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-base);
+    font-weight: 600;
     transition: all var(--transition-base);
+    letter-spacing: 0.02em;
 }
 
 .hotline-link:hover {
-    background: rgba(34, 197, 94, 0.2);
-    border-color: rgba(34, 197, 94, 0.4);
+    background: rgba(227, 24, 55, 0.15);
+    border-color: var(--color-accent);
     transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(227, 24, 55, 0.2);
 }
 
 .hotline-link svg {
-    color: #22c55e;
+    color: var(--color-accent);
     flex-shrink: 0;
 }
 
@@ -379,6 +381,45 @@ textarea {
     display: flex;
     gap: var(--space-md);
     margin-bottom: var(--space-3xl);
+}
+
+/* Warranty Sticker */
+.warranty-sticker {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    margin-top: var(--space-lg);
+    transform: rotate(-1deg);
+    position: relative;
+}
+
+.warranty-sticker::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, rgba(227, 24, 55, 0.1), transparent);
+    z-index: -1;
+}
+
+.warranty-sticker svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.warranty-sticker span {
+    color: var(--color-text-primary);
+    opacity: 0.9;
 }
 
 .hero-stats {
@@ -488,8 +529,12 @@ textarea {
         justify-content: center;
     }
 
-    .hero-stats {
+    .hero-btns {
         justify-content: center;
+    }
+
+    .warranty-sticker {
+        transform: rotate(0deg);
     }
 
     .hero-image {
@@ -523,8 +568,18 @@ textarea {
         flex-direction: column;
     }
 
-    .hero-stats {
-        gap: var(--space-xl);
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .warranty-sticker {
+        font-size: var(--font-size-xs);
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .hotline-link {
+        font-size: var(--font-size-sm);
     }
 }
 
