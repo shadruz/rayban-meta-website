@@ -9,10 +9,10 @@ const translations = {
         'nav.features': 'Характеристики',
 
         // Hero
-        'hero.badge': 'Оптовые поставки',
-        'hero.title': 'Умные очки',
-        'hero.titleAccent': 'нового поколения',
-        'hero.subtitle': 'Ray-Ban Meta — стильные очки с камерой, AI-ассистентом и премиум звуком. Официальные поставки для бизнеса от 10 единиц.',
+        'hero.badge': 'Гарантия качества',
+        'hero.title': 'Умные гаджеты',
+        'hero.titleAccent': 'из США, Европы и ОАЭ',
+        'hero.subtitle': 'Оптовые и розничные поставки смарт-очков, часов и фитнес-браслетов. Гарантия подлинности на каждый товар.',
         'hero.btnCatalog': 'Смотреть каталог',
         'hero.btnFeatures': 'Узнать больше',
         'hero.statCamera': 'Камера',
@@ -36,8 +36,8 @@ const translations = {
         'catalog.wholesale': 'опт от 10 шт',
 
         // Features
-        'features.title': 'Возможности',
-        'features.subtitle': 'Технологии будущего в классическом дизайне Ray-Ban',
+        'features.title': 'Возможности и характеристики',
+        'features.subtitle': 'Подробные спецификации наших продуктов',
         'features.camera': '12MP Камера',
         'features.cameraDesc': 'Ультраширокоугольная камера для фото и видео. Снимайте моменты без телефона в руках.',
         'features.aiDesc': 'Голосовой ассистент с искусственным интеллектом. Просто скажите "Hey Meta".',
@@ -87,10 +87,10 @@ const translations = {
         'nav.features': 'Xususiyatlar',
 
         // Hero
-        'hero.badge': 'Ulgurji yetkazib berish',
-        'hero.title': 'Aqlli ko\'zoynak',
-        'hero.titleAccent': 'yangi avlod',
-        'hero.subtitle': 'Ray-Ban Meta — kamera, AI-yordamchi va premium ovozli zamonaviy ko\'zoynak. Biznes uchun rasmiy yetkazib berish 10 donadan.',
+        'hero.badge': 'Sifat kafolati',
+        'hero.title': 'Aqlli gadjetlar',
+        'hero.titleAccent': 'AQSh, Yevropa va BAAdan',
+        'hero.subtitle': 'Smart ko\'zoynak, soat va fitnes-bilakuzuklarni ulgurji va chakana yetkazib berish. Har bir mahsulotga haqiqiylik kafolati.',
         'hero.btnCatalog': 'Katalogni ko\'rish',
         'hero.btnFeatures': 'Batafsil',
         'hero.statCamera': 'Kamera',
@@ -114,8 +114,8 @@ const translations = {
         'catalog.wholesale': 'ulgurji 10+ dona',
 
         // Features
-        'features.title': 'Imkoniyatlar',
-        'features.subtitle': 'Ray-Ban klassik dizaynida kelajak texnologiyalari',
+        'features.title': 'Imkoniyatlar va xususiyatlar',
+        'features.subtitle': 'Mahsulotlarimizning batafsil texnik xususiyatlari',
         'features.camera': '12MP Kamera',
         'features.cameraDesc': 'Foto va video uchun ultrakeng burchakli kamera. Telefonsiz lahzalarni suratga oling.',
         'features.aiDesc': 'Sun\'iy intellektli ovozli yordamchi. Shunchaki "Hey Meta" deb ayting.',

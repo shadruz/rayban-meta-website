@@ -626,41 +626,77 @@ let currentLang = 'ru';
 let cart = [];
 
 // ========================================
-// Features Data by Category
+// Features Data by Category (Multilingual)
 // ========================================
 const featuresData = {
-    rayban: [
-        { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео 60fps. Снимайте моменты без телефона.' },
-        { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент с ИИ. Просто скажите "Hey Meta" для вопросов и переводов.' },
-        { icon: 'audio', title: 'Премиум звук', desc: 'Открытые динамики с улучшенными басами и 5 микрофонов с шумоподавлением 90%.' },
-        { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования. Кейс даёт ещё 48 часов. Быстрая зарядка 50% за 20 мин.' },
-        { icon: 'storage', title: '32GB Память', desc: 'Встроенная память на 500+ фото или 100 видео по 30 сек. Wi-Fi 6 для быстрой передачи.' },
-        { icon: 'streaming', title: 'Стриминг', desc: 'Прямые трансляции в Instagram и Facebook. IPX4 защита от воды и пота.' }
-    ],
-    oakley: [
-        { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео. Отличная стабилизация для спорта.' },
-        { icon: 'lens', title: 'PRIZM Линзы', desc: 'Поляризованные линзы Oakley PRIZM усиливают цвета и снижают блики для активного отдыха.' },
-        { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент ИИ. Узнавайте о погоде, силе ветра и получайте советы в реальном времени.' },
-        { icon: 'audio', title: 'Открытые динамики', desc: 'Музыка, подкасты и звонки. 5 микрофонов для чистых голосовых команд.' },
-        { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования, 19 часов в режиме ожидания. Кейс даёт 48 часов.' },
-        { icon: 'durability', title: 'IPX4 Защита', desc: 'Защита от брызг, дождя и пота. Идеально для тренировок и активного образа жизни.' }
-    ],
-    garmin: [
-        { icon: 'display', title: 'AMOLED Дисплей', desc: 'Яркий сенсорный AMOLED экран с высоким разрешением. Always-on режим доступен.' },
-        { icon: 'gps', title: 'Multi-Band GPS', desc: 'Точная навигация с поддержкой GPS, GLONASS, Galileo, QZSS. SatIQ для оптимизации батареи.' },
-        { icon: 'health', title: 'Мониторинг здоровья', desc: 'ЧСС, HRV, SpO2, температура кожи, стресс, Body Battery, качество сна и восстановление.' },
-        { icon: 'sports', title: 'Спортивные режимы', desc: 'Более 30 режимов: бег, плавание, велосипед, триатлон. Тренировочные планы и VO2 Max.' },
-        { icon: 'battery', title: 'До 29 дней', desc: 'До 29 дней в режиме смарт-часов (Fenix 8). 14+ часов с GPS высокой точности.' },
-        { icon: 'durability', title: '10 ATM / Дайвинг', desc: 'Водонепроницаемость 10 ATM. Fenix 8 подходит для дайвинга до 40м. Сапфировое стекло.' }
-    ],
-    whoop: [
-        { icon: 'heart', title: 'Мониторинг 24/7', desc: 'Непрерывное отслеживание: ЧСС, HRV, SpO2, температура кожи, частота дыхания.' },
-        { icon: 'sleep', title: 'Sleep Coach', desc: 'Анализ стадий сна (лёгкий, глубокий, REM). Будильник с вибрацией в оптимальное время.' },
-        { icon: 'recovery', title: 'Recovery Score', desc: 'Ежедневная оценка восстановления показывает, когда тренироваться, а когда отдыхать.' },
-        { icon: 'strain', title: 'Strain Coach', desc: 'Оптимальная нагрузка на день. Автоматическое определение и отслеживание тренировок.' },
-        { icon: 'battery', title: '5 дней работы', desc: 'Батарея на 4-5 дней. Зарядка на запястье через водонепроницаемый powerpack.' },
-        { icon: 'design', title: 'Без экрана', desc: 'Компактный дизайн на 33% меньше. IP68 (10м). Сменные ремешки SuperKnit и HydroKnit.' }
-    ]
+    ru: {
+        rayban: [
+            { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео 60fps. Снимайте моменты без телефона.' },
+            { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент с ИИ. Просто скажите "Hey Meta" для вопросов и переводов.' },
+            { icon: 'audio', title: 'Премиум звук', desc: 'Открытые динамики с улучшенными басами и 5 микрофонов с шумоподавлением 90%.' },
+            { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования. Кейс даёт ещё 48 часов. Быстрая зарядка 50% за 20 мин.' },
+            { icon: 'storage', title: '32GB Память', desc: 'Встроенная память на 500+ фото или 100 видео по 30 сек. Wi-Fi 6 для быстрой передачи.' },
+            { icon: 'streaming', title: 'Стриминг', desc: 'Прямые трансляции в Instagram и Facebook. IPX4 защита от воды и пота.' }
+        ],
+        oakley: [
+            { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео. Отличная стабилизация для спорта.' },
+            { icon: 'lens', title: 'PRIZM Линзы', desc: 'Поляризованные линзы Oakley PRIZM усиливают цвета и снижают блики для активного отдыха.' },
+            { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент ИИ. Узнавайте о погоде, силе ветра и получайте советы в реальном времени.' },
+            { icon: 'audio', title: 'Открытые динамики', desc: 'Музыка, подкасты и звонки. 5 микрофонов для чистых голосовых команд.' },
+            { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования, 19 часов в режиме ожидания. Кейс даёт 48 часов.' },
+            { icon: 'durability', title: 'IPX4 Защита', desc: 'Защита от брызг, дождя и пота. Идеально для тренировок и активного образа жизни.' }
+        ],
+        garmin: [
+            { icon: 'display', title: 'AMOLED Дисплей', desc: 'Яркий сенсорный AMOLED экран с высоким разрешением. Always-on режим доступен.' },
+            { icon: 'gps', title: 'Multi-Band GPS', desc: 'Точная навигация с поддержкой GPS, GLONASS, Galileo, QZSS. SatIQ для оптимизации батареи.' },
+            { icon: 'health', title: 'Мониторинг здоровья', desc: 'ЧСС, HRV, SpO2, температура кожи, стресс, Body Battery, качество сна и восстановление.' },
+            { icon: 'sports', title: 'Спортивные режимы', desc: 'Более 30 режимов: бег, плавание, велосипед, триатлон. Тренировочные планы и VO2 Max.' },
+            { icon: 'battery', title: 'До 29 дней', desc: 'До 29 дней в режиме смарт-часов (Fenix 8). 14+ часов с GPS высокой точности.' },
+            { icon: 'durability', title: '10 ATM / Дайвинг', desc: 'Водонепроницаемость 10 ATM. Fenix 8 подходит для дайвинга до 40м. Сапфировое стекло.' }
+        ],
+        whoop: [
+            { icon: 'heart', title: 'Мониторинг 24/7', desc: 'Непрерывное отслеживание: ЧСС, HRV, SpO2, температура кожи, частота дыхания.' },
+            { icon: 'sleep', title: 'Sleep Coach', desc: 'Анализ стадий сна (лёгкий, глубокий, REM). Будильник с вибрацией в оптимальное время.' },
+            { icon: 'recovery', title: 'Recovery Score', desc: 'Ежедневная оценка восстановления показывает, когда тренироваться, а когда отдыхать.' },
+            { icon: 'strain', title: 'Strain Coach', desc: 'Оптимальная нагрузка на день. Автоматическое определение и отслеживание тренировок.' },
+            { icon: 'battery', title: '5 дней работы', desc: 'Батарея на 4-5 дней. Зарядка на запястье через водонепроницаемый powerpack.' },
+            { icon: 'design', title: 'Без экрана', desc: 'Компактный дизайн на 33% меньше. IP68 (10м). Сменные ремешки SuperKnit и HydroKnit.' }
+        ]
+    },
+    uz: {
+        rayban: [
+            { icon: 'camera', title: '12MP Kamera', desc: '3K Ultra HD video 60fps bilan ultrakeng burchakli kamera. Telefonsiz lahzalarni suratga oling.' },
+            { icon: 'ai', title: 'Meta AI', desc: "Sun'iy intellektli ovozli yordamchi. Savollar va tarjimalar uchun \"Hey Meta\" deb ayting." },
+            { icon: 'audio', title: 'Premium ovoz', desc: "Yaxshilangan basslar bilan ochiq dinamiklar va 90% shovqin filtrlash bilan 5 ta mikrofon." },
+            { icon: 'battery', title: '8 soat ishlash', desc: "8 soatgacha faol foydalanish. Quti yana 48 soat beradi. 20 daqiqada 50% tez quvvatlash." },
+            { icon: 'storage', title: '32GB Xotira', desc: "500+ ta rasm yoki 30 soniyalik 100 ta video uchun xotira. Tez uzatish uchun Wi-Fi 6." },
+            { icon: 'streaming', title: 'Striming', desc: "Instagram va Facebook-da jonli efirlar. Suv va terdan IPX4 himoya." }
+        ],
+        oakley: [
+            { icon: 'camera', title: '12MP Kamera', desc: '3K Ultra HD video bilan ultrakeng burchakli kamera. Sport uchun ajoyib stabilizatsiya.' },
+            { icon: 'lens', title: 'PRIZM Linzalar', desc: "Oakley PRIZM polarizatsiyalangan linzalar ranglarni kuchaytiradi va faol dam olish uchun yorqinlikni kamaytiradi." },
+            { icon: 'ai', title: 'Meta AI', desc: "Sun'iy intellektli ovozli yordamchi. Ob-havo, shamol kuchi haqida bilib oling va real vaqtda maslahatlar oling." },
+            { icon: 'audio', title: 'Ochiq dinamiklar', desc: "Musiqa, podkastlar va qo'ng'iroqlar. Aniq ovozli buyruqlar uchun 5 ta mikrofon." },
+            { icon: 'battery', title: '8 soat ishlash', desc: "8 soatgacha faol foydalanish, 19 soat kutish rejimida. Quti 48 soat beradi." },
+            { icon: 'durability', title: 'IPX4 Himoya', desc: "Sachratishlar, yomg'ir va terdan himoya. Mashqlar va faol turmush tarzi uchun ideal." }
+        ],
+        garmin: [
+            { icon: 'display', title: 'AMOLED Displey', desc: "Yuqori aniqlikdagi yorqin sensorli AMOLED ekran. Always-on rejimi mavjud." },
+            { icon: 'gps', title: 'Multi-Band GPS', desc: "GPS, GLONASS, Galileo, QZSS qo'llab-quvvatlashi bilan aniq navigatsiya. Batareyani optimallashtirish uchun SatIQ." },
+            { icon: 'health', title: "Sog'liqni kuzatish", desc: "Yurak urishi, HRV, SpO2, teri harorati, stress, Body Battery, uyqu sifati va tiklanish." },
+            { icon: 'sports', title: 'Sport rejimlari', desc: "30 dan ortiq rejim: yugurish, suzish, velosiped, triathlon. Mashq rejalari va VO2 Max." },
+            { icon: 'battery', title: '29 kungacha', desc: "Smart-soat rejimida 29 kungacha (Fenix 8). Yuqori aniqlikdagi GPS bilan 14+ soat." },
+            { icon: 'durability', title: '10 ATM / Sho\'ng\'in', desc: "10 ATM suv o'tkazmaslik. Fenix 8 40m gacha sho'ng'ish uchun mos. Sapfir oynasi." }
+        ],
+        whoop: [
+            { icon: 'heart', title: 'Monitoring 24/7', desc: "Doimiy kuzatish: yurak urishi, HRV, SpO2, teri harorati, nafas chastotasi." },
+            { icon: 'sleep', title: 'Sleep Coach', desc: "Uyqu bosqichlarini tahlil qilish (yengil, chuqur, REM). Optimal vaqtda vibratsiyali budilnik." },
+            { icon: 'recovery', title: 'Recovery Score', desc: "Kundalik tiklanish bahosi qachon mashq qilish va qachon dam olish kerakligini ko'rsatadi." },
+            { icon: 'strain', title: 'Strain Coach', desc: "Kun uchun optimal yuk. Mashqlarni avtomatik aniqlash va kuzatish." },
+            { icon: 'battery', title: '5 kun ishlash', desc: "4-5 kunlik batareya. Suv o'tkazmaydigan powerpack orqali bilakda quvvatlash." },
+            { icon: 'design', title: 'Ekransiz', desc: "33% kichikroq ixcham dizayn. IP68 (10m). SuperKnit va HydroKnit almashtiradigan tasmalar." }
+        ]
+    }
 };
 
 // Exchange Rate State (Central Bank of Uzbekistan)
@@ -761,9 +797,10 @@ function updateLanguage() {
         }
     });
 
-    // Re-render products and cart with new language
+    // Re-render products, cart, and features with new language
     renderProducts();
     renderCart();
+    renderFeatures();
 }
 
 // ========================================
@@ -874,7 +911,8 @@ const featureIcons = {
 // Render Features
 // ========================================
 function renderFeatures() {
-    const features = featuresData[currentFeatureCategory] || [];
+    const langData = featuresData[currentLang] || featuresData.ru;
+    const features = langData[currentFeatureCategory] || [];
 
     featuresGrid.innerHTML = features.map(feature => {
         const iconPath = featureIcons[feature.icon] || featureIcons.camera;
