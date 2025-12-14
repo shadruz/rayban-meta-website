@@ -469,6 +469,10 @@ textarea {
     animation: floatGlasses 4s ease-in-out infinite;
 }
 
+.hero-slide-small {
+    max-width: 320px;
+}
+
 @media (max-width: 1024px) {
     .hero .container {
         grid-template-columns: 1fr;
