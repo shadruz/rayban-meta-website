@@ -9,15 +9,18 @@ const translations = {
         'nav.features': 'Характеристики',
 
         // Hero
-        'hero.badge': 'Гарантия качества',
+        'hero.badge': 'Лучшие оптовые цены',
         'hero.title': 'Умные гаджеты',
         'hero.titleAccent': 'из США, Европы и ОАЭ',
         'hero.subtitle': 'Оптовые и розничные поставки смарт-очков, часов и фитнес-браслетов. Гарантия подлинности и качества на каждый товар.',
         'hero.btnCatalog': 'Смотреть каталог',
         'hero.btnFeatures': 'Узнать больше',
-        'hero.statCamera': 'Камера',
-        'hero.statBattery': 'Батарея',
-        'hero.statHours': 'ч',
+        'hero.stat1Value': 'от 7',
+        'hero.stat1Label': 'дней доставка',
+        'hero.stat2Value': 'Без',
+        'hero.stat2Label': 'предоплаты',
+        'hero.stat3Value': '100%',
+        'hero.stat3Label': 'гарантия',
 
         // Catalog
         'catalog.title': 'Каталог',
@@ -87,15 +90,18 @@ const translations = {
         'nav.features': 'Xususiyatlar',
 
         // Hero
-        'hero.badge': 'Sifat kafolati',
+        'hero.badge': 'Eng yaxshi ulgurji narxlar',
         'hero.title': 'Aqlli gadjetlar',
         'hero.titleAccent': 'AQSh, Yevropa va BAAdan',
         'hero.subtitle': 'Smart ko\'zoynak, soat va fitnes-bilakuzuklarni ulgurji va chakana yetkazib berish. Har bir mahsulotga haqiqiylik va sifat kafolati.',
         'hero.btnCatalog': 'Katalogni ko\'rish',
         'hero.btnFeatures': 'Batafsil',
-        'hero.statCamera': 'Kamera',
-        'hero.statBattery': 'Batareya',
-        'hero.statHours': 's',
+        'hero.stat1Value': '7 dan',
+        'hero.stat1Label': 'kun yetkazib berish',
+        'hero.stat2Value': 'Oldindan',
+        'hero.stat2Label': 'to\'lovsiz',
+        'hero.stat3Value': '100%',
+        'hero.stat3Label': 'kafolat',
 
         // Catalog
         'catalog.title': 'Katalog',
