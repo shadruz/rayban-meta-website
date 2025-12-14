@@ -159,82 +159,33 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="features.title">Возможности</h2>
-                <p data-i18n="features.subtitle">Технологии будущего в классическом дизайне Ray-Ban</p>
+                <h2 data-i18n="features.title">Характеристики</h2>
+                <p data-i18n="features.subtitle">Подробные спецификации наших продуктов</p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3" />
-                            <path
-                                d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            <!-- Features Category Dropdown -->
+            <div class="features-filters">
+                <div class="category-dropdown" id="featuresDropdown">
+                    <button class="category-dropdown-btn" id="featuresDropdownBtn">
+                        <span class="dropdown-label">Продукт:</span>
+                        <span class="dropdown-selected" id="selectedFeatureCategory">Ray-Ban Meta</span>
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
+                    </button>
+                    <div class="category-dropdown-menu" id="featuresMenu">
+                        <button class="category-option active" data-feature="rayban">Ray-Ban Meta</button>
+                        <button class="category-option" data-feature="oakley">Oakley Meta</button>
+                        <button class="category-option" data-feature="garmin">Garmin</button>
+                        <button class="category-option" data-feature="whoop">WHOOP</button>
                     </div>
-                    <h3 data-i18n="features.camera">12MP Камера</h3>
-                    <p data-i18n="features.cameraDesc">Ультраширокоугольная камера для фото и видео. Снимайте моменты
-                        без телефона в руках.</p>
                 </div>
+            </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                            <line x1="12" y1="19" x2="12" y2="22" />
-                        </svg>
-                    </div>
-                    <h3>Meta AI</h3>
-                    <p data-i18n="features.aiDesc">Голосовой ассистент с искусственным интеллектом. Просто скажите "Hey
-                        Meta".</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 18V5l12-2v13" />
-                            <circle cx="6" cy="18" r="3" />
-                            <circle cx="18" cy="16" r="3" />
-                        </svg>
-                    </div>
-                    <h3 data-i18n="features.sound">Премиум звук</h3>
-                    <p data-i18n="features.soundDesc">Встроенные динамики с открытым дизайном. Слушайте музыку и
-                        принимайте звонки.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="1" y="6" width="18" height="12" rx="2" />
-                            <line x1="23" y1="10" x2="23" y2="14" />
-                        </svg>
-                    </div>
-                    <h3 data-i18n="features.battery">4+ часов работы</h3>
-                    <p data-i18n="features.batteryDesc">До 4 часов активного использования. Зарядный кейс дает еще 32
-                        часа дополнительно.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                        </svg>
-                    </div>
-                    <h3 data-i18n="features.streaming">Стриминг</h3>
-                    <p data-i18n="features.streamingDesc">Прямые трансляции в Instagram и Facebook одним касанием.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg>
-                    </div>
-                    <h3 data-i18n="features.privacy">Приватность</h3>
-                    <p data-i18n="features.privacyDesc">LED-индикатор при записи. Физическая кнопка отключения камеры и
-                        микрофона.</p>
-                </div>
+            <!-- Dynamic Features Grid -->
+            <div class="features-grid" id="featuresGrid">
+                <!-- Features will be rendered by JavaScript -->
             </div>
         </div>
     </section>

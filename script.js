@@ -621,8 +621,47 @@ const products = [
 // State
 // ========================================
 let currentCategory = 'rayban'; // rayban, rayban-limited, oakley, garmin, refurbished
+let currentFeatureCategory = 'rayban'; // For features section
 let currentLang = 'ru';
 let cart = [];
+
+// ========================================
+// Features Data by Category
+// ========================================
+const featuresData = {
+    rayban: [
+        { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео 60fps. Снимайте моменты без телефона.' },
+        { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент с ИИ. Просто скажите "Hey Meta" для вопросов и переводов.' },
+        { icon: 'audio', title: 'Премиум звук', desc: 'Открытые динамики с улучшенными басами и 5 микрофонов с шумоподавлением 90%.' },
+        { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования. Кейс даёт ещё 48 часов. Быстрая зарядка 50% за 20 мин.' },
+        { icon: 'storage', title: '32GB Память', desc: 'Встроенная память на 500+ фото или 100 видео по 30 сек. Wi-Fi 6 для быстрой передачи.' },
+        { icon: 'streaming', title: 'Стриминг', desc: 'Прямые трансляции в Instagram и Facebook. IPX4 защита от воды и пота.' }
+    ],
+    oakley: [
+        { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео. Отличная стабилизация для спорта.' },
+        { icon: 'lens', title: 'PRIZM Линзы', desc: 'Поляризованные линзы Oakley PRIZM усиливают цвета и снижают блики для активного отдыха.' },
+        { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент ИИ. Узнавайте о погоде, силе ветра и получайте советы в реальном времени.' },
+        { icon: 'audio', title: 'Открытые динамики', desc: 'Музыка, подкасты и звонки. 5 микрофонов для чистых голосовых команд.' },
+        { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования, 19 часов в режиме ожидания. Кейс даёт 48 часов.' },
+        { icon: 'durability', title: 'IPX4 Защита', desc: 'Защита от брызг, дождя и пота. Идеально для тренировок и активного образа жизни.' }
+    ],
+    garmin: [
+        { icon: 'display', title: 'AMOLED Дисплей', desc: 'Яркий сенсорный AMOLED экран с высоким разрешением. Always-on режим доступен.' },
+        { icon: 'gps', title: 'Multi-Band GPS', desc: 'Точная навигация с поддержкой GPS, GLONASS, Galileo, QZSS. SatIQ для оптимизации батареи.' },
+        { icon: 'health', title: 'Мониторинг здоровья', desc: 'ЧСС, HRV, SpO2, температура кожи, стресс, Body Battery, качество сна и восстановление.' },
+        { icon: 'sports', title: 'Спортивные режимы', desc: 'Более 30 режимов: бег, плавание, велосипед, триатлон. Тренировочные планы и VO2 Max.' },
+        { icon: 'battery', title: 'До 29 дней', desc: 'До 29 дней в режиме смарт-часов (Fenix 8). 14+ часов с GPS высокой точности.' },
+        { icon: 'durability', title: '10 ATM / Дайвинг', desc: 'Водонепроницаемость 10 ATM. Fenix 8 подходит для дайвинга до 40м. Сапфировое стекло.' }
+    ],
+    whoop: [
+        { icon: 'heart', title: 'Мониторинг 24/7', desc: 'Непрерывное отслеживание: ЧСС, HRV, SpO2, температура кожи, частота дыхания.' },
+        { icon: 'sleep', title: 'Sleep Coach', desc: 'Анализ стадий сна (лёгкий, глубокий, REM). Будильник с вибрацией в оптимальное время.' },
+        { icon: 'recovery', title: 'Recovery Score', desc: 'Ежедневная оценка восстановления показывает, когда тренироваться, а когда отдыхать.' },
+        { icon: 'strain', title: 'Strain Coach', desc: 'Оптимальная нагрузка на день. Автоматическое определение и отслеживание тренировок.' },
+        { icon: 'battery', title: '5 дней работы', desc: 'Батарея на 4-5 дней. Зарядка на запястье через водонепроницаемый powerpack.' },
+        { icon: 'design', title: 'Без экрана', desc: 'Компактный дизайн на 33% меньше. IP68 (10м). Сменные ремешки SuperKnit и HydroKnit.' }
+    ]
+};
 
 // Exchange Rate State (Central Bank of Uzbekistan)
 let exchangeRate = 12000; // Fallback rate
@@ -671,6 +710,12 @@ const categoryDropdown = document.getElementById('categoryDropdown');
 const categoryDropdownBtn = document.getElementById('categoryDropdownBtn');
 const categoryMenu = document.getElementById('categoryMenu');
 const selectedCategoryEl = document.getElementById('selectedCategory');
+// Features dropdown elements
+const featuresGrid = document.getElementById('featuresGrid');
+const featuresDropdown = document.getElementById('featuresDropdown');
+const featuresDropdownBtn = document.getElementById('featuresDropdownBtn');
+const featuresMenu = document.getElementById('featuresMenu');
+const selectedFeatureCategoryEl = document.getElementById('selectedFeatureCategory');
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const cartBtn = document.getElementById('cartBtn');
@@ -797,6 +842,51 @@ function renderProducts() {
                     </div>
                 </div>
                 <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>
+            </div>
+        `;
+    }).join('');
+}
+
+// ========================================
+// Feature Icons SVG
+// ========================================
+const featureIcons = {
+    camera: '<circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>',
+    ai: '<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/>',
+    audio: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+    battery: '<rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/>',
+    storage: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><line x1="2" y1="10" x2="22" y2="10"/>',
+    streaming: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+    lens: '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>',
+    durability: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+    display: '<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>',
+    gps: '<circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>',
+    health: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+    sports: '<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>',
+    heart: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+    sleep: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+    recovery: '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>',
+    strain: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+    design: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>'
+};
+
+// ========================================
+// Render Features
+// ========================================
+function renderFeatures() {
+    const features = featuresData[currentFeatureCategory] || [];
+
+    featuresGrid.innerHTML = features.map(feature => {
+        const iconPath = featureIcons[feature.icon] || featureIcons.camera;
+        return `
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        ${iconPath}
+                    </svg>
+                </div>
+                <h3>${feature.title}</h3>
+                <p>${feature.desc}</p>
             </div>
         `;
     }).join('');
@@ -1165,6 +1255,44 @@ categoryMenu.querySelectorAll('.category-option').forEach(option => {
         categoryDropdown.classList.remove('open');
     });
 });
+
+// ========================================
+// Features Dropdown
+// ========================================
+// Toggle features dropdown open/close
+featuresDropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    featuresDropdown.classList.toggle('open');
+});
+
+// Close features dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!featuresDropdown.contains(e.target)) {
+        featuresDropdown.classList.remove('open');
+    }
+});
+
+// Handle features category selection
+featuresMenu.querySelectorAll('.category-option').forEach(option => {
+    option.addEventListener('click', () => {
+        // Update active state
+        featuresMenu.querySelectorAll('.category-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+
+        // Update selected text
+        selectedFeatureCategoryEl.textContent = option.textContent;
+
+        // Update current feature category and render
+        currentFeatureCategory = option.dataset.feature;
+        renderFeatures();
+
+        // Close dropdown
+        featuresDropdown.classList.remove('open');
+    });
+});
+
+// Initial render of features
+renderFeatures();
 
 // ========================================
 // Mobile Menu
