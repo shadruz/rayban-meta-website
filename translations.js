@@ -51,6 +51,8 @@ const translations = {
         // Footer
         'footer.desc': 'Розничные и оптовые поставки из США, Европы, ОАЭ',
         'footer.rights': 'Все права защищены.',
+        'footer.disclaimer1': 'Данный веб-сайт является информационной витриной и каталогом товаров. Мы не осуществляем продажу товаров непосредственно через этот сайт. На сайте отсутствуют механизмы онлайн-оплаты, денежные транзакции и платёжные посредники.',
+        'footer.disclaimer2': 'Все представленные цены носят ознакомительный характер. Для оформления заказа свяжитесь с нами через указанные контакты. Окончательные условия сделки согласовываются индивидуально.',
 
         // Cart
         'cart.title': 'Корзина',
@@ -127,6 +129,8 @@ const translations = {
         // Footer
         'footer.desc': 'AQSh, Yevropa, BAA dan chakana va ulgurji yetkazib berish',
         'footer.rights': 'Barcha huquqlar himoyalangan.',
+        'footer.disclaimer1': 'Ushbu veb-sayt axborot vitrini va mahsulotlar katalogidir. Biz ushbu sayt orqali to\'g\'ridan-to\'g\'ri mahsulot sotmaymiz. Saytda onlayn to\'lov mexanizmlari, pul operatsiyalari va to\'lov vositalari mavjud emas.',
+        'footer.disclaimer2': 'Barcha ko\'rsatilgan narxlar tanishuv xarakteriga ega. Buyurtma berish uchun ko\'rsatilgan kontaktlar orqali biz bilan bog\'laning. Bitimning yakuniy shartlari individual ravishda kelishiladi.',
 
         // Cart
         'cart.title': 'Savat',
