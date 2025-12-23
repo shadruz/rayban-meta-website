@@ -961,6 +961,32 @@ textarea {
     color: #eab308;
 }
 
+.product-badge.coming-soon {
+    background: rgba(147, 51, 234, 0.15);
+    color: #a855f7;
+}
+
+.product-coming-soon {
+    opacity: 0.85;
+}
+
+.product-coming-soon .add-to-cart-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.price-coming-soon {
+    text-align: center;
+    padding: var(--space-md) 0;
+}
+
+.price-coming-soon span {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-accent);
+    font-style: italic;
+}
+
 .product-name {
     font-size: var(--font-size-xl);
     font-weight: 600;

@@ -615,6 +615,55 @@ const products = [
         image: 'images/whoop_Whoop3.jpg',
         prices: { wholesale: 335, retail: 365 }
     },
+    // ============ PLAYSTATION ============
+    {
+        id: 60,
+        name: 'PlayStation 5 Pro Console',
+        variant: '',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'images/ps5-1.webp',
+        prices: { wholesale: 0, retail: 0 },
+        comingSoon: true
+    },
+    {
+        id: 61,
+        name: 'PlayStation 5 Digital Edition Console',
+        variant: '825 GB',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'images/ps5-2.webp',
+        prices: { wholesale: 0, retail: 0 },
+        comingSoon: true
+    },
+    {
+        id: 62,
+        name: 'PlayStation 5 Console',
+        variant: '1 TB',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'playstation',
+        image: 'images/ps5-3.webp',
+        prices: { wholesale: 0, retail: 0 },
+        comingSoon: true
+    },
+    {
+        id: 63,
+        name: 'PlayStation 5 Console',
+        variant: 'Certified Refurbished',
+        size: '',
+        generation: '',
+        condition: 'refurbished',
+        category: 'playstation',
+        image: 'images/ps5-4.webp',
+        prices: { wholesale: 0, retail: 0 },
+        comingSoon: true
+    },
 ];
 
 // ========================================
@@ -877,6 +926,27 @@ function renderProducts() {
         // Build product description line
         let description = product.variant || '';
         if (product.size) description += ` (${product.size})`;
+
+        // Handle coming soon products
+        if (product.comingSoon) {
+            const comingSoonText = currentLang === 'uz' ? 'Tez orada' : 'Скоро';
+            return `
+                <div class="product-card product-coming-soon">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    </div>
+                    <span class="product-badge coming-soon">${comingSoonText}</span>
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-color">${description}</p>
+                    <div class="product-prices">
+                        <div class="price-coming-soon">
+                            <span>${currentLang === 'uz' ? 'Narx tez orada' : 'Цена уточняется'}</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary add-to-cart-btn" disabled>${comingSoonText}</button>
+                </div>
+            `;
+        }
 
         return `
             <div class="product-card">

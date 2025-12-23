@@ -53,6 +53,7 @@ const translations = {
         'footer.rights': 'Все права защищены.',
         'footer.disclaimer1': 'Данный веб-сайт является информационной витриной и каталогом товаров. Мы не осуществляем продажу товаров непосредственно через этот сайт. На сайте отсутствуют механизмы онлайн-оплаты, денежные транзакции и платёжные посредники.',
         'footer.disclaimer2': 'Все представленные цены носят ознакомительный характер. Для оформления заказа свяжитесь с нами через указанные контакты. Окончательные условия сделки согласовываются индивидуально.',
+        'footer.privacy': 'Отправляя свои контактные данные (имя, номер телефона), вы даёте согласие на их обработку для связи с вами по вопросам заказа. Мы не передаём ваши данные третьим лицам и используем их исключительно для обработки вашего запроса.',
 
         // Cart
         'cart.title': 'Корзина',
@@ -131,6 +132,7 @@ const translations = {
         'footer.rights': 'Barcha huquqlar himoyalangan.',
         'footer.disclaimer1': 'Ushbu veb-sayt axborot vitrini va mahsulotlar katalogidir. Biz ushbu sayt orqali to\'g\'ridan-to\'g\'ri mahsulot sotmaymiz. Saytda onlayn to\'lov mexanizmlari, pul operatsiyalari va to\'lov vositalari mavjud emas.',
         'footer.disclaimer2': 'Barcha ko\'rsatilgan narxlar tanishuv xarakteriga ega. Buyurtma berish uchun ko\'rsatilgan kontaktlar orqali biz bilan bog\'laning. Bitimning yakuniy shartlari individual ravishda kelishiladi.',
+        'footer.privacy': 'Kontakt ma'lumotlaringizni (ism, telefon raqami) yuborar ekansiz, buyurtma bo'yicha siz bilan bog'lanish uchun ularni qayta ishlashga rozilik bildirasiz. Biz sizning ma'lumotlaringizni uchinchi shaxslarga bermaymiz va faqat so'rovingizni ko'rib chiqish uchun foydalanamiz.',
 
         // Cart
         'cart.title': 'Savat',
