@@ -132,7 +132,7 @@ const translations = {
         'footer.rights': 'Barcha huquqlar himoyalangan.',
         'footer.disclaimer1': 'Ushbu veb-sayt axborot vitrini va mahsulotlar katalogidir. Biz ushbu sayt orqali to\'g\'ridan-to\'g\'ri mahsulot sotmaymiz. Saytda onlayn to\'lov mexanizmlari, pul operatsiyalari va to\'lov vositalari mavjud emas.',
         'footer.disclaimer2': 'Barcha ko\'rsatilgan narxlar tanishuv xarakteriga ega. Buyurtma berish uchun ko\'rsatilgan kontaktlar orqali biz bilan bog\'laning. Bitimning yakuniy shartlari individual ravishda kelishiladi.',
-        'footer.privacy': 'Kontakt ma'lumotlaringizni (ism, telefon raqami) yuborar ekansiz, buyurtma bo'yicha siz bilan bog'lanish uchun ularni qayta ishlashga rozilik bildirasiz. Biz sizning ma'lumotlaringizni uchinchi shaxslarga bermaymiz va faqat so'rovingizni ko'rib chiqish uchun foydalanamiz.',
+        'footer.privacy': 'Kontakt ma\'lumotlaringizni (ism, telefon raqami) yuborar ekansiz, buyurtma bo\'yicha siz bilan bog\'lanish uchun ularni qayta ishlashga rozilik bildirasiz. Biz sizning ma\'lumotlaringizni uchinchi shaxslarga bermaymiz va faqat so\'rovingizni ko\'rib chiqish uchun foydalanamiz.',
 
         // Cart
         'cart.title': 'Savat',
