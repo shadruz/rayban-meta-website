@@ -667,9 +667,17 @@ const products = [
 ];
 
 // ========================================
+// In-Stock Products (Product IDs that are currently available)
+// ========================================
+const inStockProducts = [
+    // Example: Product ID 1 is in stock (Ray-Ban Meta Wayfarer Clear Matte 50)
+    1
+];
+
+// ========================================
 // State
 // ========================================
-let currentCategory = 'rayban'; // rayban, rayban-limited, oakley, garmin, refurbished
+let currentCategory = 'instock'; // instock, rayban, rayban-limited, oakley, garmin, refurbished
 let currentFeatureCategory = 'rayban'; // For features section
 let currentLang = 'ru';
 let cart = [];
@@ -887,7 +895,9 @@ function renderProducts() {
     // Filter products based on current category
     let filteredProducts = [];
 
-    if (currentCategory === 'rayban') {
+    if (currentCategory === 'instock') {
+        filteredProducts = products.filter(p => inStockProducts.includes(p.id));
+    } else if (currentCategory === 'rayban') {
         filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
@@ -944,6 +954,37 @@ function renderProducts() {
                         </div>
                     </div>
                     <button class="btn btn-secondary add-to-cart-btn" disabled>${comingSoonText}</button>
+                </div>
+            `;
+        }
+
+        // Handle in-stock products (special card with ribbon and booking button)
+        if (currentCategory === 'instock') {
+            const instockText = currentLang === 'uz' ? 'Mavjud' : 'В наличии';
+            const bookText = currentLang === 'uz' ? 'Band qilish' : 'Забронировать';
+            const telegramMessage = encodeURIComponent(`Здравствуйте! Хочу забронировать товар:\n\n${product.name}\n${description}\nЦена: ${formatPrice(product.prices.retail)}\n\nПрошу подтвердить наличие.`);
+            const telegramLink = `https://t.me/techgeek_uz?text=${telegramMessage}`;
+
+            return `
+                <div class="product-card product-instock">
+                    <div class="instock-ribbon">${instockText}</div>
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    </div>
+                    <span class="product-badge ${badgeClass}">${badgeText}</span>
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-color">${description}</p>
+                    <div class="product-prices">
+                        <div class="price-row price-wholesale">
+                            <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
+                            <span class="price-label">${t('catalog.wholesale')}</span>
+                        </div>
+                        <div class="price-row price-retail">
+                            <span class="price-current">${formatPrice(product.prices.retail)}</span>
+                            <span class="price-label">${t('catalog.retail')}</span>
+                        </div>
+                    </div>
+                    <a href="${telegramLink}" target="_blank" class="btn btn-primary book-btn">${bookText}</a>
                 </div>
             `;
         }

@@ -32,6 +32,8 @@ const translations = {
         'catalog.addToCart': 'В корзину',
         'catalog.retail': 'розница',
         'catalog.wholesale': 'опт от 10 шт',
+        'catalog.instock': 'В наличии',
+        'catalog.book': 'Забронировать',
 
         // Features
         'features.title': 'Возможности и характеристики',
@@ -111,6 +113,8 @@ const translations = {
         'catalog.addToCart': 'Savatga',
         'catalog.retail': 'chakana',
         'catalog.wholesale': 'ulgurji 10+ dona',
+        'catalog.instock': 'Mavjud',
+        'catalog.book': 'Band qilish',
 
         // Features
         'features.title': 'Imkoniyatlar va xususiyatlar',
