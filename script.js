@@ -670,8 +670,10 @@ const products = [
 // In-Stock Products (Product IDs that are currently available)
 // ========================================
 const inStockProducts = [
-    // Example: Product ID 1 is in stock (Ray-Ban Meta Wayfarer Clear Matte 50)
-    1
+    // Ray-Ban Meta Wayfarer Shiny Clear (50) - Gen 1
+    20,
+    // Ray-Ban Meta Wayfarer Matte Chameleon (50) - Gen 1
+    22
 ];
 
 // ========================================
