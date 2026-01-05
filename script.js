@@ -209,7 +209,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        prices: { wholesale: 323, retail: 373 }
+        prices: { wholesale: 290, retail: 300 }
     },
     {
         id: 21,
@@ -219,7 +219,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        prices: { wholesale: 328, retail: 378 }
+        prices: { wholesale: 300, retail: 310 }
     },
     {
         id: 22,
@@ -229,7 +229,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        prices: { wholesale: 410, retail: 460 }
+        prices: { wholesale: 390, retail: 400 }
     },
     {
         id: 23,
@@ -239,7 +239,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        prices: { wholesale: 415, retail: 465 }
+        prices: { wholesale: 400, retail: 410 }
     },
     {
         id: 24,
@@ -249,7 +249,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/3.jpg',
-        prices: { wholesale: 323, retail: 373 }
+        prices: { wholesale: 290, retail: 300 }
     },
     {
         id: 25,
@@ -259,7 +259,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/3.jpg',
-        prices: { wholesale: 328, retail: 378 }
+        prices: { wholesale: 300, retail: 310 }
     },
     {
         id: 26,
@@ -281,7 +281,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/7.jpg',
-        prices: { wholesale: 323, retail: 373 }
+        prices: { wholesale: 290, retail: 300 }
     },
     {
         id: 28,
@@ -291,7 +291,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/5.jpg',
-        prices: { wholesale: 410, retail: 460 }
+        prices: { wholesale: 390, retail: 400 }
     },
     {
         id: 29,
@@ -301,7 +301,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/6.jpg',
-        prices: { wholesale: 323, retail: 373 }
+        prices: { wholesale: 290, retail: 300 }
     },
     {
         id: 30,
@@ -311,7 +311,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/8.jpg',
-        prices: { wholesale: 410, retail: 460 }
+        prices: { wholesale: 390, retail: 400 }
     },
     {
         id: 31,
@@ -321,7 +321,18 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/9.jpg',
-        prices: { wholesale: 410, retail: 460 }
+        prices: { wholesale: 390, retail: 400 }
+    },
+    // ============ GEN 1 - HEADLINER ============
+    {
+        id: 64,
+        name: 'Ray-Ban Meta Headliner',
+        variant: 'Shiny Chameleon',
+        size: '',
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/35.jpg',
+        prices: { wholesale: 400, retail: 410 }
     },
     // ============ REFURBISHED (Gen 1) ============
     // Clear first
@@ -673,7 +684,9 @@ const inStockProducts = [
     // Ray-Ban Meta Wayfarer Shiny Clear (50) - Gen 1
     20,
     // Ray-Ban Meta Wayfarer Matte Chameleon (50) - Gen 1
-    22
+    22,
+    // Ray-Ban Meta Headliner Shiny Chameleon - Gen 1
+    64
 ];
 
 // ========================================
@@ -977,13 +990,13 @@ function renderProducts() {
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-color">${description}</p>
                     <div class="product-prices">
-                        <div class="price-row price-wholesale">
-                            <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
-                            <span class="price-label">${t('catalog.wholesale')}</span>
-                        </div>
                         <div class="price-row price-retail">
                             <span class="price-current">${formatPrice(product.prices.retail)}</span>
                             <span class="price-label">${t('catalog.retail')}</span>
+                        </div>
+                        <div class="price-row price-wholesale">
+                            <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
+                            <span class="price-label">${t('catalog.wholesale')}</span>
                         </div>
                     </div>
                     <a href="${telegramLink}" target="_blank" class="btn btn-primary book-btn">${bookText}</a>
@@ -1000,13 +1013,13 @@ function renderProducts() {
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-color">${description}</p>
                 <div class="product-prices">
-                    <div class="price-row price-wholesale">
-                        <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
-                        <span class="price-label">${t('catalog.wholesale')}</span>
-                    </div>
                     <div class="price-row price-retail">
                         <span class="price-current">${formatPrice(product.prices.retail)}</span>
                         <span class="price-label">${t('catalog.retail')}</span>
+                    </div>
+                    <div class="price-row price-wholesale">
+                        <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
+                        <span class="price-label">${t('catalog.wholesale')}</span>
                     </div>
                 </div>
                 <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>
