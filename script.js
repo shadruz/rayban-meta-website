@@ -683,8 +683,12 @@ const products = [
 const inStockProducts = [
     // Ray-Ban Meta Wayfarer Shiny Clear (50) - Gen 1
     20,
+    // Ray-Ban Meta Wayfarer Shiny Clear (53) - Gen 1
+    21,
     // Ray-Ban Meta Wayfarer Matte Chameleon (50) - Gen 1
     22,
+    // Ray-Ban Meta Wayfarer Matte Chameleon (53) - Gen 1
+    23,
     // Ray-Ban Meta Headliner Shiny Chameleon - Gen 1
     64
 ];
