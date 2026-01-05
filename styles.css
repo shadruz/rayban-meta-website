@@ -863,13 +863,13 @@ textarea {
         font-size: 0.5rem;
     }
 
-    /* Mobile: wholesale prominent, retail faded */
-    .price-row.price-wholesale .price-current {
+    /* Mobile: retail prominent, wholesale faded */
+    .price-row.price-retail .price-current {
         font-size: 0.7rem;
         font-weight: 700;
     }
 
-    .price-row.price-retail .price-current {
+    .price-row.price-wholesale .price-current {
         font-size: 0.55rem;
     }
 
@@ -1777,22 +1777,22 @@ textarea {
     font-weight: 600;
 }
 
-/* Wholesale price - prominent (shown first) */
-.price-row.price-wholesale {
+/* Retail price - prominent (shown first) */
+.price-row.price-retail {
     opacity: 1;
 }
 
-.price-row.price-wholesale .price-current {
+.price-row.price-retail .price-current {
     font-size: var(--font-size-lg);
     font-weight: 700;
 }
 
-/* Retail price - faded (shown second) */
-.price-row.price-retail {
+/* Wholesale price - faded (shown second) */
+.price-row.price-wholesale {
     opacity: 0.6;
 }
 
-.price-row.price-retail .price-current {
+.price-row.price-wholesale .price-current {
     font-size: var(--font-size-base);
 }
 
