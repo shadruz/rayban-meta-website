@@ -637,7 +637,7 @@ const products = [
         category: 'playstation',
         image: 'images/ps5-1.webp',
         prices: { wholesale: 0, retail: 0 },
-        comingSoon: true
+        inquirePrice: true
     },
     {
         id: 61,
@@ -649,7 +649,7 @@ const products = [
         category: 'playstation',
         image: 'images/ps5-2.webp',
         prices: { wholesale: 0, retail: 0 },
-        comingSoon: true
+        inquirePrice: true
     },
     {
         id: 62,
@@ -661,7 +661,7 @@ const products = [
         category: 'playstation',
         image: 'images/ps5-3.webp',
         prices: { wholesale: 0, retail: 0 },
-        comingSoon: true
+        inquirePrice: true
     },
     {
         id: 63,
@@ -673,13 +673,13 @@ const products = [
         category: 'playstation',
         image: 'images/ps5-4.webp',
         prices: { wholesale: 0, retail: 0 },
-        comingSoon: true
+        inquirePrice: true
     },
     // ============ AIRPODS ============
     {
         id: 65,
         name: 'Apple AirPods 4',
-        variant: 'Чип H2, Spatial Audio',
+        variant: 'Chip H2, Spatial Audio',
         size: '',
         generation: '',
         condition: 'new',
@@ -690,7 +690,7 @@ const products = [
     {
         id: 66,
         name: 'Apple AirPods 4 ANC',
-        variant: 'Чип H2, ANC, Adaptive Audio',
+        variant: 'Chip H2, ANC, Adaptive Audio',
         size: '',
         generation: '',
         condition: 'new',
@@ -701,13 +701,124 @@ const products = [
     {
         id: 67,
         name: 'Apple AirPods Pro 3',
-        variant: 'Чип H3, ANC 2x, Heart Rate Monitor',
+        variant: 'Chip H3, ANC 2x, Heart Rate Monitor',
         size: '',
         generation: '',
         condition: 'new',
         category: 'airpods',
         image: 'images/airpods3pro.jpg',
         prices: { wholesale: 250, retail: 255 }
+    },
+    // ============ OURA RING ============
+    // Ceramic first (Cloud first, then others)
+    {
+        id: 68,
+        name: 'Oura Ring 4',
+        variant: 'Ceramic Cloud',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Ceramic-Cloud.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 69,
+        name: 'Oura Ring 4',
+        variant: 'Ceramic Petal',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Ceramic-Petal.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 70,
+        name: 'Oura Ring 4',
+        variant: 'Ceramic Tide',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Ceramic-Tide.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    // Metal variants
+    {
+        id: 71,
+        name: 'Oura Ring 4',
+        variant: 'Silver',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Silver.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 72,
+        name: 'Oura Ring 4',
+        variant: 'Black',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Black.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 73,
+        name: 'Oura Ring 4',
+        variant: 'Brushed Silver',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Brushed-Silver.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 74,
+        name: 'Oura Ring 4',
+        variant: 'Gold',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Gold.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 75,
+        name: 'Oura Ring 4',
+        variant: 'Rose Gold',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Rose-Gold.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
+    },
+    {
+        id: 76,
+        name: 'Oura Ring 4',
+        variant: 'Stealth',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'oura',
+        image: 'images/Oura-Ring-4-Stealth.avif',
+        prices: { wholesale: 0, retail: 0 },
+        inquirePrice: true
     },
 ];
 
@@ -787,6 +898,14 @@ const featuresData = {
             { icon: 'streaming', title: 'Spatial Audio', desc: 'Пространственный звук с отслеживанием головы. Персонализированное 3D-аудио для музыки и фильмов.' },
             { icon: 'durability', title: 'IP54/IP57 Защита', desc: 'Защита от пота, воды и пыли. Идеально для спорта и повседневного использования.' },
             { icon: 'design', title: 'USB-C Зарядка', desc: 'Универсальный порт USB-C. Поддержка MagSafe и Qi беспроводной зарядки. Find My для поиска.' }
+        ],
+        oura: [
+            { icon: 'health', title: 'Smart Sensing', desc: '18 путей сигнала для точного измерения. ЧСС, HRV, SpO2 и температура тела 24/7 с точностью 99%.' },
+            { icon: 'heart', title: 'Мониторинг сердца', desc: 'ЧСС и вариабельность сердечного ритма (HRV) днём и ночью. Кардио-возраст и VO2 Max.' },
+            { icon: 'sleep', title: 'Анализ сна', desc: 'Детальные стадии сна (REM, глубокий, лёгкий). Sleep Score и оптимальное время пробуждения.' },
+            { icon: 'recovery', title: 'Readiness Score', desc: 'Ежедневная оценка готовности тела. Рекомендации когда тренироваться, а когда отдыхать.' },
+            { icon: 'battery', title: 'До 8 дней', desc: '5-8 дней автономной работы. Зарядка за 20-80 минут. Титановый корпус 3.3-5.2 грамм.' },
+            { icon: 'durability', title: '100м водостойкость', desc: 'Титановый корпус с защитой до 100м. Идеально для плавания и саун. 12 размеров.' }
         ]
     },
     uz: {
@@ -837,6 +956,14 @@ const featuresData = {
             { icon: 'streaming', title: 'Spatial Audio', desc: "Boshni kuzatish bilan fazoviy ovoz. Musiqa va filmlar uchun shaxsiylashtirilgan 3D-audio." },
             { icon: 'durability', title: 'IP54/IP57 Himoya', desc: "Ter, suv va changdan himoya. Sport va kundalik foydalanish uchun ideal." },
             { icon: 'design', title: 'USB-C Quvvatlash', desc: "Universal USB-C port. MagSafe va Qi simsiz quvvatlashni qo'llab-quvvatlash. Qidirish uchun Find My." }
+        ],
+        oura: [
+            { icon: 'health', title: 'Smart Sensing', desc: "Aniq o'lchash uchun 18 signal yo'li. 24/7 99% aniqlik bilan yurak urishi, HRV, SpO2 va tana harorati." },
+            { icon: 'heart', title: 'Yurak monitoringi', desc: "Kunduz va kechasi yurak urishi va HRV. Kardio-yosh va VO2 Max." },
+            { icon: 'sleep', title: 'Uyqu tahlili', desc: "Batafsil uyqu bosqichlari (REM, chuqur, yengil). Sleep Score va optimal uyg'onish vaqti." },
+            { icon: 'recovery', title: 'Readiness Score', desc: "Tananing kunlik tayyorlik bahosi. Qachon mashq qilish va qachon dam olish bo'yicha tavsiyalar." },
+            { icon: 'battery', title: '8 kungacha', desc: "5-8 kun avtonom ishlash. 20-80 daqiqada quvvatlash. 3.3-5.2 gramm titanli korpus." },
+            { icon: 'durability', title: "100m suv o'tkazmaslik", desc: "100m gacha himoyali titanli korpus. Suzish va sauna uchun ideal. 12 o'lcham." }
         ]
     }
 };
@@ -967,7 +1094,7 @@ function renderProducts() {
     if (currentCategory === 'instock') {
         filteredProducts = products.filter(p => inStockProducts.includes(p.id));
     } else if (currentCategory === 'rayban') {
-        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation' && p.category !== 'airpods');
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation' && p.category !== 'airpods' && p.category !== 'oura');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
     } else if (currentCategory === 'oakley') {
@@ -980,6 +1107,8 @@ function renderProducts() {
         filteredProducts = products.filter(p => p.category === 'playstation');
     } else if (currentCategory === 'airpods') {
         filteredProducts = products.filter(p => p.category === 'airpods');
+    } else if (currentCategory === 'oura') {
+        filteredProducts = products.filter(p => p.category === 'oura');
     } else if (currentCategory === 'refurbished') {
         filteredProducts = products.filter(p => p.condition === 'refurbished');
     }
@@ -1025,6 +1154,29 @@ function renderProducts() {
                         </div>
                     </div>
                     <button class="btn btn-secondary add-to-cart-btn" disabled>${comingSoonText}</button>
+                </div>
+            `;
+        }
+
+        // Handle inquire price products (Oura Ring, PlayStation, etc.)
+        if (product.inquirePrice) {
+            const inquireText = currentLang === 'uz' ? 'Narxni bilish' : 'Узнать цену';
+            const telegramMessage = encodeURIComponent(`Здравствуйте! Интересует товар:\n\n${product.name}\n${description}\n\nПрошу сообщить актуальную цену и наличие.`);
+            const telegramLink = `https://t.me/techgeek_uz?text=${telegramMessage}`;
+            return `
+                <div class="product-card product-inquire-price">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    </div>
+                    <span class="product-badge ${badgeClass}">${badgeText}</span>
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-color">${description}</p>
+                    <div class="product-prices">
+                        <div class="price-inquire">
+                            <span>${currentLang === 'uz' ? 'Narx so\'rov bo\'yicha' : 'Цена по запросу'}</span>
+                        </div>
+                    </div>
+                    <a href="${telegramLink}" target="_blank" class="btn btn-primary inquire-btn">${inquireText}</a>
                 </div>
             `;
         }
