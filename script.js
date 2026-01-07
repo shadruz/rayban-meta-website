@@ -835,7 +835,15 @@ const inStockProducts = [
     // Ray-Ban Meta Wayfarer Matte Chameleon (53) - Gen 1
     23,
     // Ray-Ban Meta Headliner Shiny Chameleon - Gen 1
-    64
+    64,
+    // Whoop Life with 12-month membership
+    59,
+    // Apple AirPods 4
+    65,
+    // Apple AirPods 4 ANC
+    66,
+    // Apple AirPods Pro 3
+    67
 ];
 
 // ========================================
