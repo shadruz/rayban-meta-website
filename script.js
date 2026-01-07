@@ -675,6 +675,40 @@ const products = [
         prices: { wholesale: 0, retail: 0 },
         comingSoon: true
     },
+    // ============ AIRPODS ============
+    {
+        id: 65,
+        name: 'Apple AirPods 4',
+        variant: 'Чип H2, Spatial Audio',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'airpods',
+        image: 'images/airpods4.jpg',
+        prices: { wholesale: 120, retail: 125 }
+    },
+    {
+        id: 66,
+        name: 'Apple AirPods 4 ANC',
+        variant: 'Чип H2, ANC, Adaptive Audio',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'airpods',
+        image: 'images/airdods4anc.jpg',
+        prices: { wholesale: 165, retail: 170 }
+    },
+    {
+        id: 67,
+        name: 'Apple AirPods Pro 3',
+        variant: 'Чип H3, ANC 2x, Heart Rate Monitor',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'airpods',
+        image: 'images/airpods3pro.jpg',
+        prices: { wholesale: 250, retail: 255 }
+    },
 ];
 
 // ========================================
@@ -745,6 +779,14 @@ const featuresData = {
             { icon: 'streaming', title: '8K / 120fps', desc: 'Поддержка 8K Ultra HD и 4K при 120 fps. Game Boost для обратной совместимости.' },
             { icon: 'gps', title: 'Wi-Fi 7', desc: 'Новейший стандарт Wi-Fi 7 для быстрых загрузок и стабильного онлайн-гейминга.' },
             { icon: 'sports', title: 'Ray Tracing 2x', desc: 'Улучшенная трассировка лучей в 2-3 раза быстрее. Реалистичные отражения и освещение.' }
+        ],
+        airpods: [
+            { icon: 'ai', title: 'Чип H2/H3', desc: 'Фирменный чип Apple для ИИ-обработки звука. Мгновенное переключение между устройствами и быстрое сопряжение.' },
+            { icon: 'audio', title: 'Активное шумоподавление', desc: 'ANC до 2x эффективнее предыдущих моделей. Адаптивный режим и прозрачность для внешних звуков.' },
+            { icon: 'battery', title: 'До 8 часов', desc: 'До 8 часов прослушивания (Pro 3). Кейс даёт ещё 24 часа. Быстрая зарядка за 5 минут на 1 час.' },
+            { icon: 'streaming', title: 'Spatial Audio', desc: 'Пространственный звук с отслеживанием головы. Персонализированное 3D-аудио для музыки и фильмов.' },
+            { icon: 'durability', title: 'IP54/IP57 Защита', desc: 'Защита от пота, воды и пыли. Идеально для спорта и повседневного использования.' },
+            { icon: 'design', title: 'USB-C Зарядка', desc: 'Универсальный порт USB-C. Поддержка MagSafe и Qi беспроводной зарядки. Find My для поиска.' }
         ]
     },
     uz: {
@@ -787,6 +829,14 @@ const featuresData = {
             { icon: 'streaming', title: '8K / 120fps', desc: "8K Ultra HD va 120 fps da 4K qo'llab-quvvatlaydi. Orqaga moslik uchun Game Boost." },
             { icon: 'gps', title: 'Wi-Fi 7', desc: "Tez yuklab olish va barqaror onlayn o'yin uchun eng yangi Wi-Fi 7 standarti." },
             { icon: 'sports', title: 'Ray Tracing 2x', desc: "2-3 marta tezroq yaxshilangan nur kuzatuvi. Realistik akslar va yoritish." }
+        ],
+        airpods: [
+            { icon: 'ai', title: 'H2/H3 Chip', desc: "Apple'ning o'z chipi AI ovoz ishlov berish uchun. Qurilmalar o'rtasida tezkor o'tish va ulanish." },
+            { icon: 'audio', title: 'Faol shovqinni bostirish', desc: "ANC oldingi modellardan 2x samaraliroq. Adaptive rejim va tashqi ovozlar uchun shaffoflik." },
+            { icon: 'battery', title: '8 soatgacha', desc: "8 soatgacha tinglash (Pro 3). Quti yana 24 soat beradi. 5 daqiqada 1 soatga tez quvvatlash." },
+            { icon: 'streaming', title: 'Spatial Audio', desc: "Boshni kuzatish bilan fazoviy ovoz. Musiqa va filmlar uchun shaxsiylashtirilgan 3D-audio." },
+            { icon: 'durability', title: 'IP54/IP57 Himoya', desc: "Ter, suv va changdan himoya. Sport va kundalik foydalanish uchun ideal." },
+            { icon: 'design', title: 'USB-C Quvvatlash', desc: "Universal USB-C port. MagSafe va Qi simsiz quvvatlashni qo'llab-quvvatlash. Qidirish uchun Find My." }
         ]
     }
 };
@@ -917,7 +967,7 @@ function renderProducts() {
     if (currentCategory === 'instock') {
         filteredProducts = products.filter(p => inStockProducts.includes(p.id));
     } else if (currentCategory === 'rayban') {
-        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation');
+        filteredProducts = products.filter(p => p.condition === 'new' && p.category !== 'limited' && p.category !== 'oakley' && p.category !== 'garmin' && p.category !== 'whoop' && p.category !== 'playstation' && p.category !== 'airpods');
     } else if (currentCategory === 'rayban-limited') {
         filteredProducts = products.filter(p => p.category === 'limited');
     } else if (currentCategory === 'oakley') {
@@ -928,6 +978,8 @@ function renderProducts() {
         filteredProducts = products.filter(p => p.category === 'whoop');
     } else if (currentCategory === 'playstation') {
         filteredProducts = products.filter(p => p.category === 'playstation');
+    } else if (currentCategory === 'airpods') {
+        filteredProducts = products.filter(p => p.category === 'airpods');
     } else if (currentCategory === 'refurbished') {
         filteredProducts = products.filter(p => p.condition === 'refurbished');
     }
