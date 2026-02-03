@@ -683,43 +683,82 @@ function renderProducts() {
         return;
     }
 
-    productsGrid.innerHTML = filteredProducts.map(product => {
-        const badgeClass = product.condition === 'new' ? 'new' : 'refurbished';
-        let badgeText = product.condition === 'new' ? 'New' : 'Refurbished';
-        if (product.generation) badgeText = product.generation;
+    // Define subgroups based on category
+    let subgroups = [];
+    if (currentCategory === 'rayban-gen1' || currentCategory === 'rayban-gen2') {
+        subgroups = ['Wayfarer', 'Headliner', 'Skyler'];
+    } else if (currentCategory === 'oakley') {
+        subgroups = ['HSTN', 'Vanguard'];
+    }
 
-        // Build product description line
-        let description = product.variant || '';
-        if (product.size) description += ` (${product.size})`;
+    // Build HTML with subgroup headers
+    let html = '';
+    subgroups.forEach(subgroup => {
+        const subgroupProducts = filteredProducts.filter(p => p.name.toLowerCase().includes(subgroup.toLowerCase()));
+        if (subgroupProducts.length === 0) return;
 
-        // Handle coming soon products
-        if (product.comingSoon) {
-            const comingSoonText = currentLang === 'uz' ? 'Tez orada' : 'Скоро';
-            return `
-                <div class="product-card product-coming-soon">
-                    <div class="product-image">
-                        <img src="${product.image}" alt="${product.name}" loading="lazy">
-                    </div>
-                    <span class="product-badge coming-soon">${comingSoonText}</span>
-                    <h3 class="product-name">${product.name}</h3>
-                    <p class="product-color">${description}</p>
-                    <div class="product-prices">
-                        <div class="price-coming-soon">
-                            <span>${currentLang === 'uz' ? 'Narx tez orada' : 'Цена уточняется'}</span>
+        // Add subgroup header
+        html += `<div class="product-subgroup-header"><h4>${subgroup}</h4></div>`;
+
+        // Add products in this subgroup
+        subgroupProducts.forEach(product => {
+            const badgeClass = product.condition === 'new' ? 'new' : 'refurbished';
+            let badgeText = product.condition === 'new' ? 'New' : 'Refurbished';
+            if (product.generation) badgeText = product.generation;
+
+            // Build product description line
+            let description = product.variant || '';
+            if (product.size) description += ` (${product.size})`;
+
+            // Handle coming soon products
+            if (product.comingSoon) {
+                const comingSoonText = currentLang === 'uz' ? 'Tez orada' : 'Скоро';
+                html += `
+                    <div class="product-card product-coming-soon">
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.name}" loading="lazy">
                         </div>
+                        <span class="product-badge coming-soon">${comingSoonText}</span>
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-color">${description}</p>
+                        <div class="product-prices">
+                            <div class="price-coming-soon">
+                                <span>${currentLang === 'uz' ? 'Narx tez orada' : 'Цена уточняется'}</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary add-to-cart-btn" disabled>${comingSoonText}</button>
                     </div>
-                    <button class="btn btn-secondary add-to-cart-btn" disabled>${comingSoonText}</button>
-                </div>
-            `;
-        }
+                `;
+                return;
+            }
 
-        // Handle inquire price products (Oura Ring, PlayStation, etc.)
-        if (product.inquirePrice) {
-            const inquireText = currentLang === 'uz' ? 'Narxni bilish' : 'Узнать цену';
-            const telegramMessage = encodeURIComponent(`Здравствуйте! Интересует товар:\n\n${product.name}\n${description}\n\nПрошу сообщить актуальную цену и наличие.`);
-            const telegramLink = `https://t.me/techgeek_uz?text=${telegramMessage}`;
-            return `
-                <div class="product-card product-inquire-price">
+            // Handle inquire price products
+            if (product.inquirePrice) {
+                const inquireText = currentLang === 'uz' ? 'Narxni bilish' : 'Узнать цену';
+                const telegramMessage = encodeURIComponent(`Здравствуйте! Интересует товар:\n\n${product.name}\n${description}\n\nПрошу сообщить актуальную цену и наличие.`);
+                const telegramLink = `https://t.me/techgeek_uz?text=${telegramMessage}`;
+                html += `
+                    <div class="product-card product-inquire-price">
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.name}" loading="lazy">
+                        </div>
+                        <span class="product-badge ${badgeClass}">${badgeText}</span>
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-color">${description}</p>
+                        <div class="product-prices">
+                            <div class="price-inquire">
+                                <span>${currentLang === 'uz' ? 'Narx so\'rov bo\'yicha' : 'Цена по запросу'}</span>
+                            </div>
+                        </div>
+                        <a href="${telegramLink}" target="_blank" class="btn btn-primary inquire-btn">${inquireText}</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Regular product
+            html += `
+                <div class="product-card">
                     <div class="product-image">
                         <img src="${product.image}" alt="${product.name}" loading="lazy">
                     </div>
@@ -727,33 +766,15 @@ function renderProducts() {
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-color">${description}</p>
                     <div class="product-prices">
-                        <div class="price-inquire">
-                            <span>${currentLang === 'uz' ? 'Narx so\'rov bo\'yicha' : 'Цена по запросу'}</span>
-                        </div>
+                        <span class="price-main">${formatPrice(product.price)}</span>
                     </div>
-                    <a href="${telegramLink}" target="_blank" class="btn btn-primary inquire-btn">${inquireText}</a>
+                    <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>
                 </div>
             `;
-        }
+        });
+    });
 
-        return `
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}" loading="lazy">
-                </div>
-                <span class="product-badge ${badgeClass}">${badgeText}</span>
-                <h3 class="product-name">${product.name}</h3>
-                <p class="product-color">${description}</p>
-                <div class="product-prices">
-                    <div class="price-row price-wholesale">
-                        <span class="price-current">${formatPrice(product.price)}</span>
-                        <span class="price-label">${t('catalog.wholesale')}</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>
-            </div>
-        `;
-    }).join('');
+    productsGrid.innerHTML = html;
 }
 
 // ========================================
