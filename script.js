@@ -1,7 +1,7 @@
 // ========================================
 // Product Data - Full Catalog
-// Image mapping: Message N = N.jpg
-// Display order: Gen 2 (Clear first) → Gen 1 (Clear first) → Refurbished (Clear first)
+// Wholesale Only - Minimum 25 items per order
+// Prices in USD
 // ========================================
 const products = [
     // ============ GEN 2 - WAYFARER ============
@@ -14,7 +14,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/11.jpg',
-        prices: { wholesale: 420, retail: 470 }
+        price: 389
     },
     {
         id: 2,
@@ -24,57 +24,87 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/11.jpg',
-        prices: { wholesale: 425, retail: 475 }
+        price: 389
     },
     {
         id: 3,
         name: 'Ray-Ban Meta Wayfarer',
         variant: 'Shiny Chameleon',
-        size: '',
+        size: '50',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/10.jpg',
-        prices: { wholesale: 500, retail: 550 }
+        price: 469
+    },
+    {
+        id: 77,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Chameleon',
+        size: '53',
+        generation: 'Gen 2',
+        condition: 'new',
+        image: 'images/10.jpg',
+        price: 469
     },
     {
         id: 4,
         name: 'Ray-Ban Meta Wayfarer',
         variant: 'Shiny Green',
-        size: '',
+        size: '50',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/12.jpg',
-        prices: { wholesale: 420, retail: 470 }
+        price: 389
+    },
+    {
+        id: 78,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Shiny Green',
+        size: '53',
+        generation: 'Gen 2',
+        condition: 'new',
+        image: 'images/12.jpg',
+        price: 389
     },
     {
         id: 5,
         name: 'Ray-Ban Meta Wayfarer',
         variant: 'Matte Polaroid Black',
-        size: '',
+        size: '50',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/13.jpg',
-        prices: { wholesale: 455, retail: 505 }
+        price: 419
     },
     {
-        id: 6,
+        id: 79,
         name: 'Ray-Ban Meta Wayfarer',
-        variant: 'Shiny Chameleon',
-        size: '',
+        variant: 'Matte Polaroid Black',
+        size: '53',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/14.jpg',
-        prices: { wholesale: 500, retail: 550 }
+        image: 'images/13.jpg',
+        price: 419
     },
     {
         id: 7,
         name: 'Ray-Ban Meta Wayfarer',
         variant: 'Matte Chameleon',
-        size: '',
+        size: '50',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/15.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
+    },
+    {
+        id: 80,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Chameleon',
+        size: '53',
+        generation: 'Gen 2',
+        condition: 'new',
+        image: 'images/15.jpg',
+        price: 469
     },
     // ============ GEN 2 - HEADLINER ============
     // Clear first
@@ -86,7 +116,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/17.jpg',
-        prices: { wholesale: 420, retail: 470 }
+        price: 389
     },
     {
         id: 9,
@@ -96,7 +126,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/16.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
     },
     {
         id: 10,
@@ -106,7 +136,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/18.jpg',
-        prices: { wholesale: 420, retail: 470 }
+        price: 389
     },
     {
         id: 11,
@@ -116,7 +146,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/19.jpg',
-        prices: { wholesale: 455, retail: 505 }
+        price: 419
     },
     {
         id: 12,
@@ -126,7 +156,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/20.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
     },
     {
         id: 13,
@@ -136,9 +166,19 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/21.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
     },
     // ============ GEN 2 - SKYLER ============
+    {
+        id: 81,
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny Clear',
+        size: '',
+        generation: 'Gen 2',
+        condition: 'new',
+        image: 'images/skyler_clear_gen2.jpg',
+        price: 389
+    },
     {
         id: 14,
         name: 'Ray-Ban Meta Skyler',
@@ -147,7 +187,7 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/22.jpg',
-        prices: { wholesale: 420, retail: 470 }
+        price: 389
     },
     {
         id: 15,
@@ -157,7 +197,17 @@ const products = [
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/23.jpg',
-        prices: { wholesale: 455, retail: 505 }
+        price: 419
+    },
+    {
+        id: 82,
+        name: 'Ray-Ban Meta Skyler',
+        variant: 'Shiny White Chameleon',
+        size: '',
+        generation: 'Gen 2',
+        condition: 'new',
+        image: 'images/24.jpg',
+        price: 469
     },
     {
         id: 16,
@@ -166,38 +216,28 @@ const products = [
         size: '',
         generation: 'Gen 2',
         condition: 'new',
-        image: 'images/24.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        image: 'images/25.jpg',
+        price: 469
     },
     {
         id: 17,
         name: 'Ray-Ban Meta Skyler',
-        variant: 'Shiny Chameleon',
-        size: '',
-        generation: 'Gen 2',
-        condition: 'new',
-        image: 'images/25.jpg',
-        prices: { wholesale: 515, retail: 565 }
-    },
-    {
-        id: 18,
-        name: 'Ray-Ban Meta Skyler',
-        variant: 'Shiny Chameleon',
+        variant: 'Shiny Amethyst Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/26.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
     },
     {
-        id: 19,
+        id: 18,
         name: 'Ray-Ban Meta Skyler',
-        variant: 'Shiny Chameleon',
+        variant: 'Shiny Mystic Violet Chameleon',
         size: '',
         generation: 'Gen 2',
         condition: 'new',
         image: 'images/27.jpg',
-        prices: { wholesale: 515, retail: 565 }
+        price: 469
     },
     // ============ GEN 1 - WAYFARER ============
     // Clear first
@@ -209,7 +249,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        prices: { wholesale: 290, retail: 300 }
+        price: 309
     },
     {
         id: 21,
@@ -219,7 +259,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        prices: { wholesale: 300, retail: 310 }
+        price: 309
     },
     {
         id: 22,
@@ -229,7 +269,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        prices: { wholesale: 390, retail: 400 }
+        price: 389
     },
     {
         id: 23,
@@ -239,7 +279,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        prices: { wholesale: 400, retail: 410 }
+        price: 389
     },
     {
         id: 24,
@@ -249,7 +289,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/3.jpg',
-        prices: { wholesale: 290, retail: 300 }
+        price: 309
     },
     {
         id: 25,
@@ -259,17 +299,27 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/3.jpg',
-        prices: { wholesale: 300, retail: 310 }
+        price: 309
     },
     {
         id: 26,
         name: 'Ray-Ban Meta Wayfarer',
         variant: 'Matte Polaroid Black',
-        size: '',
+        size: '50',
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/4.jpg',
-        prices: { wholesale: 378, retail: 428 }
+        price: 339
+    },
+    {
+        id: 83,
+        name: 'Ray-Ban Meta Wayfarer',
+        variant: 'Matte Polaroid Black',
+        size: '53',
+        generation: 'Gen 1',
+        condition: 'new',
+        image: 'images/4.jpg',
+        price: 339
     },
     // ============ GEN 1 - SKYLER ============
     // Clear first
@@ -281,7 +331,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/7.jpg',
-        prices: { wholesale: 290, retail: 300 }
+        price: 309
     },
     {
         id: 28,
@@ -291,7 +341,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/5.jpg',
-        prices: { wholesale: 390, retail: 400 }
+        price: 389
     },
     {
         id: 29,
@@ -301,7 +351,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/6.jpg',
-        prices: { wholesale: 290, retail: 300 }
+        price: 309
     },
     {
         id: 30,
@@ -311,28 +361,17 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/8.jpg',
-        prices: { wholesale: 390, retail: 400 }
+        price: 389
     },
     {
         id: 31,
         name: 'Ray-Ban Meta Skyler',
-        variant: 'Shiny Chameleon',
+        variant: 'Shiny Blue Chameleon',
         size: '',
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/9.jpg',
-        prices: { wholesale: 390, retail: 400 }
-    },
-    // ============ GEN 1 - HEADLINER ============
-    {
-        id: 64,
-        name: 'Ray-Ban Meta Headliner',
-        variant: 'Shiny Chameleon',
-        size: '',
-        generation: 'Gen 1',
-        condition: 'new',
-        image: 'images/35.jpg',
-        prices: { wholesale: 400, retail: 410 }
+        price: 389
     },
     // ============ OAKLEY META HSTN ============
     {
@@ -344,7 +383,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_1.jpg',
-        prices: { wholesale: 425, retail: 450 }
+        price: 425
     },
     {
         id: 44,
@@ -355,7 +394,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_2.jpg',
-        prices: { wholesale: 425, retail: 450 }
+        price: 425
     },
     {
         id: 45,
@@ -366,7 +405,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_3.jpg',
-        prices: { wholesale: 505, retail: 530 }
+        price: 505
     },
     {
         id: 46,
@@ -377,7 +416,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_4.jpg',
-        prices: { wholesale: 505, retail: 530 }
+        price: 505
     },
     {
         id: 47,
@@ -388,7 +427,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_5.jpg',
-        prices: { wholesale: 480, retail: 500 }
+        price: 480
     },
     {
         id: 48,
@@ -399,7 +438,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/oakley_6.jpg',
-        prices: { wholesale: 480, retail: 500 }
+        price: 480
     },
     // ============ OAKLEY META VANGUARD ============
     {
@@ -411,7 +450,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/vanguard_Vanguard1.jpg',
-        prices: { wholesale: 525, retail: 550 }
+        price: 525
     },
     {
         id: 53,
@@ -422,7 +461,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/vanguard_Vanguard2.jpg',
-        prices: { wholesale: 525, retail: 550 }
+        price: 525
     },
     {
         id: 54,
@@ -433,7 +472,7 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/vanguard_Vanguard3.jpg',
-        prices: { wholesale: 525, retail: 550 }
+        price: 525
     },
     {
         id: 55,
@@ -444,9 +483,12 @@ const products = [
         condition: 'new',
         category: 'oakley',
         image: 'images/vanguard_Vanguard4.jpg',
-        prices: { wholesale: 525, retail: 550 }
+        price: 525
     },
 ];
+
+// Minimum order quantity
+const MIN_ORDER_QUANTITY = 25;
 
 // ========================================
 // State
@@ -524,10 +566,7 @@ async function fetchExchangeRate() {
 }
 
 function formatPrice(usdPrice) {
-    const uzsPrice = usdPrice * exchangeRate;
-    // Round to nearest 10,000 (5,000 threshold)
-    const roundedPrice = Math.round(uzsPrice / 10000) * 10000;
-    return roundedPrice.toLocaleString('ru-RU') + ' сум';
+    return '$' + usdPrice.toLocaleString('en-US');
 }
 
 function updateRateIndicator() {
@@ -706,12 +745,8 @@ function renderProducts() {
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-color">${description}</p>
                 <div class="product-prices">
-                    <div class="price-row price-retail">
-                        <span class="price-current">${formatPrice(product.prices.retail)}</span>
-                        <span class="price-label">${t('catalog.retail')}</span>
-                    </div>
                     <div class="price-row price-wholesale">
-                        <span class="price-current">${formatPrice(product.prices.wholesale)}</span>
+                        <span class="price-current">${formatPrice(product.price)}</span>
                         <span class="price-label">${t('catalog.wholesale')}</span>
                     </div>
                 </div>
@@ -789,7 +824,7 @@ function addToCart(productId) {
             condition: product.condition,
             name: product.name,
             description: description,
-            prices: product.prices,
+            price: product.price,
             quantity: 1
         });
     }
@@ -821,12 +856,8 @@ function getTotalItems() {
 }
 
 function getTotal() {
-    const totalItems = getTotalItems();
-    const isWholesale = totalItems >= 10;
-
     return cart.reduce((sum, item) => {
-        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
-        return sum + (price * item.quantity);
+        return sum + (item.price * item.quantity);
     }, 0);
 }
 
@@ -839,7 +870,7 @@ function updateCartUI() {
 
 function renderCart() {
     const totalItems = getTotalItems();
-    const isWholesale = totalItems >= 10;
+    const MIN_ORDER_QUANTITY = 25;
 
     if (cart.length === 0) {
         cartItems.innerHTML = '';
@@ -852,7 +883,6 @@ function renderCart() {
     cartFooter.style.display = 'block';
 
     cartItems.innerHTML = cart.map((item, index) => {
-        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
         const badgeClass = item.condition === 'new' ? 'new' : 'refurbished';
         const badgeText = item.condition === 'new' ? t('catalog.new') : 'Refurbished';
 
@@ -862,7 +892,7 @@ function renderCart() {
                     <span class="cart-item-badge ${badgeClass}">${badgeText}</span>
                     <h4 class="cart-item-name">${item.name}</h4>
                     <p class="cart-item-color">${item.description}</p>
-                    <p class="cart-item-price">${formatPrice(price)} × ${item.quantity} = <strong>${formatPrice(price * item.quantity)}</strong></p>
+                    <p class="cart-item-price">${formatPrice(item.price)} × ${item.quantity} = <strong>${formatPrice(item.price * item.quantity)}</strong></p>
                 </div>
                 <div class="cart-item-controls">
                     <button class="qty-btn" onclick="updateQuantity(${index}, -1)">−</button>
@@ -879,13 +909,18 @@ function renderCart() {
         `;
     }).join('');
 
-    // Update pricing info
-    if (isWholesale) {
-        cartPricingInfo.innerHTML = `<span class="wholesale-badge">✓ ${t('cart.wholesalePrice')}</span>`;
-        cartPricingInfo.classList.add('wholesale');
-    } else {
-        cartPricingInfo.innerHTML = `<span>${t('cart.retailPrice')}</span>`;
+    // Update pricing info - show minimum order warning or ready status
+    if (totalItems < MIN_ORDER_QUANTITY) {
+        const remaining = MIN_ORDER_QUANTITY - totalItems;
+        cartPricingInfo.innerHTML = `<span class="min-order-warning">⚠️ ${currentLang === 'uz' ? `Kamida ${remaining} ta qo'shing` : `Добавьте ещё ${remaining} шт.`}</span>`;
         cartPricingInfo.classList.remove('wholesale');
+        cartPricingInfo.classList.add('warning');
+        checkoutBtn.disabled = true;
+    } else {
+        cartPricingInfo.innerHTML = `<span class="wholesale-badge">✓ ${currentLang === 'uz' ? 'Ulgurji narxlar' : 'Оптовые цены'}</span>`;
+        cartPricingInfo.classList.add('wholesale');
+        cartPricingInfo.classList.remove('warning');
+        checkoutBtn.disabled = false;
     }
 
     cartTotalValue.textContent = formatPrice(getTotal());
@@ -917,21 +952,21 @@ cartClear.addEventListener('click', clearCart);
 function openCheckout() {
     if (cart.length === 0) return;
 
+    const totalItems = getTotalItems();
+    if (totalItems < 25) return; // Minimum 25 items required
+
     closeCart();
 
-    const totalItems = getTotalItems();
-    const isWholesale = totalItems >= 10;
-    const priceType = isWholesale ? t('cart.wholesalePrice') : t('cart.retailPrice');
+    const priceType = currentLang === 'uz' ? 'Ulgurji narxlar' : 'Оптовые цены';
 
     orderSummary.innerHTML = `
         <h4>${t('checkout.orderSummary')}</h4>
         <div class="order-items">
             ${cart.map(item => {
-        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
         return `
                     <div class="order-item">
                         <span>${item.name} ${item.description ? `(${item.description})` : ''}</span>
-                        <span>${item.quantity} ${t('cart.itemsCount')} × ${formatPrice(price)}</span>
+                        <span>${item.quantity} ${t('cart.itemsCount')} × ${formatPrice(item.price)}</span>
                     </div>
                 `;
     }).join('')}
@@ -970,22 +1005,15 @@ const TELEGRAM_CHAT_ID = '1798702419';
 
 async function sendToTelegram(orderData) {
     const totalItems = getTotalItems();
-    const isWholesale = totalItems >= 10;
-    const priceType = isWholesale ? '🏷️ ОПТОВАЯ ЦЕНА' : '💰 Розничная цена';
+    const priceType = '🏷️ ОПТОВАЯ ЦЕНА';
 
     // Build order items list
     const itemsList = orderData.items.map(item => {
-        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
-        return `  • ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(price)}`;
+        return `  • ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(item.price)}`;
     }).join('\n');
 
     const message = `
-🛒 *НОВЫЙ ЗАКАЗ!*
-
-👤 *Клиент:*
-• Имя: ${orderData.customer.name}
-• Телефон: ${orderData.customer.phone}
-${orderData.customer.telegram ? `• Telegram: ${orderData.customer.telegram}` : ''}
+🛒 *НОВАЯ ОПТОВАЯ ЗАЯВКА!*
 
 📦 *Товары:*
 ${itemsList}
@@ -1040,16 +1068,14 @@ document.getElementById('sendViaTelegram').addEventListener('click', function ()
     }
 
     const totalItems = getTotalItems();
-    const isWholesale = totalItems >= 10;
-    const priceType = isWholesale ? '🏷️ ОПТОВАЯ ЦЕНА' : '💰 Розничная цена';
+    const priceType = '🏷️ ОПТОВАЯ ЦЕНА';
 
     // Build order message
     const itemsList = cart.map(item => {
-        const price = isWholesale ? item.prices.wholesale : item.prices.retail;
-        return `• ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(price)}`;
+        return `• ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(item.price)}`;
     }).join('\n');
 
-    const message = `🛒 НОВЫЙ ЗАКАЗ с сайта TechGeek.uz
+    const message = `🛒 ОПТОВАЯ ЗАЯВКА с TechGeek.uz
 
 👤 Имя: ${customerName}
 📞 Телефон: ${customerPhone}
