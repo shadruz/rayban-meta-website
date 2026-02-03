@@ -494,7 +494,7 @@ const MIN_ORDER_QUANTITY = 25;
 // State
 // ========================================
 let currentCategory = 'rayban-gen1'; // rayban-gen1, rayban-gen2, oakley
-let currentFeatureCategory = 'rayban'; // For features section
+let currentFeatureCategory = 'rayban-gen1'; // For features section
 let currentLang = 'ru';
 let cart = [];
 
@@ -503,39 +503,71 @@ let cart = [];
 // ========================================
 const featuresData = {
     ru: {
-        rayban: [
-            { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео 60fps. Снимайте моменты без телефона.' },
+        'rayban-gen1': [
+            { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера c 1080p видео 60fps. Классическое качество для фото и видео.' },
             { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент с ИИ. Просто скажите "Hey Meta" для вопросов и переводов.' },
-            { icon: 'audio', title: 'Премиум звук', desc: 'Открытые динамики с улучшенными басами и 5 микрофонов с шумоподавлением 90%.' },
-            { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования. Кейс даёт ещё 48 часов. Быстрая зарядка 50% за 20 мин.' },
-            { icon: 'storage', title: '32GB Память', desc: 'Встроенная память на 500+ фото или 100 видео по 30 сек. Wi-Fi 6 для быстрой передачи.' },
+            { icon: 'audio', title: 'Открытые динамики', desc: 'Динамики с хорошими басами и 5 микрофонов с шумоподавлением.' },
+            { icon: 'battery', title: '4 часа работы', desc: 'До 4 часов активного использования. Кейс даёт ещё 32 часа. Всего 36 часов.' },
+            { icon: 'storage', title: '32GB Память', desc: 'Встроенная память на 500+ фото или 100 видео. Wi-Fi для передачи файлов.' },
             { icon: 'streaming', title: 'Стриминг', desc: 'Прямые трансляции в Instagram и Facebook. IPX4 защита от воды и пота.' }
         ],
-        oakley: [
-            { icon: 'camera', title: '12MP Камера', desc: 'Ультраширокоугольная камера с 3K Ultra HD видео. Отличная стабилизация для спорта.' },
-            { icon: 'lens', title: 'PRIZM Линзы', desc: 'Поляризованные линзы Oakley PRIZM усиливают цвета и снижают блики для активного отдыха.' },
-            { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ассистент ИИ. Узнавайте о погоде, силе ветра и получайте советы в реальном времени.' },
-            { icon: 'audio', title: 'Открытые динамики', desc: 'Музыка, подкасты и звонки. 5 микрофонов для чистых голосовых команд.' },
-            { icon: 'battery', title: '8 часов работы', desc: 'До 8 часов активного использования, 19 часов в режиме ожидания. Кейс даёт 48 часов.' },
-            { icon: 'durability', title: 'IPX4 Защита', desc: 'Защита от брызг, дождя и пота. Идеально для тренировок и активного образа жизни.' }
+        'rayban-gen2': [
+            { icon: 'camera', title: '12MP Камера', desc: 'Улучшенная камера с 3K Ultra HD видео 30fps или 1080p 60fps. В 2 раза больше пикселей.' },
+            { icon: 'ai', title: 'Meta AI Live', desc: 'Продвинутый ИИ с режимами Hyperlapse, Slow Motion и Live AI для перевода в реальном времени.' },
+            { icon: 'audio', title: 'Премиум звук', desc: 'Улучшенные динамики с усиленными басами. 5 микрофонов с 90% шумоподавлением.' },
+            { icon: 'battery', title: '8 часов работы', desc: 'В 2 раза дольше! До 8 часов работы. Кейс даёт 48 часов. Быстрая зарядка 50% за 20 мин.' },
+            { icon: 'storage', title: '32GB + Wi-Fi 6', desc: 'Память на 500+ фото. Wi-Fi 6 для сверхбыстрой передачи файлов.' },
+            { icon: 'streaming', title: 'HDR Видео', desc: 'Ultrawide HDR для четких и ярких съемок. IPX4 защита. Стриминг в соцсети.' }
+        ],
+        'oakley-hstn': [
+            { icon: 'camera', title: '12MP / 100° FOV', desc: 'Камера на дужке с 3K видео. Угол обзора 100°. Отличная стабилизация для активного отдыха.' },
+            { icon: 'lens', title: 'PRIZM Линзы', desc: 'Поляризованные линзы Oakley PRIZM усиливают контраст и снижают блики.' },
+            { icon: 'ai', title: 'Meta AI', desc: 'Голосовой ИИ-ассистент. Узнавайте погоду, получайте советы в реальном времени.' },
+            { icon: 'audio', title: 'Открытые динамики', desc: 'Музыка и звонки hands-free. 5 микрофонов для чистых голосовых команд.' },
+            { icon: 'battery', title: '8 часов / 53г', desc: 'До 8 часов работы, легкий вес всего 53 грамма. Кейс даёт ещё 48 часов.' },
+            { icon: 'durability', title: 'IPX4 Защита', desc: 'Защита от брызг и пота. Стильный дизайн для города и активного отдыха.' }
+        ],
+        'oakley-vanguard': [
+            { icon: 'camera', title: '12MP / 122° FOV', desc: 'Центральная камера между линзами! 3K видео, угол 122°. Hyperlapse и Slow Motion.' },
+            { icon: 'lens', title: 'PRIZM Sport', desc: 'Спортивные линзы PRIZM для максимального контраста во время тренировок.' },
+            { icon: 'ai', title: 'Meta AI + Garmin/Strava', desc: 'ИИ интеграция с Garmin Connect и Strava. Данные о пульсе и метриках в реальном времени.' },
+            { icon: 'audio', title: 'Громкий звук +6дБ', desc: 'Динамики на 6 дБ громче HSTN! Слышно даже при ветре до 50 км/ч.' },
+            { icon: 'battery', title: '9 часов / 66г', desc: 'До 9 часов работы, 6 часов аудио. Спортивная конструкция весом 66г.' },
+            { icon: 'durability', title: 'IP67 + Action Button', desc: 'Полная водонепроницаемость IP67. Кнопка Action для быстрого доступа к функциям.' }
         ]
     },
     uz: {
-        rayban: [
-            { icon: 'camera', title: '12MP Kamera', desc: '3K Ultra HD video 60fps bilan ultrakeng burchakli kamera. Telefonsiz lahzalarni suratga oling.' },
+        'rayban-gen1': [
+            { icon: 'camera', title: '12MP Kamera', desc: '1080p video 60fps bilan ultrakeng burchakli kamera. Foto va video uchun klassik sifat.' },
             { icon: 'ai', title: 'Meta AI', desc: "Sun'iy intellektli ovozli yordamchi. Savollar va tarjimalar uchun \"Hey Meta\" deb ayting." },
-            { icon: 'audio', title: 'Premium ovoz', desc: "Yaxshilangan basslar bilan ochiq dinamiklar va 90% shovqin filtrlash bilan 5 ta mikrofon." },
-            { icon: 'battery', title: '8 soat ishlash', desc: "8 soatgacha faol foydalanish. Quti yana 48 soat beradi. 20 daqiqada 50% tez quvvatlash." },
-            { icon: 'storage', title: '32GB Xotira', desc: "500+ ta rasm yoki 30 soniyalik 100 ta video uchun xotira. Tez uzatish uchun Wi-Fi 6." },
+            { icon: 'audio', title: 'Ochiq dinamiklar', desc: "Yaxshi bass bilan dinamiklar va shovqinni kamaytiruvchi 5 ta mikrofon." },
+            { icon: 'battery', title: '4 soat ishlash', desc: "4 soatgacha faol foydalanish. Quti yana 32 soat beradi. Jami 36 soat." },
+            { icon: 'storage', title: '32GB Xotira', desc: "500+ ta rasm yoki 100 ta video uchun xotira. Fayllarni uzatish uchun Wi-Fi." },
             { icon: 'streaming', title: 'Striming', desc: "Instagram va Facebook-da jonli efirlar. Suv va terdan IPX4 himoya." }
         ],
-        oakley: [
-            { icon: 'camera', title: '12MP Kamera', desc: '3K Ultra HD video bilan ultrakeng burchakli kamera. Sport uchun ajoyib stabilizatsiya.' },
-            { icon: 'lens', title: 'PRIZM Linzalar', desc: "Oakley PRIZM polarizatsiyalangan linzalar ranglarni kuchaytiradi va faol dam olish uchun yorqinlikni kamaytiradi." },
-            { icon: 'ai', title: 'Meta AI', desc: "Sun'iy intellektli ovozli yordamchi. Ob-havo, shamol kuchi haqida bilib oling va real vaqtda maslahatlar oling." },
-            { icon: 'audio', title: 'Ochiq dinamiklar', desc: "Musiqa, podkastlar va qo'ng'iroqlar. Aniq ovozli buyruqlar uchun 5 ta mikrofon." },
-            { icon: 'battery', title: '8 soat ishlash', desc: "8 soatgacha faol foydalanish, 19 soat kutish rejimida. Quti 48 soat beradi." },
-            { icon: 'durability', title: 'IPX4 Himoya', desc: "Sachratishlar, yomg'ir va terdan himoya. Mashqlar va faol turmush tarzi uchun ideal." }
+        'rayban-gen2': [
+            { icon: 'camera', title: '12MP Kamera', desc: "Yaxshilangan kamera: 3K Ultra HD 30fps yoki 1080p 60fps. 2 baravar ko'p piksel." },
+            { icon: 'ai', title: 'Meta AI Live', desc: "Ilg'or AI: Hyperlapse, Slow Motion va real vaqtda tarjima uchun Live AI." },
+            { icon: 'audio', title: 'Premium ovoz', desc: "Kuchaytirilgan bass bilan yaxshilangan dinamiklar. 90% shovqin filtrlash bilan 5 mikrofon." },
+            { icon: 'battery', title: '8 soat ishlash', desc: "2 baravar ko'proq! 8 soatgacha ishlash. Quti 48 soat beradi. 20 daqiqada 50% tez quvvatlash." },
+            { icon: 'storage', title: '32GB + Wi-Fi 6', desc: "500+ rasm uchun xotira. O'ta tez fayl uzatish uchun Wi-Fi 6." },
+            { icon: 'streaming', title: 'HDR Video', desc: "Aniq va yorqin suratga olish uchun Ultrawide HDR. IPX4 himoya. Ijtimoiy tarmoqlarga striming." }
+        ],
+        'oakley-hstn': [
+            { icon: 'camera', title: '12MP / 100° FOV', desc: "Temple-da joylashgan kamera, 3K video. 100° ko'rish burchagi. Faol dam olish uchun ajoyib stabilizatsiya." },
+            { icon: 'lens', title: 'PRIZM Linzalar', desc: "Oakley PRIZM polarizatsiyalangan linzalar kontrastni kuchaytiradi va porlashni kamaytiradi." },
+            { icon: 'ai', title: 'Meta AI', desc: "Ovozli AI yordamchi. Ob-havo haqida bilib oling, real vaqtda maslahatlar oling." },
+            { icon: 'audio', title: 'Ochiq dinamiklar', desc: "Musiqa va qo'ng'iroqlar hands-free. Aniq ovozli buyruqlar uchun 5 ta mikrofon." },
+            { icon: 'battery', title: '8 soat / 53g', desc: "8 soatgacha ishlash, faqat 53 gramm engil vazn. Quti yana 48 soat beradi." },
+            { icon: 'durability', title: 'IPX4 Himoya', desc: "Sachratishlar va terdan himoya. Shahar va faol dam olish uchun zamonaviy dizayn." }
+        ],
+        'oakley-vanguard': [
+            { icon: 'camera', title: '12MP / 122° FOV', desc: "Linzalar orasida markaziy kamera! 3K video, 122° burchak. Hyperlapse va Slow Motion." },
+            { icon: 'lens', title: 'PRIZM Sport', desc: "Mashqlar paytida maksimal kontrast uchun PRIZM sport linzalari." },
+            { icon: 'ai', title: 'Meta AI + Garmin/Strava', desc: "Garmin Connect va Strava bilan AI integratsiyasi. Real vaqtda yurak urishi va metrikalar." },
+            { icon: 'audio', title: 'Baland ovoz +6dB', desc: "HSTN dan 6 dB balandroq dinamiklar! 50 km/soat shamolda ham eshitiladi." },
+            { icon: 'battery', title: '9 soat / 66g', desc: "9 soatgacha ishlash, 6 soat audio. 66g vaznli sport konstruktsiyasi." },
+            { icon: 'durability', title: 'IP67 + Action Button', desc: "To'liq suv o'tkazmaydigan IP67. Funksiyalarga tez kirish uchun Action tugmasi." }
         ]
     }
 };
@@ -691,24 +723,47 @@ function renderProducts() {
         subgroups = ['HSTN', 'Vanguard'];
     }
 
+    // Group products by name+variant to combine size variants
+    function groupProducts(productsList) {
+        const groups = {};
+        productsList.forEach(product => {
+            const key = `${product.name}|${product.variant}`;
+            if (!groups[key]) {
+                groups[key] = {
+                    ...product,
+                    sizes: product.size ? [{ size: product.size, id: product.id }] : [],
+                    allProducts: [product]
+                };
+            } else {
+                if (product.size) {
+                    groups[key].sizes.push({ size: product.size, id: product.id });
+                }
+                groups[key].allProducts.push(product);
+            }
+        });
+        return Object.values(groups);
+    }
+
     // Build HTML with subgroup headers
     let html = '';
     subgroups.forEach(subgroup => {
         const subgroupProducts = filteredProducts.filter(p => p.name.toLowerCase().includes(subgroup.toLowerCase()));
         if (subgroupProducts.length === 0) return;
 
+        // Group products by name+variant
+        const groupedProducts = groupProducts(subgroupProducts);
+
         // Add subgroup header
         html += `<div class="product-subgroup-header"><h4>${subgroup}</h4></div>`;
 
-        // Add products in this subgroup
-        subgroupProducts.forEach(product => {
+        // Add grouped products
+        groupedProducts.forEach(product => {
             const badgeClass = product.condition === 'new' ? 'new' : 'refurbished';
             let badgeText = product.condition === 'new' ? 'New' : 'Refurbished';
             if (product.generation) badgeText = product.generation;
 
-            // Build product description line
+            // Build product description (without size since it's in selector)
             let description = product.variant || '';
-            if (product.size) description += ` (${product.size})`;
 
             // Handle coming soon products
             if (product.comingSoon) {
@@ -756,25 +811,58 @@ function renderProducts() {
                 return;
             }
 
+            // Check if product has size variants
+            const hasSizes = product.sizes && product.sizes.length > 1;
+            const defaultId = hasSizes ? product.sizes[0].id : product.id;
+
+            // Size selector HTML
+            let sizeSelector = '';
+            if (hasSizes) {
+                sizeSelector = `
+                    <div class="size-selector" data-product-group="${product.name}|${product.variant}">
+                        ${product.sizes.map((s, idx) => `
+                            <button class="size-btn ${idx === 0 ? 'active' : ''}" data-product-id="${s.id}" data-size="${s.size}">${s.size}</button>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
             // Regular product
             html += `
-                <div class="product-card">
+                <div class="product-card" data-product-id="${defaultId}">
                     <div class="product-image">
                         <img src="${product.image}" alt="${product.name}" loading="lazy">
                     </div>
                     <span class="product-badge ${badgeClass}">${badgeText}</span>
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-color">${description}</p>
+                    ${sizeSelector}
                     <div class="product-prices">
                         <span class="price-main">${formatPrice(product.price)}</span>
                     </div>
-                    <button class="btn btn-secondary add-to-cart-btn" onclick="addToCart(${product.id})">${t('catalog.addToCart')}</button>
+                    <button class="btn btn-secondary add-to-cart-btn" onclick="addToCartWithSize(this, ${defaultId})">${t('catalog.addToCart')}</button>
                 </div>
             `;
         });
     });
 
     productsGrid.innerHTML = html;
+
+    // Add event listeners for size selectors
+    document.querySelectorAll('.size-selector .size-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const selector = this.closest('.size-selector');
+            selector.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // Update the card's data-product-id and button onclick
+            const card = this.closest('.product-card');
+            const newId = this.dataset.productId;
+            card.dataset.productId = newId;
+            const addBtn = card.querySelector('.add-to-cart-btn');
+            addBtn.setAttribute('onclick', `addToCartWithSize(this, ${newId})`);
+        });
+    });
 }
 
 // ========================================
@@ -852,6 +940,13 @@ function addToCart(productId) {
 
     updateCartUI();
     showToast(t('cart.added'));
+}
+
+// Wrapper for size selector - gets current selected product ID from the card
+function addToCartWithSize(button, defaultId) {
+    const card = button.closest('.product-card');
+    const productId = card ? parseInt(card.dataset.productId) : defaultId;
+    addToCart(productId);
 }
 
 function removeFromCart(index) {

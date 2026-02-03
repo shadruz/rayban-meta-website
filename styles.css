@@ -1104,6 +1104,48 @@ textarea {
     color: var(--color-text-secondary);
 }
 
+/* Size Selector */
+.size-selector {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: var(--space-sm) 0;
+}
+
+.size-btn {
+    padding: 6px 14px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background: transparent;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.size-btn:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-accent);
+}
+
+.size-btn.active {
+    color: var(--color-text-primary);
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .size-selector {
+        gap: 4px;
+    }
+
+    .size-btn {
+        padding: 4px 10px;
+        font-size: 0.65rem;
+    }
+}
+
 .product-card .btn {
     width: 100%;
 }
