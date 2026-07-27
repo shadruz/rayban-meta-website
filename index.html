@@ -2,16 +2,37 @@
 <html lang="ru">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPT5LBKSDZ"></script>
+    <meta charset="UTF-8">
+    <!-- Google Analytics loads after the critical page content or on the first interaction. -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-GPT5LBKSDZ');
+        (function () {
+            let analyticsLoaded = false;
+
+            function loadAnalytics() {
+                if (analyticsLoaded) return;
+                analyticsLoaded = true;
+
+                const script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GPT5LBKSDZ';
+                document.head.appendChild(script);
+
+                gtag('js', new Date());
+                gtag('config', 'G-GPT5LBKSDZ');
+            }
+
+            window.addEventListener('load', function () {
+                window.setTimeout(loadAnalytics, 2500);
+            }, { once: true });
+
+            ['pointerdown', 'keydown', 'touchstart'].forEach(function (eventName) {
+                window.addEventListener(eventName, loadAnalytics, { once: true, passive: true });
+            });
+        }());
     </script>
 
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ray-Ban Meta и WHOOP в Ташкенте — купить с гарантией | TechGeek.uz</title>
     <meta name="description"
