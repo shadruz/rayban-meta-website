@@ -485,7 +485,42 @@ const products = [
         image: 'images/vanguard_Vanguard4.jpg',
         price: 525
     },
+    // ============ WHOOP MG LIFE ============
+    {
+        id: 59,
+        name: 'WHOOP MG Life 5.0',
+        variant: '12-month Life membership',
+        size: '',
+        generation: '',
+        condition: 'new',
+        category: 'whoop',
+        image: 'images/whoop_Whoop3.jpg',
+        price: 335,
+        pageUrl: {
+            ru: '/whoop-mg-life/',
+            uz: '/uz/whoop-mg-life/'
+        }
+    },
 ];
+
+// Product IDs currently available for immediate purchase in Tashkent.
+const inStockProducts = [20, 21, 22, 23, 59];
+
+// SEO landing pages for the two in-stock Ray-Ban variants.
+products.forEach(product => {
+    if (product.generation === 'Gen 1' && product.variant === 'Shiny Clear') {
+        product.pageUrl = {
+            ru: '/ray-ban-meta-gen-1-clear/',
+            uz: '/uz/ray-ban-meta-gen-1-clear/'
+        };
+    }
+    if (product.generation === 'Gen 1' && product.variant === 'Matte Chameleon') {
+        product.pageUrl = {
+            ru: '/ray-ban-meta-gen-1-chameleon/',
+            uz: '/uz/ray-ban-meta-gen-1-chameleon/'
+        };
+    }
+});
 
 // Minimum order quantity
 const MIN_ORDER_QUANTITY = 25;
@@ -493,7 +528,7 @@ const MIN_ORDER_QUANTITY = 25;
 // ========================================
 // State
 // ========================================
-let currentCategory = 'rayban-gen1'; // rayban-gen1, rayban-gen2, oakley
+let currentCategory = 'instock'; // instock, rayban-gen1, rayban-gen2, oakley, whoop
 let currentFeatureCategory = 'rayban-gen1'; // For features section
 let currentLang = 'ru';
 let cart = [];
@@ -534,6 +569,14 @@ const featuresData = {
             { icon: 'audio', title: 'Громкий звук +6дБ', desc: 'Динамики на 6 дБ громче HSTN! Слышно даже при ветре до 50 км/ч.' },
             { icon: 'battery', title: '9 часов / 66г', desc: 'До 9 часов работы, 6 часов аудио. Спортивная конструкция весом 66г.' },
             { icon: 'durability', title: 'IP67 + Action Button', desc: 'Полная водонепроницаемость IP67. Кнопка Action для быстрого доступа к функциям.' }
+        ],
+        whoop: [
+            { icon: 'heart', title: 'WHOOP MG + ECG', desc: 'Датчик WHOOP MG с контактами для ЭКГ. Доступность медицинских функций зависит от страны и настроек аккаунта.' },
+            { icon: 'sleep', title: 'Сон и восстановление', desc: 'Ежедневные показатели Sleep, Recovery и Strain помогают оценивать сон, готовность к нагрузке и активность.' },
+            { icon: 'battery', title: '14+ дней работы', desc: 'До 14+ дней работы на одном заряде и беспроводной PowerPack для зарядки без снятия браслета.' },
+            { icon: 'health', title: '24/7 мониторинг', desc: 'Отслеживание пульса, HRV, частоты дыхания, температуры кожи и других показателей в приложении WHOOP.' },
+            { icon: 'durability', title: 'Защита IP68', desc: 'Датчик защищён от пыли и воды; подходит для душа и плавания в пределах рекомендаций производителя.' },
+            { icon: 'design', title: 'Life на 12 месяцев', desc: 'В комплект входит 12-месячное членство WHOOP Life. Условия активации уточняйте перед покупкой.' }
         ]
     },
     uz: {
@@ -568,6 +611,14 @@ const featuresData = {
             { icon: 'audio', title: 'Baland ovoz +6dB', desc: "HSTN dan 6 dB balandroq dinamiklar! 50 km/soat shamolda ham eshitiladi." },
             { icon: 'battery', title: '9 soat / 66g', desc: "9 soatgacha ishlash, 6 soat audio. 66g vaznli sport konstruktsiyasi." },
             { icon: 'durability', title: 'IP67 + Action Button', desc: "To'liq suv o'tkazmaydigan IP67. Funksiyalarga tez kirish uchun Action tugmasi." }
+        ],
+        whoop: [
+            { icon: 'heart', title: 'WHOOP MG + ECG', desc: "ECG uchun kontaktlarga ega WHOOP MG sensori. Tibbiy funksiyalar mamlakat va akkaunt sozlamalariga qarab farq qiladi." },
+            { icon: 'sleep', title: 'Uyqu va tiklanish', desc: "Sleep, Recovery va Strain ko'rsatkichlari uyqu, yuklamaga tayyorgarlik va faollikni baholashga yordam beradi." },
+            { icon: 'battery', title: '14+ kun ishlash', desc: "Bir quvvatda 14+ kungacha ishlaydi, Wireless PowerPack esa bilakdan yechmasdan quvvatlash imkonini beradi." },
+            { icon: 'health', title: '24/7 monitoring', desc: "WHOOP ilovasida puls, HRV, nafas olish tezligi, teri harorati va boshqa ko'rsatkichlarni kuzatadi." },
+            { icon: 'durability', title: 'IP68 himoya', desc: "Sensor chang va suvdan himoyalangan; ishlab chiqaruvchi tavsiyalariga muvofiq dush va suzish uchun mos." },
+            { icon: 'design', title: '12 oylik Life', desc: "Komplektga 12 oylik WHOOP Life a'zoligi kiradi. Faollashtirish shartlarini xariddan oldin aniqlang." }
         ]
     }
 };
@@ -651,6 +702,8 @@ function t(key) {
 }
 
 function updateLanguage() {
+    document.documentElement.lang = currentLang;
+
     // Update all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -666,6 +719,34 @@ function updateLanguage() {
             el.placeholder = translations[currentLang][key];
         }
     });
+
+    const seoCopy = {
+        ru: {
+            title: 'Ray-Ban Meta и WHOOP в Ташкенте — купить с гарантией | TechGeek.uz',
+            description: 'Оригинальные Ray-Ban Meta Gen 1 и WHOOP MG Life в наличии в Ташкенте. Выгодные цены, гарантия подлинности, доставка по Узбекистану. +998 99 299 99 00.',
+            productUrls: [
+                '/ray-ban-meta-gen-1-clear/',
+                '/ray-ban-meta-gen-1-chameleon/',
+                '/whoop-mg-life/'
+            ]
+        },
+        uz: {
+            title: 'Toshkentda Ray-Ban Meta va WHOOP sotib olish | TechGeek.uz',
+            description: "Ray-Ban Meta Gen 1 va WHOOP MG Life Toshkentda mavjud. Qulay narx, originallik kafolati va O'zbekiston bo'ylab yetkazib berish.",
+            productUrls: [
+                '/uz/ray-ban-meta-gen-1-clear/',
+                '/uz/ray-ban-meta-gen-1-chameleon/',
+                '/uz/whoop-mg-life/'
+            ]
+        }
+    };
+    document.title = seoCopy[currentLang].title;
+    const descriptionMeta = document.querySelector('meta[name="description"]');
+    if (descriptionMeta) descriptionMeta.content = seoCopy[currentLang].description;
+    document.querySelectorAll('.availability-links a').forEach((link, index) => {
+        link.href = seoCopy[currentLang].productUrls[index];
+    });
+    if (currentCategory === 'instock') selectedCategoryEl.textContent = t('catalog.instock');
 
     // Re-render products, cart, and features with new language
     renderProducts();
@@ -692,12 +773,16 @@ function renderProducts() {
     // Filter products based on current category
     let filteredProducts = [];
 
-    if (currentCategory === 'rayban-gen1') {
+    if (currentCategory === 'instock') {
+        filteredProducts = products.filter(p => inStockProducts.includes(p.id));
+    } else if (currentCategory === 'rayban-gen1') {
         filteredProducts = products.filter(p => p.generation === 'Gen 1' && p.condition === 'new' && p.category !== 'oakley');
     } else if (currentCategory === 'rayban-gen2') {
         filteredProducts = products.filter(p => p.generation === 'Gen 2' && p.condition === 'new' && p.category !== 'oakley');
     } else if (currentCategory === 'oakley') {
         filteredProducts = products.filter(p => p.category === 'oakley');
+    } else if (currentCategory === 'whoop') {
+        filteredProducts = products.filter(p => p.category === 'whoop');
     }
 
     // Show placeholder if no products in category
@@ -717,10 +802,14 @@ function renderProducts() {
 
     // Define subgroups based on category
     let subgroups = [];
-    if (currentCategory === 'rayban-gen1' || currentCategory === 'rayban-gen2') {
+    if (currentCategory === 'instock') {
+        subgroups = ['Ray-Ban', 'WHOOP'];
+    } else if (currentCategory === 'rayban-gen1' || currentCategory === 'rayban-gen2') {
         subgroups = ['Wayfarer', 'Headliner', 'Skyler'];
     } else if (currentCategory === 'oakley') {
         subgroups = ['HSTN', 'Vanguard'];
+    } else if (currentCategory === 'whoop') {
+        subgroups = ['WHOOP'];
     }
 
     // Group products by name+variant to combine size variants
@@ -754,16 +843,25 @@ function renderProducts() {
         const groupedProducts = groupProducts(subgroupProducts);
 
         // Add subgroup header
-        html += `<div class="product-subgroup-header"><h4>${subgroup}</h4></div>`;
+        html += `<div class="product-subgroup-header"><h3>${subgroup}</h3></div>`;
 
         // Add grouped products
         groupedProducts.forEach(product => {
             const badgeClass = product.condition === 'new' ? 'new' : 'refurbished';
             let badgeText = product.condition === 'new' ? 'New' : 'Refurbished';
             if (product.generation) badgeText = product.generation;
-
+            const isInStock = product.allProducts.some(item => inStockProducts.includes(item.id));
+            const availabilityText = isInStock ? t('catalog.instock') : t('catalog.preorder');
+            const availabilityClass = isInStock ? 'in-stock' : 'preorder';
+            const productPageUrl = product.pageUrl ? product.pageUrl[currentLang] : '';
             // Build product description (without size since it's in selector)
-            let description = product.variant || '';
+            const description = product.variant || '';
+            const productNameMarkup = productPageUrl
+                ? `<a href="${productPageUrl}" class="product-name-link">${product.name}</a>`
+                : product.name;
+            const productImageMarkup = productPageUrl
+                ? `<a href="${productPageUrl}" aria-label="${product.name} ${description}"><img src="${product.image}" alt="${product.name} ${description}" loading="lazy" width="1206" height="900"></a>`
+                : `<img src="${product.image}" alt="${product.name} ${description}" loading="lazy" width="1206" height="900">`;
 
             // Handle coming soon products
             if (product.comingSoon) {
@@ -831,15 +929,19 @@ function renderProducts() {
             html += `
                 <div class="product-card" data-product-id="${defaultId}">
                     <div class="product-image">
-                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                        ${productImageMarkup}
                     </div>
-                    <span class="product-badge ${badgeClass}">${badgeText}</span>
-                    <h3 class="product-name">${product.name}</h3>
+                    <div class="product-badge-row">
+                        <span class="product-badge ${badgeClass}">${badgeText}</span>
+                        <span class="availability-badge ${availabilityClass}">${availabilityText}</span>
+                    </div>
+                    <h3 class="product-name">${productNameMarkup}</h3>
                     <p class="product-color">${description}</p>
                     ${sizeSelector}
                     <div class="product-prices">
                         <span class="price-main">${formatPrice(product.price)}</span>
                     </div>
+                    ${productPageUrl ? `<a href="${productPageUrl}" class="details-link">${t('catalog.details')} →</a>` : ''}
                     <button class="btn btn-secondary add-to-cart-btn" onclick="addToCartWithSize(this, ${defaultId})">${t('catalog.addToCart')}</button>
                 </div>
             `;
@@ -980,6 +1082,7 @@ function getTotal() {
 function updateCartUI() {
     const totalItems = getTotalItems();
     cartCount.textContent = totalItems;
+    cartBtn.setAttribute('aria-label', `${currentLang === 'uz' ? 'Savat' : 'Открыть корзину'}: ${totalItems}`);
 
     renderCart();
 }
@@ -1114,60 +1217,12 @@ checkoutModal.addEventListener('click', (e) => {
 });
 
 // ========================================
-// Telegram Bot Configuration
-// ========================================
-const TELEGRAM_BOT_TOKEN = '8068572788:AAECuusnDI9tZzwzwoAkEmDVEMmJVLD2gZU';
-const TELEGRAM_CHAT_ID = '1798702419';
-
-async function sendToTelegram(orderData) {
-    const totalItems = getTotalItems();
-    const priceType = '🏷️ ОПТОВАЯ ЦЕНА';
-
-    // Build order items list
-    const itemsList = orderData.items.map(item => {
-        return `  • ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(item.price)}`;
-    }).join('\n');
-
-    const message = `
-🛒 *НОВАЯ ОПТОВАЯ ЗАЯВКА!*
-
-📦 *Товары:*
-${itemsList}
-
-${priceType}
-📊 Всего товаров: ${totalItems} шт.
-💵 *ИТОГО: ${formatPrice(orderData.total)}*
-
-⏰ ${new Date().toLocaleString('ru-RU', { timeZone: 'Asia/Tashkent' })}
-    `.trim();
-
-    try {
-        const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: TELEGRAM_CHAT_ID,
-                text: message,
-                parse_mode: 'Markdown'
-            })
-        });
-
-        const result = await response.json();
-        return result.ok;
-    } catch (error) {
-        console.error('Failed to send to Telegram:', error);
-        return false;
-    }
-}
-
-// ========================================
 // Send Order via Telegram Direct Message
 // ========================================
 const TELEGRAM_USERNAME = 'techgeek_uz'; // Your personal Telegram username
 
-document.getElementById('sendViaTelegram').addEventListener('click', function () {
+document.getElementById('sendViaTelegram').addEventListener('click', function (event) {
+    event.preventDefault();
     const customerName = document.getElementById('customerName').value.trim();
     const customerPhone = document.getElementById('customerPhone').value.trim();
 
@@ -1209,14 +1264,6 @@ ${priceType}
     // Open Telegram with pre-filled message
     const telegramUrl = `https://t.me/${TELEGRAM_USERNAME}?text=${encodedMessage}`;
     window.open(telegramUrl, '_blank');
-
-    // Also send notification to bot
-    sendToTelegram({
-        customer: { name: customerName, telegram: 'Отправлено через личное сообщение' },
-        items: cart,
-        total: getTotal(),
-        isWholesale: isWholesale
-    });
 
     // Clear cart
     closeCheckout();
@@ -1390,5 +1437,7 @@ function nextHeroSlide() {
     heroSlides[currentSlide].classList.add('active');
 }
 
-// Auto-rotate every 2 seconds
-setInterval(nextHeroSlide, 2000);
+// Auto-rotate unless the visitor has asked for reduced motion.
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && heroSlides.length > 1) {
+    setInterval(nextHeroSlide, 4000);
+}

@@ -6,20 +6,23 @@ const translations = {
     ru: {
         // Navigation
         'nav.catalog': 'Каталог',
+        'nav.instock': 'В наличии',
         'nav.features': 'Характеристики',
+        'nav.delivery': 'Доставка и гарантия',
 
         // Hero
-        'hero.badge': 'Лучшие оптовые цены',
-        'hero.title': 'Умные гаджеты',
-        'hero.titleAccent': 'из США, Европы и ОАЭ',
-        'hero.subtitle': 'В наличии и на заказ. Оптовые и розничные поставки смарт-очков, часов, фитнес-браслетов и других гаджетов. Гарантия подлинности и качества на каждый товар.',
-        'hero.btnCatalog': 'Смотреть каталог',
-        'hero.btnFeatures': 'Узнать больше',
+        'hero.badge': 'В наличии в Ташкенте',
+        'hero.title': 'Ray-Ban Meta и WHOOP',
+        'hero.titleAccent': 'в Ташкенте',
+        'hero.subtitle': 'Оригинальные умные очки с камерой и фитнес-браслеты по выгодной цене. Проверяем комплектность, даём гарантию подлинности и доставляем по Узбекистану.',
+        'hero.btnCatalog': 'Смотреть товары в наличии',
+        'hero.btnFeatures': 'Спросить в Telegram',
         'hero.warranty': 'Гарантия 1 месяц на заводской брак',
+        'stock.quickTitle': 'Сейчас в наличии:',
 
         // Catalog
-        'catalog.title': 'Каталог',
-        'catalog.subtitle': 'Выберите модель умных очков для вашего бизнеса',
+        'catalog.title': 'В наличии в Ташкенте',
+        'catalog.subtitle': 'Оригинальные Ray-Ban Meta Gen 1 и WHOOP MG Life с гарантией подлинности',
         'catalog.category': 'Категория:',
         'catalog.rayban': 'Ray-Ban Gen 1-2',
         'catalog.raybanLimited': 'Ray-Ban Meta Limited',
@@ -28,11 +31,14 @@ const translations = {
         'catalog.whoop': 'WHOOP',
         'catalog.refurbished': 'Ray-Ban Meta Refurbished',
         'catalog.comingSoon': 'Скоро в продаже',
-        'catalog.priceInfo': 'При заказе от 10 шт. автоматически применяется оптовая цена',
+        'catalog.priceInfo': 'Розничную цену уточняйте по телефону или в Telegram. Опт — от 25 шт.',
         'catalog.addToCart': 'В корзину',
+        'catalog.new': 'Новый',
         'catalog.retail': 'розница',
         'catalog.wholesale': 'опт от 10 шт',
         'catalog.instock': 'В наличии',
+        'catalog.preorder': 'Под заказ',
+        'catalog.details': 'Подробнее',
         'catalog.book': 'Забронировать',
 
         // Features
@@ -49,6 +55,29 @@ const translations = {
         'features.streamingDesc': 'Прямые трансляции в Instagram и Facebook одним касанием.',
         'features.privacy': 'Приватность',
         'features.privacyDesc': 'LED-индикатор при записи. Физическая кнопка отключения камеры и микрофона.',
+
+        // Trust
+        'trust.title': 'Покупка без лишнего риска',
+        'trust.subtitle': 'Проверяем товар до передачи и остаёмся на связи после покупки',
+        'trust.authTitle': 'Гарантия подлинности',
+        'trust.authText': 'Продаём оригинальные устройства в заводской комплектации. Перед покупкой можно уточнить маркировку и комплект поставки.',
+        'trust.warrantyTitle': 'Гарантия на заводской брак',
+        'trust.warrantyText': 'Даём 1 месяц гарантии на заводской брак и заранее объясняем условия проверки устройства.',
+        'trust.deliveryTitle': 'Доставка по Узбекистану',
+        'trust.deliveryText': 'Согласуем удобный способ получения в Ташкенте или отправку в другой город. Срок и стоимость подтверждаем до заказа.',
+        'trust.call': 'Позвонить +998 99 299 99 00',
+
+        // FAQ
+        'faq.title': 'Частые вопросы',
+        'faq.subtitle': 'Коротко о наличии, оригинальности и доставке',
+        'faq.stockQuestion': 'Какие модели сейчас в наличии?',
+        'faq.stockAnswer': 'Ray-Ban Meta Gen 1 Wayfarer с прозрачными линзами, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество уточняйте перед заказом.',
+        'faq.originalQuestion': 'Товары оригинальные?',
+        'faq.originalAnswer': 'Да, мы продаём оригинальные устройства в заводской комплектации и предоставляем гарантию подлинности.',
+        'faq.deliveryQuestion': 'Есть доставка по Ташкенту и Узбекистану?',
+        'faq.deliveryAnswer': 'Да. Способ, срок и стоимость доставки зависят от города и согласовываются до подтверждения заказа.',
+        'faq.priceQuestion': 'Как узнать актуальную розничную цену?',
+        'faq.priceAnswer': 'Позвоните по номеру +998 99 299 99 00 или напишите в Telegram. Цены в каталоге указаны для оптового заказа от 25 штук.',
 
         // Footer
         'footer.desc': 'Розничные и оптовые поставки из США, Европы, ОАЭ',
@@ -87,20 +116,23 @@ const translations = {
     uz: {
         // Navigation
         'nav.catalog': 'Katalog',
+        'nav.instock': 'Mavjud',
         'nav.features': 'Xususiyatlar',
+        'nav.delivery': 'Yetkazib berish va kafolat',
 
         // Hero
-        'hero.badge': 'Eng yaxshi ulgurji narxlar',
-        'hero.title': 'Aqlli gadjetlar',
-        'hero.titleAccent': 'AQSh, Yevropa va BAAdan',
-        'hero.subtitle': "Mavjud va buyurtmaga. Smart ko'zoynak, soat, fitnes-bilakuzuklar va boshqa gadjetlarni ulgurji va chakana yetkazib berish. Har bir mahsulotga haqiqiylik va sifat kafolati.",
-        'hero.btnCatalog': "Katalogni ko'rish",
-        'hero.btnFeatures': 'Batafsil',
+        'hero.badge': 'Toshkentda mavjud',
+        'hero.title': 'Ray-Ban Meta va WHOOP',
+        'hero.titleAccent': 'Toshkentda',
+        'hero.subtitle': "Kamerali original aqlli ko'zoynaklar va fitnes-bilaguzuklar qulay narxda. Komplektni tekshiramiz, originalligiga kafolat beramiz va O'zbekiston bo'ylab yetkazamiz.",
+        'hero.btnCatalog': "Mavjud mahsulotlarni ko'rish",
+        'hero.btnFeatures': 'Telegram orqali so‘rash',
         'hero.warranty': 'Zavod nuqsoni uchun 1 oylik kafolat',
+        'stock.quickTitle': 'Hozir mavjud:',
 
         // Catalog
-        'catalog.title': 'Katalog',
-        'catalog.subtitle': 'Biznesingiz uchun aqlli ko\'zoynak modelini tanlang',
+        'catalog.title': 'Toshkentda mavjud',
+        'catalog.subtitle': 'Originallik kafolati bilan Ray-Ban Meta Gen 1 va WHOOP MG Life',
         'catalog.category': 'Kategoriya:',
         'catalog.rayban': 'Ray-Ban Gen 1-2',
         'catalog.raybanLimited': 'Ray-Ban Meta Limited',
@@ -109,11 +141,14 @@ const translations = {
         'catalog.whoop': 'WHOOP',
         'catalog.refurbished': 'Ray-Ban Meta Refurbished',
         'catalog.comingSoon': 'Tez orada sotuvda',
-        'catalog.priceInfo': '10 donadan buyurtma qilganda avtomatik ravishda ulgurji narx qo\'llaniladi',
+        'catalog.priceInfo': 'Chakana narxni telefon yoki Telegram orqali aniqlang. Ulgurji buyurtma — 25 donadan.',
         'catalog.addToCart': 'Savatga',
+        'catalog.new': 'Yangi',
         'catalog.retail': 'chakana',
         'catalog.wholesale': 'ulgurji 10+ dona',
         'catalog.instock': 'Mavjud',
+        'catalog.preorder': 'Buyurtma asosida',
+        'catalog.details': 'Batafsil',
         'catalog.book': 'Band qilish',
 
         // Features
@@ -130,6 +165,29 @@ const translations = {
         'features.streamingDesc': 'Instagram va Facebook-da jonli efirlar bir tegish bilan.',
         'features.privacy': 'Maxfiylik',
         'features.privacyDesc': 'Yozish paytida LED indikatori. Kamera va mikrofonni o\'chirish uchun jismoniy tugma.',
+
+        // Trust
+        'trust.title': 'Xavfsiz va tushunarli xarid',
+        'trust.subtitle': 'Mahsulotni topshirishdan oldin tekshiramiz va xariddan keyin ham aloqada bo‘lamiz',
+        'trust.authTitle': 'Originallik kafolati',
+        'trust.authText': 'Original qurilmalarni zavod komplektida sotamiz. Xariddan oldin markirovka va komplektni aniqlashtirish mumkin.',
+        'trust.warrantyTitle': 'Zavod nuqsoniga kafolat',
+        'trust.warrantyText': 'Zavod nuqsoniga 1 oy kafolat beramiz va tekshirish shartlarini oldindan tushuntiramiz.',
+        'trust.deliveryTitle': 'O‘zbekiston bo‘ylab yetkazib berish',
+        'trust.deliveryText': 'Toshkentda qulay topshirish usulini yoki boshqa shaharga jo‘natishni kelishamiz. Muddat va narx buyurtmadan oldin tasdiqlanadi.',
+        'trust.call': '+998 99 299 99 00 raqamiga qo‘ng‘iroq qilish',
+
+        // FAQ
+        'faq.title': 'Ko‘p so‘raladigan savollar',
+        'faq.subtitle': 'Mavjudlik, originallik va yetkazib berish haqida qisqacha',
+        'faq.stockQuestion': 'Hozir qaysi modellar mavjud?',
+        'faq.stockAnswer': 'Shaffof linzali Ray-Ban Meta Gen 1 Wayfarer, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon va WHOOP MG Life 5.0 mavjud. Aniq sonini buyurtmadan oldin tekshiring.',
+        'faq.originalQuestion': 'Mahsulotlar originalmi?',
+        'faq.originalAnswer': 'Ha, original qurilmalarni zavod komplektida sotamiz va originalligiga kafolat beramiz.',
+        'faq.deliveryQuestion': 'Toshkent va O‘zbekiston bo‘ylab yetkazib berish bormi?',
+        'faq.deliveryAnswer': 'Ha. Yetkazib berish usuli, muddati va narxi shaharga qarab buyurtmani tasdiqlashdan oldin kelishiladi.',
+        'faq.priceQuestion': 'Chakana narxni qanday bilish mumkin?',
+        'faq.priceAnswer': '+998 99 299 99 00 raqamiga qo‘ng‘iroq qiling yoki Telegram orqali yozing. Katalogdagi narxlar 25 donadan ulgurji buyurtma uchun ko‘rsatilgan.',
 
         // Footer
         'footer.desc': 'AQSh, Yevropa, BAA dan chakana va ulgurji yetkazib berish',
