@@ -249,7 +249,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        price: 309
+        price: 280
     },
     {
         id: 21,
@@ -259,7 +259,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/2.jpg',
-        price: 309
+        price: 280
     },
     {
         id: 22,
@@ -269,7 +269,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        price: 389
+        price: 330
     },
     {
         id: 23,
@@ -279,7 +279,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        price: 389
+        price: 330
     },
     {
         id: 24,
