@@ -7,14 +7,14 @@ Retail price, exact stock, delivery terms, and payment terms are confirmed befor
 
 ## Ray-Ban Meta Gen 1 Wayfarer Clear
 
-- Wholesale price: from USD 309 per unit
+- Wholesale price: from USD 280 per unit
 - Stock: in stock in Tashkent
 - Sizes: 50 and 53, subject to availability
 - Product page: https://www.techgeek.uz/ray-ban-meta-gen-1-clear/
 
 ## Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon
 
-- Wholesale price: from USD 389 per unit
+- Wholesale price: from USD 330 per unit
 - Stock: in stock in Tashkent
 - Sizes: 50 and 53, subject to availability
 - Product page: https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/
