@@ -31,7 +31,7 @@ const translations = {
         'catalog.whoop': 'WHOOP',
         'catalog.refurbished': 'Ray-Ban Meta Refurbished',
         'catalog.comingSoon': 'Скоро в продаже',
-        'catalog.priceInfo': 'Розничную цену уточняйте по телефону или в Telegram. Опт — от 25 шт.',
+        'catalog.priceInfo': 'На сайте указаны актуальные розничные цены. Оптовую цену на партию запросите в Telegram.',
         'catalog.addToCart': 'В корзину',
         'catalog.new': 'Новый',
         'catalog.retail': 'розница',
@@ -75,9 +75,9 @@ const translations = {
         'faq.originalQuestion': 'Товары оригинальные?',
         'faq.originalAnswer': 'Да, мы продаём оригинальные устройства в заводской комплектации и предоставляем гарантию подлинности.',
         'faq.deliveryQuestion': 'Есть доставка по Ташкенту и Узбекистану?',
-        'faq.deliveryAnswer': 'Да. Способ, срок и стоимость доставки зависят от города и согласовываются до подтверждения заказа.',
+        'faq.deliveryAnswer': 'Да. По Ташкенту доставка бесплатная. Отправку в другие города согласовываем до подтверждения заказа.',
         'faq.priceQuestion': 'Как узнать актуальную розничную цену?',
-        'faq.priceAnswer': 'Позвоните по номеру +998 99 299 99 00 или напишите в Telegram. Цены в каталоге указаны для оптового заказа от 25 штук.',
+        'faq.priceAnswer': 'На сайте указаны розничные цены за одну единицу. Для оптовой цены на партию напишите нам в Telegram.',
 
         // Footer
         'footer.desc': 'Розничные и оптовые поставки из США, Европы, ОАЭ',
@@ -92,8 +92,8 @@ const translations = {
         'cart.total': 'Итого:',
         'cart.clear': 'Очистить всё',
         'cart.checkout': 'Оформить заказ',
-        'cart.retailPrice': 'Розничная цена (менее 10 шт.)',
-        'cart.wholesalePrice': 'Оптовая цена (от 10 шт.)',
+        'cart.retailPrice': 'Розничная цена',
+        'cart.wholesalePrice': 'Оптовая цена по запросу',
         'cart.itemsCount': 'шт.',
         'cart.added': 'Добавлено в корзину',
 
@@ -141,7 +141,7 @@ const translations = {
         'catalog.whoop': 'WHOOP',
         'catalog.refurbished': 'Ray-Ban Meta Refurbished',
         'catalog.comingSoon': 'Tez orada sotuvda',
-        'catalog.priceInfo': 'Chakana narxni telefon yoki Telegram orqali aniqlang. Ulgurji buyurtma — 25 donadan.',
+        'catalog.priceInfo': 'Saytda amaldagi chakana narxlar ko‘rsatilgan. Partiya uchun ulgurji narxni Telegram orqali so‘rang.',
         'catalog.addToCart': 'Savatga',
         'catalog.new': 'Yangi',
         'catalog.retail': 'chakana',
@@ -185,9 +185,9 @@ const translations = {
         'faq.originalQuestion': 'Mahsulotlar originalmi?',
         'faq.originalAnswer': 'Ha, original qurilmalarni zavod komplektida sotamiz va originalligiga kafolat beramiz.',
         'faq.deliveryQuestion': 'Toshkent va O‘zbekiston bo‘ylab yetkazib berish bormi?',
-        'faq.deliveryAnswer': 'Ha. Yetkazib berish usuli, muddati va narxi shaharga qarab buyurtmani tasdiqlashdan oldin kelishiladi.',
+        'faq.deliveryAnswer': 'Ha. Toshkent bo‘ylab yetkazib berish bepul. Boshqa shaharlarga jo‘natishni buyurtmani tasdiqlashdan oldin kelishamiz.',
         'faq.priceQuestion': 'Chakana narxni qanday bilish mumkin?',
-        'faq.priceAnswer': '+998 99 299 99 00 raqamiga qo‘ng‘iroq qiling yoki Telegram orqali yozing. Katalogdagi narxlar 25 donadan ulgurji buyurtma uchun ko‘rsatilgan.',
+        'faq.priceAnswer': 'Saytda bir dona uchun chakana narxlar ko‘rsatilgan. Partiya uchun ulgurji narxni Telegram orqali so‘rang.',
 
         // Footer
         'footer.desc': 'AQSh, Yevropa, BAA dan chakana va ulgurji yetkazib berish',
@@ -202,8 +202,8 @@ const translations = {
         'cart.total': 'Jami:',
         'cart.clear': 'Hammasini tozalash',
         'cart.checkout': 'Buyurtma berish',
-        'cart.retailPrice': 'Chakana narx (10 tadan kam)',
-        'cart.wholesalePrice': 'Ulgurji narx (10+ dona)',
+        'cart.retailPrice': 'Chakana narx',
+        'cart.wholesalePrice': 'Ulgurji narx so‘rov bo‘yicha',
         'cart.itemsCount': 'dona',
         'cart.added': 'Savatga qo\'shildi',
 

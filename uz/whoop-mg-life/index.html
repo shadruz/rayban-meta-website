@@ -60,10 +60,19 @@
             "@type": "Offer",
             "url": "https://www.techgeek.uz/uz/whoop-mg-life/",
             "priceCurrency": "USD",
-            "price": "335",
+            "price": "355",
             "availability": "https://schema.org/InStock",
             "seller": {"@id": "https://www.techgeek.uz/#organization"},
-            "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 25, "unitCode": "C62"}
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "UZS"},
+              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "UZ", "addressRegion": "Tashkent"},
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"},
+                "transitTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}
+              }
+            }
           }
         },
         {
@@ -108,7 +117,7 @@
             </a>
             <div class="nav-links">
                 <a href="/#catalog">Mavjud</a>
-                <a href="/#delivery">Yetkazib berish va kafolat</a>
+                <a href="/uz/yetkazib-berish-va-kafolat/">Yetkazib berish va kafolat</a>
                 <a href="/#faq">FAQ</a>
             </div>
             <div class="nav-right">
@@ -137,9 +146,8 @@
                     <p class="product-lead">Ekransiz, 24/7 uyqu, tiklanish va yuklamani tahlil qiladigan ilg‘or
                         fitnes-bilaguzuk. Life komplektiga WHOOP MG sensori, mos bilaguzuk, Wireless PowerPack va 12
                         oylik a’zolik kiradi.</p>
-                    <div class="product-price"><strong>$335 dan</strong><span>25 donadan ulgurji</span></div>
-                    <p class="retail-note">Chakana narx, komplekt va faollashtirish shartlarini buyurtmadan oldin
-                        aniqlashtiring.</p>
+                    <div class="product-price"><strong>$355</strong><span>1 dona uchun chakana narx</span></div>
+                    <p class="retail-note">Toshkent bo‘ylab bepul yetkazib berish. Partiya uchun ulgurji narx — so‘rov bo‘yicha.</p>
                     <div class="product-actions">
                         <a href="tel:+998992999900" class="btn btn-primary">+998&nbsp;99&nbsp;299&nbsp;99&nbsp;00</a>
                         <a href="https://t.me/techgeek_uz?text=Assalomu%20alaykum!%20WHOOP%20MG%20Life%205.0%20va%2012%20oylik%20a'zolik%20qiziqtirdi."
@@ -261,6 +269,7 @@
             </div>
         </div>
     </footer>
+    <script src="/analytics.js"></script>
 </body>
 
 </html>

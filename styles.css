@@ -883,6 +883,7 @@ textarea {
         padding: var(--space-xs);
         font-size: 0.65rem;
         margin-bottom: var(--space-md);
+        flex-wrap: wrap;
     }
 
     .price-info-banner svg {
@@ -1770,7 +1771,7 @@ textarea {
 }
 
 /* ========================================
-   Price Info Banner - Premium Wholesale Notice
+   Price Info Banner - Retail and Wholesale Notice
 ======================================== */
 .price-info-banner {
     display: flex;
@@ -1850,6 +1851,19 @@ textarea {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: 0.02em;
+}
+
+.wholesale-link {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+}
+
+.wholesale-link:hover {
+    color: var(--color-accent-text);
 }
 
 /* ========================================
