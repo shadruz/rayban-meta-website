@@ -1,7 +1,6 @@
 // ========================================
 // Product Data - Full Catalog
-// Wholesale Only - Minimum 25 items per order
-// Prices in USD
+// Retail catalog prices in USD. Wholesale pricing is available on request.
 // ========================================
 const products = [
     // ============ GEN 2 - WAYFARER ============
@@ -269,7 +268,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        price: 330
+        price: 350
     },
     {
         id: 23,
@@ -279,7 +278,7 @@ const products = [
         generation: 'Gen 1',
         condition: 'new',
         image: 'images/1.jpg',
-        price: 330
+        price: 350
     },
     {
         id: 24,
@@ -495,7 +494,7 @@ const products = [
         condition: 'new',
         category: 'whoop',
         image: 'images/whoop_Whoop3.jpg',
-        price: 335,
+        price: 355,
         pageUrl: {
             ru: '/whoop-mg-life/',
             uz: '/uz/whoop-mg-life/'
@@ -521,9 +520,6 @@ products.forEach(product => {
         };
     }
 });
-
-// Minimum order quantity
-const MIN_ORDER_QUANTITY = 25;
 
 // ========================================
 // State
@@ -1089,7 +1085,6 @@ function updateCartUI() {
 
 function renderCart() {
     const totalItems = getTotalItems();
-    const MIN_ORDER_QUANTITY = 25;
 
     if (cart.length === 0) {
         cartItems.innerHTML = '';
@@ -1128,19 +1123,10 @@ function renderCart() {
         `;
     }).join('');
 
-    // Update pricing info - show minimum order warning or ready status
-    if (totalItems < MIN_ORDER_QUANTITY) {
-        const remaining = MIN_ORDER_QUANTITY - totalItems;
-        cartPricingInfo.innerHTML = `<span class="min-order-warning">⚠️ ${currentLang === 'uz' ? `Kamida ${remaining} ta qo'shing` : `Добавьте ещё ${remaining} шт.`}</span>`;
-        cartPricingInfo.classList.remove('wholesale');
-        cartPricingInfo.classList.add('warning');
-        checkoutBtn.disabled = true;
-    } else {
-        cartPricingInfo.innerHTML = `<span class="wholesale-badge">✓ ${currentLang === 'uz' ? 'Ulgurji narxlar' : 'Оптовые цены'}</span>`;
-        cartPricingInfo.classList.add('wholesale');
-        cartPricingInfo.classList.remove('warning');
-        checkoutBtn.disabled = false;
-    }
+    cartPricingInfo.innerHTML = `<span class="wholesale-badge">✓ ${currentLang === 'uz' ? 'Chakana narx' : 'Розничная цена'}</span>`;
+    cartPricingInfo.classList.add('wholesale');
+    cartPricingInfo.classList.remove('warning');
+    checkoutBtn.disabled = false;
 
     cartTotalValue.textContent = formatPrice(getTotal());
 }
@@ -1172,11 +1158,10 @@ function openCheckout() {
     if (cart.length === 0) return;
 
     const totalItems = getTotalItems();
-    if (totalItems < 25) return; // Minimum 25 items required
 
     closeCart();
 
-    const priceType = currentLang === 'uz' ? 'Ulgurji narxlar' : 'Оптовые цены';
+    const priceType = currentLang === 'uz' ? 'Chakana narx' : 'Розничная цена';
 
     orderSummary.innerHTML = `
         <h4>${t('checkout.orderSummary')}</h4>
@@ -1239,14 +1224,14 @@ document.getElementById('sendViaTelegram').addEventListener('click', function (e
     }
 
     const totalItems = getTotalItems();
-    const priceType = '🏷️ ОПТОВАЯ ЦЕНА';
+    const priceType = '🏷️ РОЗНИЧНАЯ ЦЕНА';
 
     // Build order message
     const itemsList = cart.map(item => {
         return `• ${item.name} ${item.description ? `(${item.description})` : ''} — ${item.quantity} шт. × ${formatPrice(item.price)}`;
     }).join('\n');
 
-    const message = `🛒 ОПТОВАЯ ЗАЯВКА с TechGeek.uz
+    const message = `🛒 РОЗНИЧНЫЙ ЗАКАЗ с TechGeek.uz
 
 👤 Имя: ${customerName}
 📞 Телефон: ${customerPhone}
@@ -1264,6 +1249,9 @@ ${priceType}
     // Open Telegram with pre-filled message
     const telegramUrl = `https://t.me/${TELEGRAM_USERNAME}?text=${encodedMessage}`;
     window.open(telegramUrl, '_blank');
+    document.dispatchEvent(new CustomEvent('techgeek:order-sent', {
+        detail: { value: getTotal(), currency: 'USD', items_count: totalItems }
+    }));
 
     // Clear cart
     closeCheckout();

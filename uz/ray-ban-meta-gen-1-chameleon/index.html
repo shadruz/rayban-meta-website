@@ -63,17 +63,26 @@
             "@type": "Offer",
             "url": "https://www.techgeek.uz/uz/ray-ban-meta-gen-1-chameleon/",
             "priceCurrency": "USD",
-            "price": "330",
+            "price": "350",
             "availability": "https://schema.org/InStock",
             "seller": {"@id": "https://www.techgeek.uz/#organization"},
-            "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 25, "unitCode": "C62"}
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "UZS"},
+              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "UZ", "addressRegion": "Tashkent"},
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"},
+                "transitTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}
+              }
+            }
           }
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "TechGeek.uz", "item": "https://www.techgeek.uz/"},
-            {"@type": "ListItem", "position": 2, "name": "Ray-Ban Meta", "item": "https://www.techgeek.uz/#catalog"},
+            {"@type": "ListItem", "position": 2, "name": "Ray-Ban Meta", "item": "https://www.techgeek.uz/uz/ray-ban-meta/"},
             {"@type": "ListItem", "position": 3, "name": "Gen 1 Chameleon", "item": "https://www.techgeek.uz/uz/ray-ban-meta-gen-1-chameleon/"}
           ]
         },
@@ -111,7 +120,7 @@
             </a>
             <div class="nav-links">
                 <a href="/#catalog">Mavjud</a>
-                <a href="/#delivery">Yetkazib berish va kafolat</a>
+                <a href="/uz/yetkazib-berish-va-kafolat/">Yetkazib berish va kafolat</a>
                 <a href="/#faq">FAQ</a>
             </div>
             <div class="nav-right">
@@ -123,7 +132,7 @@
 
     <main class="product-page-main">
         <nav class="container breadcrumbs" aria-label="Navigatsiya">
-            <a href="/">Bosh sahifa</a><span>/</span><a href="/#catalog">Ray-Ban Meta</a><span>/</span>
+            <a href="/">Bosh sahifa</a><span>/</span><a href="/uz/ray-ban-meta/">Ray-Ban Meta</a><span>/</span>
             <span aria-current="page">Gen 1 Chameleon</span>
         </nav>
 
@@ -140,8 +149,8 @@
                     <p class="product-lead">Matte Black Wayfarer va Clear to Graphite Green fotoxrom linzalari: bino
                         ichida ochroq, quyoshda to‘qroq. 12 MP kamera, ochiq dinamiklar va ovozli boshqaruv klassik
                         Ray-Ban romkasiga joylashtirilgan.</p>
-                    <div class="product-price"><strong>$330 dan</strong><span>25 donadan ulgurji</span></div>
-                    <p class="retail-note">Chakana narx va aniq mavjudlikni buyurtmadan oldin tekshiring.</p>
+                    <div class="product-price"><strong>$350</strong><span>1 dona uchun chakana narx</span></div>
+                    <p class="retail-note">Toshkent bo‘ylab bepul yetkazib berish. Partiya uchun ulgurji narx — so‘rov bo‘yicha.</p>
                     <div class="product-actions">
                         <a href="tel:+998992999900" class="btn btn-primary">+998&nbsp;99&nbsp;299&nbsp;99&nbsp;00</a>
                         <a href="https://t.me/techgeek_uz?text=Assalomu%20alaykum!%20Ray-Ban%20Meta%20Gen%201%20Chameleon%20qiziqtirdi."
@@ -251,6 +260,7 @@
             </div>
         </div>
     </footer>
+    <script src="/analytics.js"></script>
 </body>
 
 </html>

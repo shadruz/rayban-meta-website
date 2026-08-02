@@ -1,0 +1,203 @@
+.seo-page {
+    padding: 120px 0 72px;
+}
+
+.seo-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 48px;
+    align-items: center;
+    padding-bottom: 64px;
+}
+
+.seo-eyebrow {
+    color: var(--color-accent-text);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.seo-hero h1 {
+    margin: 12px 0 20px;
+    font-size: clamp(2.2rem, 5vw, 4.6rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+}
+
+.seo-lead {
+    max-width: 720px;
+    color: var(--color-text-secondary);
+    font-size: 1.12rem;
+}
+
+.seo-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.seo-hero-card,
+.seo-section,
+.seo-card,
+.seo-cta {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-bg-card);
+}
+
+.seo-hero-card {
+    padding: 24px;
+}
+
+.seo-hero-card img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.seo-price-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.seo-price-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+}
+
+.seo-price-row strong {
+    color: var(--color-accent-text);
+    white-space: nowrap;
+}
+
+.seo-section {
+    padding: clamp(24px, 5vw, 48px);
+    margin-bottom: 24px;
+}
+
+.seo-section h2,
+.seo-cta h2 {
+    margin-bottom: 16px;
+    font-size: clamp(1.55rem, 3vw, 2.4rem);
+}
+
+.seo-section h3 {
+    margin: 24px 0 8px;
+    color: #fff;
+}
+
+.seo-section p,
+.seo-section li,
+.seo-card p {
+    color: var(--color-text-secondary);
+}
+
+.seo-section p + p {
+    margin-top: 14px;
+}
+
+.seo-section ul,
+.seo-section ol {
+    display: grid;
+    gap: 10px;
+    margin: 18px 0 0 20px;
+}
+
+.seo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.seo-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.seo-card h2,
+.seo-card h3 {
+    margin-bottom: 10px;
+}
+
+.seo-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.seo-table-wrap {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.seo-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+}
+
+.seo-table th,
+.seo-table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+    color: var(--color-text-secondary);
+}
+
+.seo-table th {
+    color: #fff;
+}
+
+.seo-faq details {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.seo-faq summary {
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.seo-faq details p {
+    margin-top: 10px;
+}
+
+.seo-cta {
+    padding: clamp(28px, 5vw, 52px);
+    text-align: center;
+    background: linear-gradient(135deg, rgba(227, 24, 55, 0.18), rgba(255, 255, 255, 0.03));
+}
+
+.seo-cta .seo-actions {
+    justify-content: center;
+}
+
+.seo-breadcrumbs {
+    margin-bottom: 28px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.seo-breadcrumbs a {
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 840px) {
+    .seo-hero,
+    .seo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seo-page {
+        padding-top: 96px;
+    }
+}

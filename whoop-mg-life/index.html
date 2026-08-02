@@ -60,10 +60,19 @@
             "@type": "Offer",
             "url": "https://www.techgeek.uz/whoop-mg-life/",
             "priceCurrency": "USD",
-            "price": "335",
+            "price": "355",
             "availability": "https://schema.org/InStock",
             "seller": {"@id": "https://www.techgeek.uz/#organization"},
-            "eligibleQuantity": {"@type": "QuantitativeValue", "minValue": 25, "unitCode": "C62"}
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "UZS"},
+              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "UZ", "addressRegion": "Tashkent"},
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"},
+                "transitTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}
+              }
+            }
           },
           "additionalProperty": [
             {"@type": "PropertyValue", "name": "Устройство", "value": "WHOOP MG"},
@@ -115,7 +124,7 @@
             </a>
             <div class="nav-links">
                 <a href="/#catalog">В наличии</a>
-                <a href="/#delivery">Доставка и гарантия</a>
+                <a href="/dostavka-i-garantiya/">Доставка и гарантия</a>
                 <a href="/#faq">FAQ</a>
             </div>
             <div class="nav-right">
@@ -144,9 +153,8 @@
                     <p class="product-lead">Продвинутый фитнес-браслет без экрана для круглосуточного анализа сна,
                         восстановления и нагрузки. Комплектация Life включает устройство WHOOP MG, совместимый ремешок,
                         Wireless PowerPack и членство на 12 месяцев.</p>
-                    <div class="product-price"><strong>от $335</strong><span>оптом от 25 шт.</span></div>
-                    <p class="retail-note">Актуальную розничную цену, комплектацию и условия активации уточняйте перед
-                        заказом.</p>
+                    <div class="product-price"><strong>$355</strong><span>розничная цена за 1 шт.</span></div>
+                    <p class="retail-note">Бесплатная доставка по Ташкенту. Оптовая цена на партию — по запросу.</p>
                     <div class="product-actions">
                         <a href="tel:+998992999900" class="btn btn-primary">Позвонить
                             +998&nbsp;99&nbsp;299&nbsp;99&nbsp;00</a>
@@ -271,6 +279,7 @@
             </div>
         </div>
     </footer>
+    <script src="/analytics.js"></script>
 </body>
 
 </html>
