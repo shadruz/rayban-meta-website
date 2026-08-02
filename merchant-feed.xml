@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>TechGeek.uz — товары в наличии</title>
+    <link>https://www.techgeek.uz/</link>
+    <description>Оригинальные умные гаджеты в наличии в Ташкенте</description>
+    <item>
+      <g:id>RBM-G1-CLEAR</g:id>
+      <g:title>Ray-Ban Meta Gen 1 Wayfarer Clear</g:title>
+      <g:description>Оригинальные умные очки Ray-Ban Meta Gen 1 Wayfarer с прозрачными линзами, камерой 12 МП, открытыми динамиками и зарядным кейсом. В наличии в Ташкенте.</g:description>
+      <g:link>https://www.techgeek.uz/ray-ban-meta-gen-1-clear/</g:link>
+      <g:image_link>https://www.techgeek.uz/images/2.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>280.00 USD</g:price>
+      <g:brand>Ray-Ban</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>RBM-G1-CHAMELEON</g:id>
+      <g:title>Ray-Ban Meta Gen 1 Wayfarer Chameleon</g:title>
+      <g:description>Оригинальные умные очки Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon с фотохромными линзами, камерой 12 МП и зарядным кейсом. В наличии в Ташкенте.</g:description>
+      <g:link>https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/</g:link>
+      <g:image_link>https://www.techgeek.uz/images/1.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>350.00 USD</g:price>
+      <g:brand>Ray-Ban</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>WHOOP-MG-LIFE</g:id>
+      <g:title>WHOOP MG Life 5.0 с членством на 12 месяцев</g:title>
+      <g:description>Оригинальный фитнес-браслет WHOOP MG Life 5.0 с 12-месячным членством Life, зарядным модулем и заводской комплектацией. В наличии в Ташкенте.</g:description>
+      <g:link>https://www.techgeek.uz/whoop-mg-life/</g:link>
+      <g:image_link>https://www.techgeek.uz/images/whoop_Whoop3.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>355.00 USD</g:price>
+      <g:brand>WHOOP</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+  </channel>
+</rss>
