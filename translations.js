@@ -64,7 +64,7 @@ const translations = {
         'trust.warrantyTitle': 'Гарантия на заводской брак',
         'trust.warrantyText': 'Даём 1 месяц гарантии на заводской брак и заранее объясняем условия проверки устройства.',
         'trust.deliveryTitle': 'Доставка по Узбекистану',
-        'trust.deliveryText': 'Согласуем удобный способ получения в Ташкенте или отправку в другой город. Срок и стоимость подтверждаем до заказа.',
+        'trust.deliveryText': 'Доставка по Ташкенту и Узбекистану бесплатная, обычно до 24 часов после подтверждения заказа.',
         'trust.call': 'Позвонить +998 99 299 99 00',
 
         // FAQ
@@ -75,7 +75,7 @@ const translations = {
         'faq.originalQuestion': 'Товары оригинальные?',
         'faq.originalAnswer': 'Да, мы продаём оригинальные устройства в заводской комплектации и предоставляем гарантию подлинности.',
         'faq.deliveryQuestion': 'Есть доставка по Ташкенту и Узбекистану?',
-        'faq.deliveryAnswer': 'Да. По Ташкенту доставка бесплатная. Отправку в другие города согласовываем до подтверждения заказа.',
+        'faq.deliveryAnswer': 'Да. По Ташкенту и Узбекистану доставка бесплатная, обычно до 24 часов после подтверждения заказа.',
         'faq.priceQuestion': 'Как узнать актуальную розничную цену?',
         'faq.priceAnswer': 'На сайте указаны розничные цены за одну единицу. Для оптовой цены на партию напишите нам в Telegram.',
 
@@ -174,7 +174,7 @@ const translations = {
         'trust.warrantyTitle': 'Zavod nuqsoniga kafolat',
         'trust.warrantyText': 'Zavod nuqsoniga 1 oy kafolat beramiz va tekshirish shartlarini oldindan tushuntiramiz.',
         'trust.deliveryTitle': 'O‘zbekiston bo‘ylab yetkazib berish',
-        'trust.deliveryText': 'Toshkentda qulay topshirish usulini yoki boshqa shaharga jo‘natishni kelishamiz. Muddat va narx buyurtmadan oldin tasdiqlanadi.',
+        'trust.deliveryText': 'Toshkent va O‘zbekiston bo‘ylab yetkazish bepul, odatda buyurtma tasdiqlangandan keyin 24 soatgacha.',
         'trust.call': '+998 99 299 99 00 raqamiga qo‘ng‘iroq qilish',
 
         // FAQ
@@ -185,7 +185,7 @@ const translations = {
         'faq.originalQuestion': 'Mahsulotlar originalmi?',
         'faq.originalAnswer': 'Ha, original qurilmalarni zavod komplektida sotamiz va originalligiga kafolat beramiz.',
         'faq.deliveryQuestion': 'Toshkent va O‘zbekiston bo‘ylab yetkazib berish bormi?',
-        'faq.deliveryAnswer': 'Ha. Toshkent bo‘ylab yetkazib berish bepul. Boshqa shaharlarga jo‘natishni buyurtmani tasdiqlashdan oldin kelishamiz.',
+        'faq.deliveryAnswer': 'Ha. Toshkent va O‘zbekiston bo‘ylab yetkazish bepul, odatda buyurtma tasdiqlangandan keyin 24 soatgacha.',
         'faq.priceQuestion': 'Chakana narxni qanday bilish mumkin?',
         'faq.priceAnswer': 'Saytda bir dona uchun chakana narxlar ko‘rsatilgan. Partiya uchun ulgurji narxni Telegram orqali so‘rang.',
 

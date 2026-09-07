@@ -1,608 +1,1292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <!-- Google Analytics loads after the critical page content or on the first interaction. -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        (function () {
-            let analyticsLoaded = false;
-
-            function loadAnalytics() {
-                if (analyticsLoaded) return;
-                analyticsLoaded = true;
-
-                const script = document.createElement('script');
-                script.async = true;
-                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GPT5LBKSDZ';
-                document.head.appendChild(script);
-
-                gtag('js', new Date());
-                gtag('config', 'G-GPT5LBKSDZ');
-            }
-
-            window.addEventListener('load', function () {
-                window.setTimeout(loadAnalytics, 2500);
-            }, { once: true });
-
-            ['pointerdown', 'keydown', 'touchstart'].forEach(function (eventName) {
-                window.addEventListener(eventName, loadAnalytics, { once: true, passive: true });
-            });
-        }());
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ray-Ban Meta и WHOOP в Ташкенте — купить с гарантией | TechGeek.uz</title>
-    <meta name="description"
-        content="Оригинальные Ray-Ban Meta Gen 1 и WHOOP MG Life в наличии в Ташкенте. Выгодные цены, гарантия подлинности, доставка по Узбекистану. +998 99 299 99 00.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#0a0a0a">
-    <link rel="canonical" href="https://www.techgeek.uz/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="TechGeek.uz">
-    <meta property="og:title" content="Ray-Ban Meta и WHOOP в Ташкенте — TechGeek.uz">
-    <meta property="og:description"
-        content="Оригинальные умные очки и фитнес-браслеты в наличии. Гарантия подлинности и доставка по Узбекистану.">
-    <meta property="og:url" content="https://www.techgeek.uz/">
-    <meta property="og:image" content="https://www.techgeek.uz/hero-glasses.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ray-Ban Meta и WHOOP в Ташкенте — TechGeek.uz">
-    <meta name="twitter:description"
-        content="Оригинальные гаджеты в наличии, гарантия подлинности и доставка по Узбекистану.">
-    <meta name="twitter:image" content="https://www.techgeek.uz/hero-glasses.png">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ray-Ban Meta и WHOOP в Ташкенте — купить с гарантией | TechGeek.uz
+    </title>
+    <meta
+      name="description"
+      content="Оригинальные Ray-Ban Meta Gen 1 и WHOOP MG Life в наличии в Ташкенте. Выгодные цены, гарантия подлинности, доставка по Узбекистану. +998 99 299 99 00."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <link rel="canonical" href="https://www.techgeek.uz/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="TechGeek.uz" />
+    <meta
+      property="og:title"
+      content="Ray-Ban Meta и WHOOP в Ташкенте — TechGeek.uz"
+    />
+    <meta
+      property="og:description"
+      content="Оригинальные умные очки и фитнес-браслеты в наличии. Гарантия подлинности и доставка по Узбекистану."
+    />
+    <meta property="og:url" content="https://www.techgeek.uz/" />
+    <meta
+      property="og:image"
+      content="https://www.techgeek.uz/hero-glasses.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ray-Ban Meta и WHOOP в Ташкенте — TechGeek.uz"
+    />
+    <meta
+      name="twitter:description"
+      content="Оригинальные гаджеты в наличии, гарантия подлинности и доставка по Узбекистану."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.techgeek.uz/hero-glasses.png"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link
+      rel="preload"
+      href="/fonts/manrope-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="/hero-glasses.webp" as="image" />
+    <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": ["Organization", "OnlineStore"],
-          "@id": "https://www.techgeek.uz/#organization",
-          "name": "TechGeek.uz",
-          "url": "https://www.techgeek.uz/",
-          "logo": "https://www.techgeek.uz/images/logo.png",
-          "image": "https://www.techgeek.uz/hero-glasses.png",
-          "telephone": "+998992999900",
-          "priceRange": "$$",
-          "currenciesAccepted": ["USD", "UZS"],
-          "areaServed": [
-            {"@type": "City", "name": "Ташкент"},
-            {"@type": "Country", "name": "Узбекистан"}
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["Organization", "OnlineStore"],
+            "@id": "https://www.techgeek.uz/#organization",
+            "name": "TechGeek.uz",
+            "url": "https://www.techgeek.uz/",
+            "logo": "https://www.techgeek.uz/images/logo.png",
+            "image": "https://www.techgeek.uz/hero-glasses.png",
             "telephone": "+998992999900",
-            "contactType": "sales",
-            "availableLanguage": ["Russian", "Uzbek"]
+            "priceRange": "$$",
+            "currenciesAccepted": ["USD", "UZS"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Shota Rustaveli Street, 41",
+              "addressLocality": "Tashkent",
+              "addressCountry": "UZ"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Ташкент" },
+              { "@type": "Country", "name": "Узбекистан" }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+998992999900",
+              "contactType": "sales",
+              "availableLanguage": ["Russian", "Uzbek"]
+            },
+            "sameAs": [
+              "https://t.me/techgeek_uz",
+              "https://www.instagram.com/techgeek.uz/"
+            ]
           },
-          "sameAs": [
-            "https://t.me/techgeek_uz",
-            "https://www.instagram.com/techgeek.uz/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.techgeek.uz/#website",
-          "url": "https://www.techgeek.uz/",
-          "name": "TechGeek.uz",
-          "inLanguage": ["ru", "uz"],
-          "publisher": {"@id": "https://www.techgeek.uz/#organization"}
-        },
-        {
-          "@type": "ItemList",
-          "name": "Товары TechGeek.uz в наличии",
-          "numberOfItems": 3,
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "url": "https://www.techgeek.uz/ray-ban-meta-gen-1-clear/",
-              "name": "Ray-Ban Meta Gen 1 Clear"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "url": "https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/",
-              "name": "Ray-Ban Meta Gen 1 Matte Chameleon"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "url": "https://www.techgeek.uz/whoop-mg-life/",
-              "name": "WHOOP MG Life 5.0"
-            }
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Какие модели сейчас в наличии?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ray-Ban Meta Gen 1 Wayfarer Clear, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество подтверждается перед заказом."
+          {
+            "@type": "WebSite",
+            "@id": "https://www.techgeek.uz/#website",
+            "url": "https://www.techgeek.uz/",
+            "name": "TechGeek.uz",
+            "inLanguage": ["ru", "uz"],
+            "publisher": { "@id": "https://www.techgeek.uz/#organization" }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Товары TechGeek.uz в наличии",
+            "numberOfItems": 3,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "url": "https://www.techgeek.uz/ray-ban-meta-gen-1-clear/",
+                "name": "Ray-Ban Meta Gen 1 Clear"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "url": "https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/",
+                "name": "Ray-Ban Meta Gen 1 Matte Chameleon"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "url": "https://www.techgeek.uz/whoop-mg-life/",
+                "name": "WHOOP MG Life 5.0"
               }
-            },
-            {
-              "@type": "Question",
-              "name": "Товары оригинальные?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "TechGeek.uz продаёт оригинальные устройства в заводской комплектации и предоставляет гарантию подлинности."
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Какие модели сейчас в наличии?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ray-Ban Meta Gen 1 Wayfarer Clear, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество подтверждается перед заказом."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Товары оригинальные?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TechGeek.uz продаёт оригинальные устройства в заводской комплектации и предоставляет гарантию подлинности."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Есть доставка по Ташкенту и Узбекистану?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да. Доставка по Ташкенту и Узбекистану бесплатная, обычно до 24 часов после подтверждения заказа."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Как узнать актуальную розничную цену?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "На сайте указаны розничные цены за одну единицу. Для оптовой цены на партию напишите TechGeek.uz в Telegram."
+                }
               }
-            },
-            {
-              "@type": "Question",
-              "name": "Есть доставка по Ташкенту и Узбекистану?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Да. Доставка по Ташкенту бесплатная. Условия отправки в другие города Узбекистана согласовываются до подтверждения заказа."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Как узнать актуальную розничную цену?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "На сайте указаны розничные цены за одну единицу. Для оптовой цены на партию напишите TechGeek.uz в Telegram."
-              }
-            }
-          ]
-        }
-      ]
-    }
+            ]
+          }
+        ]
+      }
     </script>
-</head>
+  </head>
 
-<body id="top">
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#top" class="logo">
-                <img src="images/logo.webp" alt="TechGeek.uz" class="logo-img" width="32" height="32">
-                <span class="logo-ray">TechGeek</span>
-                <span class="logo-meta">.uz</span>
-            </a>
-            <div class="nav-links">
-                <a href="#catalog" data-i18n="nav.instock">В наличии</a>
-                <a href="#features" data-i18n="nav.features">Характеристики</a>
-                <a href="#delivery" data-i18n="nav.delivery">Доставка и гарантия</a>
-                <a href="#faq">FAQ</a>
-            </div>
-            <div class="nav-right">
-                <!-- Language Switcher -->
-                <div class="lang-switcher">
-                    <button type="button" class="lang-btn active" data-lang="ru">RU</button>
-                    <button type="button" class="lang-btn" data-lang="uz">UZ</button>
-                </div>
-                <!-- Cart Button -->
-                <button type="button" class="cart-btn" id="cartBtn" aria-label="Открыть корзину: 0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="9" cy="21" r="1" />
-                        <circle cx="20" cy="21" r="1" />
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-                    </svg>
-                    <span class="cart-count" id="cartCount" aria-hidden="true">0</span>
-                </button>
-            </div>
-            <button type="button" class="mobile-menu-btn" aria-label="Открыть меню">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <a href="#catalog" data-i18n="nav.instock">В наличии</a>
-        <a href="#features" data-i18n="nav.features">Характеристики</a>
-        <a href="#delivery" data-i18n="nav.delivery">Доставка и гарантия</a>
-        <a href="#faq">FAQ</a>
+  <body id="top" class="storefront">
+    <a
+      class="skip-link"
+      href="#main"
+      data-ru="К содержимому"
+      data-uz="Mazmunga o‘tish"
+      >К содержимому</a
+    >
+    <div class="announcement">
+      <span class="status-dot"></span
+      ><span
+        data-ru="Бесплатно доставим по Узбекистану за 24 часа"
+        data-uz="O‘zbekiston bo‘ylab 24 soatda bepul yetkazamiz"
+        >Бесплатно доставим по Узбекистану за 24 часа</span
+      ><span class="announcement-arrow" aria-hidden="true">↗</span>
     </div>
-
-    <main>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge" data-i18n="hero.badge">В наличии в Ташкенте</div>
-                <h1>
-                    <span class="hero-title-line" data-i18n="hero.title">Ray-Ban Meta и WHOOP</span><br>
-                    <span class="gradient-text" data-i18n="hero.titleAccent">в Ташкенте</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Оригинальные умные очки с камерой и фитнес-браслеты
-                    по выгодной цене. Проверяем комплектность, даём гарантию подлинности и доставляем по Узбекистану.</p>
-                <div class="hero-hotline">
-                    <a href="tel:+998992999900" class="hotline-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
-                            height="18">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                        <span>+998&nbsp;99&nbsp;299&nbsp;99&nbsp;00</span>
-                    </a>
-                </div>
-                <div class="hero-btns">
-                    <a href="#catalog" class="btn btn-primary" data-i18n="hero.btnCatalog">Смотреть товары в наличии</a>
-                    <a href="https://t.me/techgeek_uz" target="_blank" rel="noopener"
-                        class="btn btn-secondary" data-i18n="hero.btnFeatures">Спросить в Telegram</a>
-                </div>
-                <div class="warranty-sticker">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        <polyline points="9 12 11 14 15 10" />
-                    </svg>
-                    <span data-i18n="hero.warranty">Гарантия 1 месяц на заводской брак</span>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-image-glow"></div>
-                <div class="hero-carousel" id="heroCarousel">
-                    <img src="hero-glasses.webp" alt="Ray-Ban Meta" class="hero-slide active" width="800" height="337"
-                        fetchpriority="high">
-                    <img src="hero-slide-2.webp" alt="Oakley Meta" class="hero-slide" width="800" height="432">
-                    <img src="hero-slide-3.webp" alt="Oakley Meta" class="hero-slide" width="800" height="432">
-                    <img src="hero-slide-5.webp" alt="WHOOP MG Life 5.0" class="hero-slide hero-slide-small" width="700"
-                        height="804">
-                </div>
-            </div>
+    <header class="site-header">
+      <nav class="container header-inner" aria-label="Основная навигация">
+        <a href="/" class="brand" aria-label="TechGeek.uz — главная"
+          ><span class="brand-mark" aria-hidden="true">t<span>g</span></span
+          >TechGeek<span class="brand-domain">.uz</span></a
+        >
+        <div class="desktop-nav">
+          <a href="#catalog" data-ru="Каталог" data-uz="Katalog">Каталог</a
+          ><a href="#difference" data-ru="Как выбрать" data-uz="Qanday tanlash"
+            >Как выбрать</a
+          ><a
+            href="#delivery"
+            data-ru="Доставка и гарантия"
+            data-uz="Yetkazish va kafolat"
+            >Доставка и гарантия</a
+          >
         </div>
+        <div class="header-controls">
+          <div class="language-switch" aria-label="Язык / Til">
+            <button
+              type="button"
+              data-lang="ru"
+              class="active"
+              aria-pressed="true"
+            >
+              RU</button
+            ><span>/</span
+            ><button type="button" data-lang="uz" aria-pressed="false">
+              UZ
+            </button>
+          </div>
+          <button
+            type="button"
+            class="bag-button"
+            data-cart-open
+            aria-label="Открыть корзину"
+            data-aria-ru="Открыть корзину"
+            data-aria-uz="Savatni ochish"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 14H4L5 7Z" />
+              <path d="M8 8V6a4 4 0 0 1 8 0v2" /></svg
+            ><span id="cartCount">0</span>
+          </button>
+          <button
+            type="button"
+            class="menu-button"
+            data-menu-toggle
+            aria-label="Меню"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <a href="#catalog" data-ru="Каталог" data-uz="Katalog">Каталог</a
+        ><a href="#difference" data-ru="Как выбрать" data-uz="Qanday tanlash"
+          >Как выбрать</a
+        ><a
+          href="#delivery"
+          data-ru="Доставка и гарантия"
+          data-uz="Yetkazish va kafolat"
+          >Доставка и гарантия</a
+        ><a href="tel:+998992999900">+998 99 299 99 00</a>
+      </div>
     </header>
-
-    <section class="availability-strip" aria-label="Товары в наличии">
-        <div class="container">
-            <p data-i18n="stock.quickTitle">Сейчас в наличии:</p>
-            <div class="availability-links">
-                <a href="/ray-ban-meta-gen-1-clear/">Ray-Ban Meta Gen 1 Clear</a>
-                <a href="/ray-ban-meta-gen-1-chameleon/">Ray-Ban Meta Gen 1 Chameleon</a>
-                <a href="/whoop-mg-life/">WHOOP MG Life 5.0</a>
+    <main id="main">
+      <section class="hero container" aria-labelledby="heroTitle">
+        <div class="hero-stage">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="mini-cross" aria-hidden="true">✳</span> TECH FOR
+              YOUR EVERYDAY
             </div>
+            <h1 id="heroTitle">
+              <span data-ru="Смотри шире." data-uz="Kengroq qara."
+                >Смотри шире.</span
+              ><br /><span
+                class="hero-title-second"
+                data-ru="Живи в моменте."
+                data-uz="Lahzani his qil."
+                >Живи в моменте.</span
+              >
+            </h1>
+            <p
+              data-ru="Ray-Ban Meta и WHOOP в Ташкенте. Технологии, которые становятся частью тебя."
+              data-uz="Toshkentda Ray-Ban Meta va WHOOP. Hayotingizning bir qismiga aylanadigan texnologiyalar."
+            >
+              Ray-Ban Meta и WHOOP в Ташкенте. Технологии, которые становятся
+              частью тебя.
+            </p>
+            <a href="#catalog" class="btn btn-primary hero-cta"
+              ><span data-ru="Найти свой гаджет" data-uz="Gadjetingizni tanlang"
+                >Найти свой гаджет</span
+              ><span aria-hidden="true">↗</span></a
+            >
+            <div class="hero-proof">
+              <span class="proof-check" aria-hidden="true">✓</span
+              ><span
+                data-ru="Оригинальная техника. Гарантия подлинности."
+                data-uz="Original texnika. Originallik kafolati."
+                >Оригинальная техника. Гарантия подлинности.</span
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <span class="hero-orbit" aria-hidden="true"></span>
+            <span class="hero-outline-word" aria-hidden="true">meta</span>
+            <span class="product-coordinate" aria-hidden="true"
+              >01 / RAY-BAN META</span
+            >
+            <img
+              src="/hero-glasses.webp"
+              alt="Умные очки Ray-Ban Meta Wayfarer"
+              width="800"
+              height="337"
+              fetchpriority="high"
+              class="hero-product"
+            />
+            <span class="lens-callout"
+              ><span class="callout-dot"></span
+              ><span
+                data-ru="Твой взгляд. Твоя камера."
+                data-uz="Sizning nigohingiz. Sizning kamerangiz."
+                >Твой взгляд. Твоя камера.</span
+              ></span
+            >
+            <a
+              href="/ray-ban-meta-gen-1-clear/"
+              data-product-link="clear"
+              class="hero-product-link"
+              ><span
+                ><strong>Ray-Ban Meta</strong
+                ><span>Wayfarer · Gen 1</span></span
+              ><span class="round-arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-    </section>
-
-    <!-- Catalog Section -->
-    <section id="catalog" class="catalog">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="catalog.title">В наличии в Ташкенте</h2>
-                <p data-i18n="catalog.subtitle">Оригинальные Ray-Ban Meta Gen 1 и WHOOP MG Life с гарантией подлинности</p>
-            </div>
-
-            <!-- Category Dropdown -->
-            <div class="catalog-filters">
-                <div class="category-dropdown" id="categoryDropdown">
-                    <button type="button" class="category-dropdown-btn" id="categoryDropdownBtn">
-                        <span class="dropdown-label" data-i18n="catalog.category">Категория:</span>
-                        <span class="dropdown-selected" id="selectedCategory">В наличии</span>
-                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="category-dropdown-menu" id="categoryMenu">
-                        <button type="button" class="category-option active" data-category="instock"
-                            data-i18n="catalog.instock">В наличии</button>
-                        <button type="button" class="category-option" data-category="rayban-gen1">Ray-Ban Gen 1</button>
-                        <button type="button" class="category-option" data-category="rayban-gen2">Ray-Ban Gen 2</button>
-                        <button type="button" class="category-option" data-category="oakley">Oakley Meta</button>
-                        <button type="button" class="category-option" data-category="whoop">WHOOP</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Price Info Banner -->
-            <div class="price-info-banner">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="16" x2="12" y2="12" />
-                    <line x1="12" y1="8" x2="12.01" y2="8" />
-                </svg>
-                <span data-i18n="catalog.priceInfo">На сайте указаны актуальные розничные цены. Оптовую цену на партию запросите в Telegram.</span>
-                <a class="wholesale-link" href="https://t.me/techgeek_uz?text=Здравствуйте%21%20Хочу%20узнать%20оптовую%20цену%20на%20партию%20товара."
-                    target="_blank" rel="noopener">Запросить оптовую цену</a>
-            </div>
-
-            <!-- Products Grid -->
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be rendered by JavaScript -->
-            </div>
+        <div class="hero-bottom">
+          <span
+            ><span class="status-dot"></span
+            ><span data-ru="В наличии в Ташкенте" data-uz="Toshkentda mavjud"
+              >В наличии в Ташкенте</span
+            ></span
+          ><span
+            data-ru="Доставка по всей стране"
+            data-uz="Butun mamlakat bo‘ylab yetkazish"
+            >Доставка по всей стране</span
+          ><a
+            href="https://www.instagram.com/techgeek.uz/"
+            target="_blank"
+            rel="noopener"
+            >INSTAGRAM <span aria-hidden="true">↗</span></a
+          >
         </div>
-    </section>
+      </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="features.title">Возможности и характеристики</h2>
-                <p data-i18n="features.subtitle">Подробные спецификации наших продуктов</p>
-            </div>
-
-            <!-- Features Category Dropdown -->
-            <div class="features-filters">
-                <div class="category-dropdown" id="featuresDropdown">
-                    <button type="button" class="category-dropdown-btn" id="featuresDropdownBtn">
-                        <span class="dropdown-label">Продукт:</span>
-                        <span class="dropdown-selected" id="selectedFeatureCategory">Ray-Ban Meta Gen 1</span>
-                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="category-dropdown-menu" id="featuresMenu">
-                        <button type="button" class="category-option active" data-feature="rayban-gen1">Ray-Ban Meta Gen 1</button>
-                        <button type="button" class="category-option" data-feature="rayban-gen2">Ray-Ban Meta Gen 2</button>
-                        <button type="button" class="category-option" data-feature="oakley-hstn">Oakley Meta HSTN</button>
-                        <button type="button" class="category-option" data-feature="oakley-vanguard">Oakley Meta Vanguard</button>
-                        <button type="button" class="category-option" data-feature="whoop">WHOOP MG Life</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dynamic Features Grid -->
-            <div class="features-grid" id="featuresGrid">
-                <!-- Features will be rendered by JavaScript -->
-            </div>
+      <section
+        id="catalog"
+        class="catalog-section container"
+        aria-labelledby="catalogTitle"
+      >
+        <div class="section-heading">
+          <div>
+            <p
+              class="eyebrow"
+              data-ru="ВЫБРАНО TECHGEEK"
+              data-uz="TECHGEEK TANLOVI"
+            >
+              ВЫБРАНО TECHGEEK
+            </p>
+            <h2 id="catalogTitle">
+              <span data-ru="Меньше лишнего." data-uz="Kamroq ortiqcha."
+                >Меньше лишнего.</span
+              ><br />
+              <span data-ru="Больше твоего." data-uz="Ko‘proq sizniki."
+                >Больше твоего.</span
+              >
+            </h2>
+          </div>
+          <p
+            class="section-intro"
+            data-ru="Три устройства, которые хочется носить каждый день. Все — в наличии, с гарантией."
+            data-uz="Har kuni taqishni istaydigan uchta qurilma. Barchasi mavjud, kafolat bilan."
+          >
+            Три устройства, которые хочется носить каждый день. Все — в наличии,
+            с гарантией.
+          </p>
         </div>
-    </section>
-
-    <section id="delivery" class="trust-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="trust.title">Покупка без лишнего риска</h2>
-                <p data-i18n="trust.subtitle">Проверяем товар до передачи и остаёмся на связи после покупки</p>
-            </div>
-            <div class="trust-grid">
-                <article class="trust-item">
-                    <span class="trust-number">01</span>
-                    <div>
-                        <h3 data-i18n="trust.authTitle">Гарантия подлинности</h3>
-                        <p data-i18n="trust.authText">Продаём оригинальные устройства в заводской комплектации. Перед
-                            покупкой можно уточнить маркировку и комплект поставки.</p>
-                    </div>
-                </article>
-                <article class="trust-item">
-                    <span class="trust-number">02</span>
-                    <div>
-                        <h3 data-i18n="trust.warrantyTitle">Гарантия на заводской брак</h3>
-                        <p data-i18n="trust.warrantyText">Даём 1 месяц гарантии на заводской брак и заранее объясняем
-                            условия проверки устройства.</p>
-                    </div>
-                </article>
-                <article class="trust-item">
-                    <span class="trust-number">03</span>
-                    <div>
-                        <h3 data-i18n="trust.deliveryTitle">Доставка по Узбекистану</h3>
-                        <p data-i18n="trust.deliveryText">Согласуем удобный способ получения в Ташкенте или отправку в
-                            другой город. Срок и стоимость подтверждаем до заказа.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="trust-cta">
-                <a href="tel:+998992999900" class="btn btn-primary" data-i18n="trust.call">Позвонить
-                    +998&nbsp;99&nbsp;299&nbsp;99&nbsp;00</a>
-                <a href="https://www.instagram.com/techgeek.uz/" target="_blank" rel="noopener"
-                    class="btn btn-secondary">Instagram</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="faq-section">
-        <div class="container faq-container">
-            <div class="section-header">
-                <h2 data-i18n="faq.title">Частые вопросы</h2>
-                <p data-i18n="faq.subtitle">Коротко о наличии, оригинальности и доставке</p>
-            </div>
-            <div class="faq-list">
-                <details>
-                    <summary data-i18n="faq.stockQuestion">Какие модели сейчас в наличии?</summary>
-                    <p data-i18n="faq.stockAnswer">Ray-Ban Meta Gen 1 Wayfarer с прозрачными линзами, Ray-Ban Meta Gen 1
-                        Wayfarer Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество уточняйте перед заказом.</p>
-                </details>
-                <details>
-                    <summary data-i18n="faq.originalQuestion">Товары оригинальные?</summary>
-                    <p data-i18n="faq.originalAnswer">Да, мы продаём оригинальные устройства в заводской комплектации и
-                        предоставляем гарантию подлинности.</p>
-                </details>
-                <details>
-                    <summary data-i18n="faq.deliveryQuestion">Есть доставка по Ташкенту и Узбекистану?</summary>
-                    <p data-i18n="faq.deliveryAnswer">Да. По Ташкенту доставка бесплатная. Отправку в другие города
-                        согласовываем до подтверждения заказа.</p>
-                </details>
-                <details>
-                    <summary data-i18n="faq.priceQuestion">Как узнать актуальную розничную цену?</summary>
-                    <p data-i18n="faq.priceAnswer">На сайте указаны розничные цены за одну единицу. Для оптовой цены на
-                        партию напишите нам в Telegram.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#top" class="logo">
-                        <img src="images/logo.webp" alt="TechGeek.uz" class="logo-img" width="32" height="32">
-                        <span class="logo-ray">TechGeek</span>
-                        <span class="logo-meta">.uz</span>
-                    </a>
-                    <p data-i18n="footer.desc">Розничные и оптовые поставки из США, Европы, ОАЭ</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
-                    <a href="#features" data-i18n="nav.features">Характеристики</a>
-                    <a href="/ray-ban-meta/">Ray-Ban Meta</a>
-                    <a href="/umnye-ochki-s-kameroy-tashkent/">Умные очки с камерой</a>
-                    <a href="/ray-ban-meta-gen-1-vs-gen-2/">Gen 1 или Gen 2</a>
-                    <a href="/dostavka-i-garantiya/" data-i18n="nav.delivery">Доставка и гарантия</a>
-                    <a href="https://www.instagram.com/techgeek.uz/" target="_blank" rel="noopener">Instagram</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-disclaimer">
-                    <p data-i18n="footer.disclaimer1">Данный веб-сайт является информационной витриной и каталогом
-                        товаров. Мы не осуществляем продажу товаров непосредственно через этот сайт. На сайте
-                        отсутствуют механизмы онлайн-оплаты, денежные транзакции и платёжные посредники.</p>
-                    <p data-i18n="footer.disclaimer2">Все представленные цены носят ознакомительный характер. Для
-                        оформления заказа свяжитесь с нами через указанные контакты. Окончательные условия сделки
-                        согласовываются индивидуально.</p>
-                    <p data-i18n="footer.privacy">Отправляя свои контактные данные (имя, номер телефона), вы даёте
-                        согласие на их обработку для связи с вами по вопросам заказа. Мы не передаём ваши данные третьим
-                        лицам и используем их исключительно для обработки вашего запроса.</p>
-                </div>
-                <p>&copy; 2026 TechGeek.uz. <span data-i18n="footer.rights">Все права защищены.</span></p>
-                <div class="exchange-rate-indicator">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 6v6l4 2" />
-                    </svg>
-                    <span data-i18n="rate.label">Курс ЦБ:</span>
-                    <span id="exchangeRateValue">1 USD = ... сум</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Cart Sidebar -->
-    <div class="cart-overlay" id="cartOverlay"></div>
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h3 data-i18n="cart.title">Корзина</h3>
-            <button type="button" class="cart-close" id="cartClose" aria-label="Закрыть корзину">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
+        <div class="catalog-toolbar">
+          <div class="filter-tabs" aria-label="Категории товаров">
+            <button
+              type="button"
+              data-filter="all"
+              class="active"
+              aria-pressed="true"
+            >
+              <span data-ru="Все устройства" data-uz="Barcha qurilmalar"
+                >Все устройства</span
+              ><span class="filter-count">03</span></button
+            ><button type="button" data-filter="rayban" aria-pressed="false">
+              Ray-Ban Meta</button
+            ><button type="button" data-filter="whoop" aria-pressed="false">
+              WHOOP
             </button>
+          </div>
+          <div class="currency-switch" aria-label="Валюта">
+            <button
+              type="button"
+              data-currency="USD"
+              class="active"
+              aria-pressed="true"
+            >
+              USD</button
+            ><button type="button" data-currency="UZS" aria-pressed="false">
+              UZS
+            </button>
+          </div>
         </div>
-
-        <div class="cart-items" id="cartItems">
-            <!-- Cart items will be rendered here -->
-        </div>
-
-        <div class="cart-empty" id="cartEmpty">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="9" cy="21" r="1" />
-                <circle cx="20" cy="21" r="1" />
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-            </svg>
-            <p data-i18n="cart.empty">Корзина пуста</p>
-        </div>
-
-        <div class="cart-footer" id="cartFooter">
-            <div class="cart-pricing-info" id="cartPricingInfo">
-                <!-- Pricing info will be shown here -->
-            </div>
-            <div class="cart-total">
-                <span data-i18n="cart.total">Итого:</span>
-                <span class="cart-total-value" id="cartTotalValue">$0</span>
-            </div>
-            <button type="button" class="btn btn-secondary cart-clear" id="cartClear"
-                data-i18n="cart.clear">Очистить всё</button>
-            <button type="button" class="btn btn-primary btn-full" id="checkoutBtn"
-                data-i18n="cart.checkout">Оформить заказ</button>
-        </div>
-    </div>
-
-    <!-- Checkout Modal -->
-    <div class="modal-overlay" id="checkoutModal">
-        <div class="modal">
-            <div class="modal-header">
-                <h3 data-i18n="checkout.title">Оформление заказа</h3>
-                <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть окно">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18" />
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="order-summary" id="orderSummary">
-                    <!-- Order summary will be rendered here -->
+        <p id="currencyNote" class="currency-note" aria-live="polite"></p>
+        <div class="product-grid" id="productsGrid">
+          <article
+            class="product-card"
+            data-category="rayban"
+            data-product-id="clear"
+          >
+            <a
+              class="product-picture"
+              href="/ray-ban-meta-gen-1-clear/"
+              data-product-link="clear"
+              ><span class="stock-label"
+                ><span class="status-dot"></span
+                ><span data-ru="В наличии" data-uz="Mavjud"
+                  >В наличии</span
+                ></span
+              ><span class="product-index">01</span
+              ><img
+                src="/images/store-clear.webp"
+                alt="Ray-Ban Meta Gen 1 Clear, прозрачные линзы"
+                width="1000"
+                height="716"
+                loading="lazy"
+              /><span class="picture-caption">CLEAR LENS</span
+              ><span class="picture-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="product-info">
+              <div class="product-kicker">RAY-BAN META · GEN 1</div>
+              <h3 class="product-name">
+                <a href="/ray-ban-meta-gen-1-clear/" data-product-link="clear"
+                  >Wayfarer Clear</a
+                >
+              </h3>
+              <p
+                data-ru="Прозрачные линзы. Твой взгляд без фильтров."
+                data-uz="Shaffof linzalar. Filtrlarsiz nigohingiz."
+              >
+                Прозрачные линзы. Твой взгляд без фильтров.
+              </p>
+              <div class="product-options">
+                <span class="color-swatch black"></span
+                ><span>Shiny Black / Clear</span>
+              </div>
+              <div class="product-buy">
+                <div>
+                  <strong data-price="clear">$280</strong
+                  ><span
+                    data-ru="за одно устройство"
+                    data-uz="bitta qurilma uchun"
+                    >за одно устройство</span
+                  >
                 </div>
-
-                <!-- Order Form with Telegram Send -->
-                <form class="checkout-form" id="checkoutForm">
-                    <div class="form-group">
-                        <label for="customerName" data-i18n="checkout.name">Имя</label>
-                        <input type="text" id="customerName" name="name" required
-                            data-i18n-placeholder="checkout.namePlaceholder" placeholder="Ваше имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="customerPhone" data-i18n="checkout.phone">Телефон</label>
-                        <input type="tel" id="customerPhone" name="phone" required placeholder="+998 __ ___ __ __"
-                            pattern="\+[0-9]{12,13}" title="Введите номер в формате +998XXXXXXXXX">
-                    </div>
-
-                    <div class="telegram-send-section">
-                        <p class="telegram-hint">Нажмите кнопку ниже — откроется Telegram с вашим заказом</p>
-                        <button type="submit" class="btn btn-telegram" id="sendViaTelegram">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                                <path
-                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                            </svg>
-                            Отправить через Telegram
-                        </button>
-                    </div>
-                </form>
+                <button
+                  type="button"
+                  data-add="clear"
+                  class="add-button"
+                  aria-label="Добавить Wayfarer Clear в корзину"
+                  data-aria-ru="Добавить Wayfarer Clear в корзину"
+                  data-aria-uz="Wayfarer Clear savatga qo‘shish"
+                >
+                  <span data-ru="В корзину" data-uz="Savatga">В корзину</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </div>
             </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="rayban"
+            data-product-id="chameleon"
+          >
+            <a
+              class="product-picture"
+              href="/ray-ban-meta-gen-1-chameleon/"
+              data-product-link="chameleon"
+              ><span class="stock-label"
+                ><span class="status-dot"></span
+                ><span data-ru="В наличии" data-uz="Mavjud"
+                  >В наличии</span
+                ></span
+              ><span class="product-index">02</span
+              ><img
+                src="/images/store-chameleon.webp"
+                alt="Ray-Ban Meta Gen 1 Matte Chameleon, фотохромные линзы"
+                width="1000"
+                height="883"
+                loading="lazy"
+              /><span class="picture-caption">TRANSITIONS® LENS</span
+              ><span class="picture-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="product-info">
+              <div class="product-kicker">RAY-BAN META · GEN 1</div>
+              <h3 class="product-name">
+                <a
+                  href="/ray-ban-meta-gen-1-chameleon/"
+                  data-product-link="chameleon"
+                  >Wayfarer Chameleon</a
+                >
+              </h3>
+              <p
+                data-ru="Линзы, которые меняются вместе со светом."
+                data-uz="Yorug‘lik bilan birga o‘zgaradigan linzalar."
+              >
+                Линзы, которые меняются вместе со светом.
+              </p>
+              <div class="product-options">
+                <span class="color-swatch graphite"></span
+                ><span>Matte Black / Chameleon</span>
+              </div>
+              <div class="product-buy">
+                <div>
+                  <strong data-price="chameleon">$350</strong
+                  ><span
+                    data-ru="за одно устройство"
+                    data-uz="bitta qurilma uchun"
+                    >за одно устройство</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  data-add="chameleon"
+                  class="add-button"
+                  aria-label="Добавить Wayfarer Chameleon в корзину"
+                  data-aria-ru="Добавить Wayfarer Chameleon в корзину"
+                  data-aria-uz="Wayfarer Chameleon savatga qo‘shish"
+                >
+                  <span data-ru="В корзину" data-uz="Savatga">В корзину</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-category="whoop"
+            data-product-id="whoop"
+          >
+            <a
+              class="product-picture whoop-picture"
+              href="/whoop-mg-life/"
+              data-product-link="whoop"
+              ><span class="stock-label"
+                ><span class="status-dot"></span
+                ><span data-ru="В наличии" data-uz="Mavjud"
+                  >В наличии</span
+                ></span
+              ><span class="product-index">03</span
+              ><img
+                src="/images/store-whoop.webp"
+                alt="Чёрный фитнес-браслет WHOOP MG Life 5.0"
+                width="800"
+                height="918"
+                loading="lazy"
+              /><span class="picture-caption">KNOW YOURSELF BETTER</span
+              ><span class="picture-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="product-info">
+              <div class="product-kicker">WHOOP · 5.0</div>
+              <h3 class="product-name">
+                <a href="/whoop-mg-life/" data-product-link="whoop">MG Life</a>
+              </h3>
+              <p
+                data-ru="Больше понимания себя. Без лишнего экрана."
+                data-uz="O‘zingizni yaxshiroq anglang. Ortiqcha ekransiz."
+              >
+                Больше понимания себя. Без лишнего экрана.
+              </p>
+              <div class="product-options">
+                <span class="color-swatch black"></span
+                ><span>Black / Life</span>
+              </div>
+              <div class="product-buy">
+                <div>
+                  <strong data-price="whoop">$355</strong
+                  ><span
+                    data-ru="за одно устройство"
+                    data-uz="bitta qurilma uchun"
+                    >за одно устройство</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  data-add="whoop"
+                  class="add-button"
+                  aria-label="Добавить WHOOP MG Life в корзину"
+                  data-aria-ru="Добавить WHOOP MG Life в корзину"
+                  data-aria-uz="WHOOP MG Life savatga qo‘shish"
+                >
+                  <span data-ru="В корзину" data-uz="Savatga">В корзину</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
-    </div>
+        <div class="catalog-footnote">
+          <span
+            data-ru="Розничные цены. Бесплатная доставка включена."
+            data-uz="Chakana narxlar. Bepul yetkazib berish kiritilgan."
+            >Розничные цены. Бесплатная доставка включена.</span
+          ><a
+            class="text-link wholesale-link"
+            href="https://t.me/techgeek_uz?text=Здравствуйте!%20Хочу%20узнать%20оптовую%20цену%20на%20партию."
+            target="_blank"
+            rel="noopener"
+            ><span
+              data-ru="Нужна партия? Обсудим опт"
+              data-uz="Partiya kerakmi? Ulgurji narxni so‘rang"
+              >Нужна партия? Обсудим опт</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <noscript
+          ><p class="noscript-note">
+            Чтобы воспользоваться корзиной, включите JavaScript. Заказать также
+            можно по телефону
+            <a href="tel:+998992999900">+998 99 299 99 00</a> или в
+            <a href="https://t.me/techgeek_uz">Telegram</a>.
+          </p></noscript
+        >
+      </section>
 
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">
-        <span class="toast-message" id="toastMessage"></span>
-    </div>
+      <section
+        id="features"
+        class="feature-section container"
+        aria-labelledby="featureTitle"
+      >
+        <div class="feature-panel">
+          <div class="feature-copy">
+            <p class="eyebrow">RAY-BAN META</p>
+            <h2 id="featureTitle">
+              <span data-ru="Руки свободны." data-uz="Qo‘llar erkin."
+                >Руки свободны.</span
+              ><br /><span
+                data-ru="Моменты — с тобой."
+                data-uz="Lahzalar — siz bilan."
+                >Моменты — с тобой.</span
+              >
+            </h2>
+            <p
+              data-ru="Снимай то, что видишь. Слушай любимое. Принимай звонки. Всё это — в знакомой оправе Wayfarer."
+              data-uz="Ko‘rganingizni suratga oling. Sevimli musiqangizni tinglang. Qo‘ng‘iroqlarga javob bering. Barchasi — tanish Wayfarer gardishida."
+            >
+              Снимай то, что видишь. Слушай любимое. Принимай звонки. Всё это —
+              в знакомой оправе Wayfarer.
+            </p>
+            <a
+              class="light-link"
+              href="/ray-ban-meta/"
+              data-href-ru="/ray-ban-meta/"
+              data-href-uz="/uz/ray-ban-meta/"
+              ><span
+                data-ru="Познакомиться с Ray-Ban Meta"
+                data-uz="Ray-Ban Meta bilan tanishing"
+                >Познакомиться с Ray-Ban Meta</span
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="feature-visual">
+            <span class="feature-line" aria-hidden="true"></span
+            ><img
+              src="/hero-glasses.webp"
+              alt="Ray-Ban Meta — камера и открытые динамики в оправе"
+              width="800"
+              height="337"
+              loading="lazy"
+            />
+            <div class="feature-caption">
+              <span>12 MP</span
+              ><span
+                data-ru="Камера твоего взгляда"
+                data-uz="Nigohingiz kamerasi"
+                >Камера твоего взгляда</span
+              >
+            </div>
+          </div>
+          <div class="feature-specs">
+            <div>
+              <span class="spec-number">01</span
+              ><strong
+                data-ru="Снимай от первого лица"
+                data-uz="Birinchi shaxsdan suratga oling"
+                >Снимай от первого лица</strong
+              ><span
+                data-ru="Фото и видео одним касанием"
+                data-uz="Bir tegishda foto va video"
+                >Фото и видео одним касанием</span
+              >
+            </div>
+            <div>
+              <span class="spec-number">02</span
+              ><strong data-ru="Оставайся на связи" data-uz="Aloqada qoling"
+                >Оставайся на связи</strong
+              ><span
+                data-ru="Звонки и открытый звук"
+                data-uz="Qo‘ng‘iroqlar va ochiq ovoz"
+                >Звонки и открытый звук</span
+              >
+            </div>
+            <div>
+              <span class="spec-number">03</span
+              ><strong data-ru="Носи каждый день" data-uz="Har kuni taqing"
+                >Носи каждый день</strong
+              ><span
+                data-ru="Классический дизайн Wayfarer"
+                data-uz="Klassik Wayfarer dizayni"
+                >Классический дизайн Wayfarer</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Floating Contact Button -->
-    <div class="contact-fab">
-        <button type="button" class="fab-main" id="fabMain" aria-label="Открыть способы связи">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
+      <section
+        id="difference"
+        class="choice-section container"
+        aria-labelledby="choiceTitle"
+      >
+        <div class="section-heading">
+          <div>
+            <p
+              class="eyebrow"
+              data-ru="ПОД ТВОЙ РИТМ"
+              data-uz="SIZNING RITMINGIZ UCHUN"
+            >
+              ПОД ТВОЙ РИТМ
+            </p>
+            <h2
+              id="choiceTitle"
+              data-ru="Твой день. Твой выбор."
+              data-uz="Sizning kuningiz. Sizning tanlovingiz."
+            >
+              Твой день. Твой выбор.
+            </h2>
+          </div>
+          <p
+            class="section-intro"
+            data-ru="Начни с того, что для тебя важнее."
+            data-uz="Siz uchun eng muhimidan boshlang."
+          >
+            Начни с того, что для тебя важнее.
+          </p>
+        </div>
+        <div class="choice-grid">
+          <a
+            href="/ray-ban-meta-gen-1-clear/"
+            data-product-link="clear"
+            class="choice-card"
+            ><div class="choice-top">
+              <span class="choice-number">01 / CLEAR</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <h3
+              data-ru="Работа. Город. Каждый день."
+              data-uz="Ish. Shahar. Har kuni."
+            >
+              Работа. Город.<br />Каждый день.
+            </h3>
+            <p
+              data-ru="Прозрачные линзы для помещений и повседневных дел. Все возможности Meta — всегда рядом."
+              data-uz="Xonalar va kundalik ishlar uchun shaffof linzalar. Meta imkoniyatlari doimo yoningizda."
+            >
+              Прозрачные линзы для помещений и повседневных дел. Все возможности
+              Meta — всегда рядом.
+            </p>
+            <span class="choice-bottom"
+              >Wayfarer Clear <span data-price="clear">$280</span></span
+            ></a
+          >
+          <a
+            href="/ray-ban-meta-gen-1-chameleon/"
+            data-product-link="chameleon"
+            class="choice-card"
+            ><div class="choice-top">
+              <span class="choice-number">02 / CHAMELEON</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <h3
+              data-ru="Из офиса — навстречу солнцу."
+              data-uz="Ofisdan — quyosh sari."
+            >
+              Из офиса —<br />навстречу солнцу.
+            </h3>
+            <p
+              data-ru="Фотохромные линзы адаптируются к освещению. Одна оправа для разных планов на день."
+              data-uz="Fotoxrom linzalar yorug‘likka moslashadi. Kunning turli rejalari uchun bitta gardish."
+            >
+              Фотохромные линзы адаптируются к освещению. Одна оправа для разных
+              планов на день.
+            </p>
+            <span class="choice-bottom"
+              >Wayfarer Chameleon <span data-price="chameleon">$350</span></span
+            ></a
+          >
+          <a
+            href="/whoop-mg-life/"
+            data-product-link="whoop"
+            class="choice-card choice-whoop"
+            ><div class="choice-top">
+              <span class="choice-number">03 / WHOOP</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <h3 data-ru="Пойми свой ритм." data-uz="O‘z ritmingizni anglang.">
+              Пойми<br />свой ритм.
+            </h3>
+            <p
+              data-ru="Сон, нагрузка и восстановление в одном браслете. Подробности подписки Life уточним перед заказом."
+              data-uz="Uyqu, yuklama va tiklanish bitta bilaguzukda. Life obunasi tafsilotlarini buyurtmadan oldin aniqlashtiramiz."
+            >
+              Сон, нагрузка и восстановление в одном браслете. Подробности
+              подписки Life уточним перед заказом.
+            </p>
+            <span class="choice-bottom"
+              >WHOOP MG Life <span data-price="whoop">$355</span></span
+            ></a
+          >
+        </div>
+      </section>
+
+      <section
+        id="delivery"
+        class="service-section container"
+        aria-labelledby="serviceTitle"
+      >
+        <div class="service-heading">
+          <p class="eyebrow">THE TECHGEEK WAY</p>
+          <h2 id="serviceTitle">
+            <span data-ru="Хорошая техника." data-uz="Yaxshi texnika."
+              >Хорошая техника.</span
+            ><br />
+            <span data-ru="Нормальный сервис." data-uz="Ishonchli xizmat."
+              >Нормальный сервис.</span
+            >
+          </h2>
+          <a
+            class="text-link"
+            href="/dostavka-i-garantiya/"
+            data-href-ru="/dostavka-i-garantiya/"
+            data-href-uz="/uz/yetkazib-berish-va-kafolat/"
+            ><span data-ru="Все условия" data-uz="Barcha shartlar"
+              >Все условия</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="service-items">
+          <article>
+            <span class="service-symbol" aria-hidden="true">↗</span>
+            <div>
+              <h3
+                data-ru="24 часа. Доставка за наш счёт."
+                data-uz="24 soat. Yetkazish bizning hisobimizdan."
+              >
+                24 часа. Доставка за наш счёт.
+              </h3>
+              <p
+                data-ru="По Ташкенту и всему Узбекистану — бесплатно, обычно в течение суток после подтверждения заказа."
+                data-uz="Toshkent va butun O‘zbekiston bo‘ylab bepul, odatda buyurtma tasdiqlangandan keyin bir sutka ichida."
+              >
+                По Ташкенту и всему Узбекистану — бесплатно, обычно в течение
+                суток после подтверждения заказа.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="service-symbol" aria-hidden="true">✓</span>
+            <div>
+              <h3
+                data-ru="Оригинал. Без компромиссов."
+                data-uz="Original. Murosasiz."
+              >
+                Оригинал. Без компромиссов.
+              </h3>
+              <p
+                data-ru="Гарантируем подлинность. Проверяем внешний вид и комплектность перед передачей."
+                data-uz="Originalligiga kafolat beramiz. Topshirishdan oldin tashqi ko‘rinish va komplektni tekshiramiz."
+              >
+                Гарантируем подлинность. Проверяем внешний вид и комплектность
+                перед передачей.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="service-symbol" aria-hidden="true">+</span>
+            <div>
+              <h3
+                data-ru="Остаёмся рядом после покупки."
+                data-uz="Xariddan keyin ham yoningizdamiz."
+              >
+                Остаёмся рядом после покупки.
+              </h3>
+              <p
+                data-ru="Гарантия на заводской брак — 1 месяц. При подтверждённом дефекте обратную доставку оплачиваем мы."
+                data-uz="Zavod nuqsoniga 1 oy kafolat. Nuqson tasdiqlansa, qaytarib yetkazishni biz to‘laymiz."
+              >
+                Гарантия на заводской брак — 1 месяц. При подтверждённом дефекте
+                обратную доставку оплачиваем мы.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="social-section container" aria-labelledby="socialTitle">
+        <div class="social-panel">
+          <div>
+            <p
+              class="eyebrow"
+              data-ru="БЛИЖЕ, ЧЕМ КАЖЕТСЯ"
+              data-uz="O‘YLAGANINGIZDAN YAQINROQ"
+            >
+              БЛИЖЕ, ЧЕМ КАЖЕТСЯ
+            </p>
+            <h2 id="socialTitle">
+              <span data-ru="На связи." data-uz="Aloqadamiz.">На связи.</span
+              ><br />
+              <span data-ru="В твоей ленте." data-uz="Sizning lentangizda."
+                >В твоей ленте.</span
+              >
+            </h2>
+            <p
+              data-ru="Посмотри на гаджеты поближе и задай любой вопрос в Instagram."
+              data-uz="Instagram’da gadjetlar bilan yaqindan tanishing va istalgan savolingizni bering."
+            >
+              Посмотри на гаджеты поближе и задай любой вопрос в Instagram.
+            </p>
+            <a
+              href="https://www.instagram.com/techgeek.uz/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-dark"
+              >@techgeek.uz <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="social-art" aria-hidden="true">
+            <span class="social-orbit"></span
+            ><span class="social-word">BE<br />GEEK.</span
+            ><img
+              src="/images/store-whoop.webp"
+              alt=""
+              width="800"
+              height="918"
+              loading="lazy"
+            /><span class="social-sticker">GOOD TECH.<br />GOOD DAYS.</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="faq"
+        class="faq-section container"
+        aria-labelledby="faqTitle"
+      >
+        <div class="faq-heading">
+          <p class="eyebrow" data-ru="ВСЁ ПРОСТО" data-uz="HAMMASI OSON">
+            ВСЁ ПРОСТО
+          </p>
+          <h2
+            id="faqTitle"
+            data-ru="Остались вопросы?"
+            data-uz="Savollar qoldimi?"
+          >
+            Остались<br />вопросы?
+          </h2>
+          <a
+            href="https://t.me/techgeek_uz"
+            target="_blank"
+            rel="noopener"
+            class="text-link"
+            ><span
+              data-ru="Спросить нас в Telegram"
+              data-uz="Telegram’da so‘rang"
+              >Спросить нас в Telegram</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary
+              data-ru="Как оформить заказ?"
+              data-uz="Qanday buyurtma berish mumkin?"
+            >
+              Как оформить заказ?
+            </summary>
+            <p
+              data-ru="Добавьте устройство в корзину и нажмите «Продолжить в Telegram». Откроется чат с готовым текстом — отправьте его нам. Подтвердим наличие, комплектацию, итоговую сумму и доставку. Можно также позвонить: +998 99 299 99 00."
+              data-uz="Qurilmani savatga qo‘shib, «Telegram’da davom etish» tugmasini bosing. Tayyor matnli chat ochiladi — uni bizga yuboring. Mavjudlik, komplekt, yakuniy summa va yetkazishni tasdiqlaymiz. Shuningdek, +998 99 299 99 00 raqamiga qo‘ng‘iroq qilishingiz mumkin."
+            >
+              Добавьте устройство в корзину и нажмите «Продолжить в Telegram».
+              Откроется чат с готовым текстом — отправьте его нам. Подтвердим
+              наличие, комплектацию, итоговую сумму и доставку. Можно также
+              позвонить: +998 99 299 99 00.
+            </p>
+          </details>
+          <details>
+            <summary
+              data-ru="Какие модели сейчас в наличии?"
+              data-uz="Hozir qaysi modellar mavjud?"
+            >
+              Какие модели сейчас в наличии?
+            </summary>
+            <p
+              data-ru="Ray-Ban Meta Gen 1 Wayfarer Clear, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество и доступный размер оправы подтверждаем перед заказом."
+              data-uz="Ray-Ban Meta Gen 1 Wayfarer Clear, Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon va WHOOP MG Life 5.0. Aniq soni va gardish o‘lchamini buyurtmadan oldin tasdiqlaymiz."
+            >
+              Ray-Ban Meta Gen 1 Wayfarer Clear, Ray-Ban Meta Gen 1 Wayfarer
+              Matte Chameleon и WHOOP MG Life 5.0. Актуальное количество и
+              доступный размер оправы подтверждаем перед заказом.
+            </p>
+          </details>
+          <details>
+            <summary
+              data-ru="Товары оригинальные?"
+              data-uz="Mahsulotlar originalmi?"
+            >
+              Товары оригинальные?
+            </summary>
+            <p
+              data-ru="Да. Продаём оригинальные устройства в заводской комплектации и предоставляем гарантию подлинности. Перед покупкой можно уточнить маркировку и комплект поставки."
+              data-uz="Ha. Original qurilmalarni zavod komplektida sotamiz va originalligiga kafolat beramiz. Xariddan oldin markirovka va komplektni aniqlashtirish mumkin."
+            >
+              Да. Продаём оригинальные устройства в заводской комплектации и
+              предоставляем гарантию подлинности. Перед покупкой можно уточнить
+              маркировку и комплект поставки.
+            </p>
+          </details>
+          <details>
+            <summary
+              data-ru="Есть доставка по Ташкенту и Узбекистану?"
+              data-uz="Toshkent va O‘zbekiston bo‘ylab yetkazish bormi?"
+            >
+              Есть доставка по Ташкенту и Узбекистану?
+            </summary>
+            <p
+              data-ru="Да. Доставка бесплатная по всей стране, обычно до 24 часов после подтверждения заказа. Точный интервал согласуем с вами."
+              data-uz="Ha. Butun mamlakat bo‘ylab yetkazish bepul, odatda buyurtma tasdiqlangandan keyin 24 soatgacha. Aniq vaqtni siz bilan kelishamiz."
+            >
+              Да. Доставка бесплатная по всей стране, обычно до 24 часов после
+              подтверждения заказа. Точный интервал согласуем с вами.
+            </p>
+          </details>
+          <details>
+            <summary
+              data-ru="Какие условия гарантии и возврата?"
+              data-uz="Kafolat va qaytarish shartlari qanday?"
+            >
+              Какие условия гарантии и возврата?
+            </summary>
+            <p
+              data-ru="На заводской брак действует гарантия 1 месяц. При подтверждённом заводском дефекте возможны возврат или обмен, обратную доставку оплачиваем мы. Повреждения по вине покупателя не покрываются этой гарантией. Подробные условия — на странице доставки и гарантии."
+              data-uz="Zavod nuqsoniga 1 oy kafolat amal qiladi. Zavod nuqsoni tasdiqlansa, qaytarish yoki almashtirish mumkin, qaytarib yetkazishni biz to‘laymiz. Xaridor aybi bilan yuzaga kelgan shikastlar ushbu kafolatga kirmaydi. Tafsilotlar yetkazish va kafolat sahifasida."
+            >
+              На заводской брак действует гарантия 1 месяц. При подтверждённом
+              заводском дефекте возможны возврат или обмен, обратную доставку
+              оплачиваем мы. Повреждения по вине покупателя не покрываются этой
+              гарантией. Подробные условия — на странице доставки и гарантии.
+            </p>
+          </details>
+          <details>
+            <summary
+              data-ru="Как узнать актуальную розничную цену?"
+              data-uz="Chakana narxni qanday bilish mumkin?"
+            >
+              Как узнать актуальную розничную цену?
+            </summary>
+            <p
+              data-ru="На сайте указаны розничные цены за одну единицу. Пересчёт в сумы ориентировочный, по курсу ЦБ Узбекистана. Итоговую сумму и способ оплаты согласуем перед покупкой. Для оптовой цены на партию напишите нам в Telegram."
+              data-uz="Saytda bir dona uchun chakana narxlar ko‘rsatilgan. So‘mdagi hisob O‘zbekiston Markaziy banki kursi bo‘yicha taxminiy. Yakuniy summa va to‘lov usulini xariddan oldin kelishamiz. Partiya uchun ulgurji narxni Telegram’da so‘rang."
+            >
+              На сайте указаны розничные цены за одну единицу. Пересчёт в сумы
+              ориентировочный, по курсу ЦБ Узбекистана. Итоговую сумму и способ
+              оплаты согласуем перед покупкой. Для оптовой цены на партию
+              напишите нам в Telegram.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section container">
+        <div>
+          <p
+            class="eyebrow"
+            data-ru="ТВОЙ СЛЕДУЮЩИЙ ГАДЖЕТ — ЗДЕСЬ"
+            data-uz="KEYINGI GADJETINGIZ — SHU YERDA"
+          >
+            ТВОЙ СЛЕДУЮЩИЙ ГАДЖЕТ — ЗДЕСЬ
+          </p>
+          <h2
+            data-ru="Давай подберём твой."
+            data-uz="Keling, siznikini tanlaymiz."
+          >
+            Давай подберём твой.
+          </h2>
+        </div>
+        <a href="tel:+998992999900" class="contact-phone"
+          >+998 99 299 99 00 <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="/" class="brand"
+              ><span class="brand-mark" aria-hidden="true">t<span>g</span></span
+              >TechGeek<span class="brand-domain">.uz</span></a
+            >
+            <p
+              data-ru="Техника, с которой хочется жить."
+              data-uz="Birga yashashni istaydigan texnika."
+            >
+              Техника, с которой хочется жить.
+            </p>
+            <p
+              class="footer-address"
+              data-ru="Ташкент, ул. Шота Руставели, 41"
+              data-uz="Toshkent, Shota Rustaveli ko‘chasi, 41"
+            >
+              Ташкент, ул. Шота Руставели, 41
+            </p>
+            <span class="footer-hours"
+              ><span class="status-dot"></span
+              ><span
+                data-ru="Принимаем заказы 24/7"
+                data-uz="Buyurtmalarni 24/7 qabul qilamiz"
+                >Принимаем заказы 24/7</span
+              ></span
+            >
+          </div>
+          <div class="footer-column">
+            <h3 data-ru="Выбрать" data-uz="Tanlash">Выбрать</h3>
+            <a href="/ray-ban-meta-gen-1-clear/" data-product-link="clear"
+              >Wayfarer Clear</a
+            ><a
+              href="/ray-ban-meta-gen-1-chameleon/"
+              data-product-link="chameleon"
+              >Wayfarer Chameleon</a
+            ><a href="/whoop-mg-life/" data-product-link="whoop"
+              >WHOOP MG Life</a
+            >
+          </div>
+          <div class="footer-column">
+            <h3 data-ru="Разобраться" data-uz="Bilish">Разобраться</h3>
+            <a
+              href="/ray-ban-meta/"
+              data-href-ru="/ray-ban-meta/"
+              data-href-uz="/uz/ray-ban-meta/"
+              >Ray-Ban Meta</a
+            ><a
+              href="/ray-ban-meta-gen-1-vs-gen-2/"
+              data-href-ru="/ray-ban-meta-gen-1-vs-gen-2/"
+              data-href-uz="/uz/ray-ban-meta-gen-1-vs-gen-2/"
+              >Gen 1 / Gen 2</a
+            ><a
+              href="/umnye-ochki-s-kameroy-tashkent/"
+              data-href-ru="/umnye-ochki-s-kameroy-tashkent/"
+              data-href-uz="/uz/kamerali-aqlli-kozoynak-toshkent/"
+              data-ru="Умные очки с камерой"
+              data-uz="Kamerali aqlli ko‘zoynaklar"
+              >Умные очки с камерой</a
+            ><a
+              href="/dostavka-i-garantiya/"
+              data-href-ru="/dostavka-i-garantiya/"
+              data-href-uz="/uz/yetkazib-berish-va-kafolat/"
+              data-ru="Доставка и гарантия"
+              data-uz="Yetkazish va kafolat"
+              >Доставка и гарантия</a
+            >
+          </div>
+          <div class="footer-column">
+            <h3 data-ru="Быть на связи" data-uz="Aloqada bo‘lish">
+              Быть на связи
+            </h3>
+            <a
+              href="https://www.instagram.com/techgeek.uz/"
+              target="_blank"
+              rel="noopener"
+              >Instagram ↗</a
+            ><a href="https://t.me/techgeek_uz" target="_blank" rel="noopener"
+              >Telegram ↗</a
+            ><a href="tel:+998992999900">+998 99 299 99 00</a>
+          </div>
+        </div>
+        <div class="footer-fineprint">
+          <span>© 2026 TechGeek.uz</span
+          ><span
+            data-ru="Заказ подтверждается в переписке. Онлайн-оплата на сайте не принимается."
+            data-uz="Buyurtma yozishmada tasdiqlanadi. Saytda onlayn to‘lov qabul qilinmaydi."
+            >Заказ подтверждается в переписке. Онлайн-оплата на сайте не
+            принимается.</span
+          ><a href="/privacy/" data-ru="Конфиденциальность" data-uz="Maxfiylik"
+            >Конфиденциальность</a
+          >
+        </div>
+        <div class="footer-wordmark" aria-hidden="true">TechGeek.</div>
+      </div>
+    </footer>
+    <dialog id="cartDialog" class="cart-dialog" aria-labelledby="cartTitle">
+      <div class="cart-heading">
+        <div>
+          <p class="eyebrow">YOUR EVERYDAY TECH</p>
+          <h2 id="cartTitle" data-ru="Твой выбор" data-uz="Sizning tanlovingiz">
+            Твой выбор
+          </h2>
+        </div>
+        <button
+          type="button"
+          class="icon-button"
+          data-cart-close
+          aria-label="Закрыть корзину"
+          data-aria-ru="Закрыть корзину"
+          data-aria-uz="Savatni yopish"
+        >
+          ×
         </button>
-        <div class="fab-options" id="fabOptions">
-            <a href="tel:+998992999900" class="fab-option fab-phone" data-i18n-title="contact.call">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-                <span data-i18n="contact.call">Позвонить</span>
-            </a>
-            <a href="https://t.me/techgeek_uz" target="_blank" class="fab-option fab-telegram">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                </svg>
-                <span>Telegram</span>
-            </a>
-            <a href="https://www.instagram.com/techgeek.uz/" target="_blank" rel="noopener"
-                class="fab-option fab-instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
-                </svg>
-                <span>Instagram</span>
-            </a>
+      </div>
+      <div id="cartEmpty" class="cart-empty">
+        <span class="empty-bag" aria-hidden="true">+</span>
+        <h3
+          data-ru="Здесь будет твой следующий гаджет"
+          data-uz="Keyingi gadjetingiz shu yerda bo‘ladi"
+        >
+          Здесь будет твой следующий гаджет
+        </h3>
+        <p
+          data-ru="Выбери то, что подходит твоему ритму."
+          data-uz="Ritmingizga mosini tanlang."
+        >
+          Выбери то, что подходит твоему ритму.
+        </p>
+        <button
+          type="button"
+          data-cart-close
+          class="btn btn-primary"
+          data-ru="К устройствам"
+          data-uz="Qurilmalarga"
+        >
+          К устройствам
+        </button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div id="cartSummary" class="cart-summary" hidden>
+        <div class="cart-shipping">
+          <span
+            data-ru="Доставка по Узбекистану"
+            data-uz="O‘zbekiston bo‘ylab yetkazish"
+            >Доставка по Узбекистану</span
+          ><strong data-ru="Бесплатно" data-uz="Bepul">Бесплатно</strong>
         </div>
-    </div>
-
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
-    <script src="/analytics.js"></script>
-</body>
-
+        <div class="cart-total">
+          <span data-ru="Итого" data-uz="Jami">Итого</span
+          ><strong id="cartTotal">$0</strong>
+        </div>
+        <p id="cartCurrencyNote" class="currency-note"></p>
+        <a
+          id="checkoutLink"
+          href="https://t.me/techgeek_uz"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+          ><span
+            data-ru="Продолжить в Telegram"
+            data-uz="Telegram’da davom etish"
+            >Продолжить в Telegram</span
+          ><span aria-hidden="true">↗</span></a
+        >
+        <p
+          class="checkout-note"
+          data-ru="Откроется чат с готовым текстом заказа. Отправьте сообщение — мы подтвердим наличие и договоримся о доставке."
+          data-uz="Buyurtma matni tayyor chat ochiladi. Xabarni yuboring — mavjudlikni tasdiqlab, yetkazishni kelishamiz."
+        >
+          Откроется чат с готовым текстом заказа. Отправьте сообщение — мы
+          подтвердим наличие и договоримся о доставке.
+        </p>
+        <a
+          class="cart-phone"
+          href="tel:+998992999900"
+          data-ru="Или заказать по телефону"
+          data-uz="Yoki telefon orqali buyurtma bering"
+          >Или заказать по телефону</a
+        >
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/catalog.js" defer></script>
+    <script src="/storefront.js" defer></script>
+    <script src="/analytics.js" defer></script>
+  </body>
 </html>

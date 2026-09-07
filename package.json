@@ -1,0 +1,14 @@
+{
+  "name": "techgeek-storefront",
+  "version": "2.0.0",
+  "private": true,
+  "description": "TechGeek.uz retail storefront",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.cjs",
+    "check": "node scripts/check-site.cjs",
+    "test": "node --test tests/*.test.cjs tests/*.test.mjs"
+  }
+}
