@@ -419,6 +419,9 @@ section[id] {
   color: #586574;
 }
 .mini-cross {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
   color: var(--blue);
   font-size: 18px;
   line-height: 1;
