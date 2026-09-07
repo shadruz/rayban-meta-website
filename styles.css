@@ -127,6 +127,13 @@ svg {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.icon-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.12em;
+  flex-shrink: 0;
+}
 button {
   border: 0;
   background: none;
