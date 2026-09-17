@@ -185,6 +185,18 @@ assert(
 const feedField = (item, field) =>
   new RegExp(`<g:${field}>([\\s\\S]*?)<\\/g:${field}>`).exec(item)?.[1].trim();
 
+// Merchant Center rejects mixed currencies, even when shipping is free.
+for (const item of feedItems) {
+  const priceValues = [...item.matchAll(/<g:price>([^<]+)<\/g:price>/g)].map(
+    (match) => match[1].trim(),
+  );
+  assert(
+    priceValues.length >= 2 &&
+      priceValues.every((value) => /^\d+(?:\.\d+)? USD$/.test(value)),
+    `merchant-feed.xml: ${feedField(item, "id")} product and shipping currencies must both be USD`,
+  );
+}
+
 for (const product of catalog) {
   assert(
     Number.isFinite(product.price) && product.price > 0,
@@ -217,6 +229,10 @@ for (const product of catalog) {
     );
     assert(schemaProduct, `${file}: missing Product structured data`);
     const offer = schemaProduct?.offers;
+    assert(
+      offer?.shippingDetails?.shippingRate?.currency === offer?.priceCurrency,
+      `${file}: shipping currency must match offer currency`,
+    );
     assert(
       offer &&
         Number(offer.price) === product.price &&
