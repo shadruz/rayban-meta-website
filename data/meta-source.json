@@ -1,0 +1,2730 @@
+{
+  "checkedAt": "2026-09-19T06:58:15.959Z",
+  "market": "US",
+  "families": [
+    {
+      "source": "https://www.meta.com/ai-glasses/meta-glasses/starfire-kylie-black-black/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/meta-glasses/starfire-kylie-edition",
+          "description": "The Meta Starfire Kylie Edition features a slim oval frame designed with Kylie Jenner for a refined, fashion-forward look. Use your voice to get fast answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream, and more.",
+          "name": "Meta Glasses Starfire Kylie Edition",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/starfire-kylie-edition/",
+          "productGroupID": "starfire-kylie-edition",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001901-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001903-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001904-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Meta Starfire Kylie Edition Classic Black Black Lenses ",
+          "sku": "SK-1001901-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/starfire-kylie-black-black/",
+          "color": [
+            "Lens color:Black",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 399,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2468308603658939"
+          ],
+          "description": "Meta Starfire Kylie Edition Classic Black Black Lenses "
+        },
+        {
+          "name": "Meta Starfire Kylie Edition Dark Tortoise Chocolate Lenses ",
+          "sku": "SK-1001903-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/starfire-kylie-tortoise-chocolate/",
+          "color": [
+            "Lens color:Chocolate",
+            "Frame color:Dark Tortoise"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 399,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1357142236585876"
+          ],
+          "description": "Meta Starfire Kylie Edition Dark Tortoise Chocolate Lenses "
+        },
+        {
+          "name": "Meta Starfire Kylie Edition Classic Black Transitions® Grey Lenses",
+          "sku": "SK-1001904-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/starfire-kylie-black-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 479,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1094827559667190"
+          ],
+          "description": "Meta Starfire Kylie Edition Classic Black Transitions® Grey Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-tortoise-brown/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/meta-glasses/adventurer",
+          "description": "The Meta Adventurer features a versatile rectangle frame with 3-way adjustable nose pads for all-day comfort and a custom fit. Use your voice to get fast answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream, and more.",
+          "name": "Meta Glasses Adventurer",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer/",
+          "productGroupID": "adventurer",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001887-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001879-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001888-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001880-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001889-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001881-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001890-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001882-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001893-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001885-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001894-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001886-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001892-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001884-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001891-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001883-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Meta Adventurer Large Classic Black Clear Lenses ",
+          "sku": "SK-1001887-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Classic Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1514379832908785"
+          ],
+          "description": "Meta Adventurer Large Classic Black Clear Lenses "
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Black Clear Lenses",
+          "sku": "SK-1001879-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1002428912681686"
+          ],
+          "description": "Meta Adventurer Standard Classic Black Clear Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Classic Tortoise Clear Lenses ",
+          "sku": "SK-1001888-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-tortoise-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Classic Tortoise"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1037832802497360"
+          ],
+          "description": "Meta Adventurer Large Classic Tortoise Clear Lenses "
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Tortoise Clear Lenses ",
+          "sku": "SK-1001880-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-tortoise-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Classic Tortoise"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1523128683189690"
+          ],
+          "description": "Meta Adventurer Standard Classic Tortoise Clear Lenses "
+        },
+        {
+          "name": "Meta Adventurer Large Classic Black Brown Lenses",
+          "sku": "SK-1001889-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-brown/",
+          "color": [
+            "Lens color:Brown",
+            "Frame color:Classic Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2264211734327926"
+          ],
+          "description": "Meta Adventurer Large Classic Black Brown Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Black Brown Lenses",
+          "sku": "SK-1001881-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-brown/",
+          "color": [
+            "Lens color:Brown",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1692064951917777"
+          ],
+          "description": "Meta Adventurer Standard Classic Black Brown Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Classic Tortoise Brown Lenses",
+          "sku": "SK-1001890-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-tortoise-brown/",
+          "color": [
+            "Lens color:Brown",
+            "Frame color:Classic Tortoise"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1510559600087623"
+          ],
+          "description": "Meta Adventurer Large Classic Tortoise Brown Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Tortoise Brown Lenses",
+          "sku": "SK-1001882-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-tortoise-brown/",
+          "color": [
+            "Lens color:Brown",
+            "Frame color:Classic Tortoise"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1315379063632190"
+          ],
+          "description": "Meta Adventurer Standard Classic Tortoise Brown Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Classic Black Polar Grey Lenses",
+          "sku": "SK-1001893-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-grey-polar/",
+          "color": [
+            "Lens color:Grey",
+            "Frame color:Classic Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 329,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1470153688204541"
+          ],
+          "description": "Meta Adventurer Large Classic Black Polar Grey Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Black Polar Grey Lenses",
+          "sku": "SK-1001885-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-grey-polar/",
+          "color": [
+            "Lens color:Grey",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 329,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1426004416047860"
+          ],
+          "description": "Meta Adventurer Standard Classic Black Polar Grey Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Classic Black Transitions® Grey Lenses",
+          "sku": "SK-1001894-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Classic Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2443496486174516"
+          ],
+          "description": "Meta Adventurer Large Classic Black Transitions® Grey Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Classic Black Transitions® Grey Lenses",
+          "sku": "SK-1001886-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-black-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1364828755369051"
+          ],
+          "description": "Meta Adventurer Standard Classic Black Transitions® Grey Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Merlot Transitions® Ruby Lenses",
+          "sku": "SK-1001892-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-merlot-ruby-transitions/",
+          "color": [
+            "Lens color:Clear to Ruby Transitions®",
+            "Frame color:Merlot"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1536878354408310"
+          ],
+          "description": "Meta Adventurer Large Merlot Transitions® Ruby Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Merlot Transitions® Ruby Lenses",
+          "sku": "SK-1001884-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-merlot-ruby-transitions/",
+          "color": [
+            "Lens color:Clear to Ruby Transitions®",
+            "Frame color:Merlot"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1427664835948724"
+          ],
+          "description": "Meta Adventurer Standard Merlot Transitions® Ruby Lenses"
+        },
+        {
+          "name": "Meta Adventurer Large Linen Transitions® Sapphire Lenses",
+          "sku": "SK-1001891-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-linen-sapphire-transitions/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Linen"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1625485892500961"
+          ],
+          "description": "Meta Adventurer Large Linen Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Meta Adventurer Standard Linen Transitions® Sapphire Lenses",
+          "sku": "SK-1001883-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/adventurer-linen-sapphire-transitions/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Linen"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2312611452827046"
+          ],
+          "description": "Meta Adventurer Standard Linen Transitions® Sapphire Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/meta-glasses/fury-racing-green-blue-atlantic/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/meta-glasses/fury",
+          "description": "The Meta Fury makes a bold statement with its striking frame, available in 5 colors. Use your voice to get fast answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream, and more.",
+          "name": "Meta Glasses Fury",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury/",
+          "productGroupID": "fury",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001895-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001896-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001897-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001899-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001898-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001900-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1002104-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Meta Fury Classic Black Brown Gradient Lenses",
+          "sku": "SK-1001895-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-black-brown-gradient/",
+          "color": [
+            "Lens color:Brown Gradient",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=27218485591165940"
+          ],
+          "description": "Meta Fury Classic Black Brown Gradient Lenses"
+        },
+        {
+          "name": "Meta Fury Mahogany Green Lenses",
+          "sku": "SK-1001896-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-mahogany-green/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Mahogany"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1584508589696548"
+          ],
+          "description": "Meta Fury Mahogany Green Lenses"
+        },
+        {
+          "name": "Meta Fury Racing Green Light Blue Atlantic Lenses",
+          "sku": "SK-1001897-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-racing-green-blue-atlantic/",
+          "color": [
+            "Lens color:Light Blue Atlantic",
+            "Frame color:Racing Green"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1784359155890600"
+          ],
+          "description": "Meta Fury Racing Green Light Blue Atlantic Lenses"
+        },
+        {
+          "name": "Meta Fury Classic Black Polar Grey Lenses",
+          "sku": "SK-1001899-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-black-grey-polar/",
+          "color": [
+            "Lens color:Grey",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 329,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1493517732520946"
+          ],
+          "description": "Meta Fury Classic Black Polar Grey Lenses"
+        },
+        {
+          "name": "Meta Fury Sandstone Dark Amber Lenses",
+          "sku": "SK-1001898-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-sandstone-amber/",
+          "color": [
+            "Lens color:Dark Amber",
+            "Frame color:Sandstone"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 299,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1090146740656890"
+          ],
+          "description": "Meta Fury Sandstone Dark Amber Lenses"
+        },
+        {
+          "name": "Meta Fury Classic Black Transitions® Grey Lenses",
+          "sku": "SK-1001900-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-black-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Classic Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1665431538248699"
+          ],
+          "description": "Meta Fury Classic Black Transitions® Grey Lenses"
+        },
+        {
+          "name": "Meta Fury Mahogany Transitions® Grey Lenses",
+          "sku": "SK-1002104-01",
+          "url": "https://www.meta.com/ai-glasses/meta-glasses/fury-mahogany-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Mahogany"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1655074866103994"
+          ],
+          "description": "Meta Fury Mahogany Transitions® Grey Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-clear-gen-2/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/ray-ban-meta-wayfarer-gen-2",
+          "description": "The Wayfarer glasses combine iconic Hollywood style and technology to keep you fully in the moment.\n          Use your voice to get fast answers with Meta AI,\n          capture memories, make calls, send messages, listen to music, livestream and more.",
+          "name": "Ray-Ban Meta Wayfarer (Gen 2)",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-gen-2/",
+          "productGroupID": "ray-ban-meta-wayfarer-gen-2",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001200-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001199-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001203-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001202-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001238-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001237-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001242-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001241-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001251-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001250-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001247-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001246-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001846-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001845-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Clear Lenses",
+          "sku": "SK-1001200-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1465571944568885&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=24162651613419500&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=991148296393546&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2874069432980623&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1224625516132980&version=1777898936&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Clear Lenses",
+          "sku": "SK-1001199-01",
+          "gtin": "8056262721391",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1465571944568885&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=24162651613419500&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=991148296393546&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2874069432980623&version=1777898936&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1224625516132980&version=1777898936&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Black Green Lenses",
+          "sku": "SK-1001203-01",
+          "gtin": "8056262721346",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-black-green-gen-2/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1750655995603223&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1487824539886168&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=822150250482683&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=812943687848841&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1944841119639018&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1778508216872779&version=1783657758&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Black Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Black Green Lenses",
+          "sku": "SK-1001202-01",
+          "gtin": "8056262721339",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-black-green-gen-2/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1750655995603223&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1487824539886168&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=822150250482683&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=812943687848841&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1944841119639018&version=1783657758&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1778508216872779&version=1783657758&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Black Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Polar Gradient Graphite Lenses",
+          "sku": "SK-1001238-01",
+          "gtin": "8056262721421",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-polarized-graphite-gradient-gen-2/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 409,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1295239735559607&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1468870020982240&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=718069751264072&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1099811395579786&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1044995594376020&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=745123238409605&version=1777898940&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Polar Gradient Graphite Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Polar Gradient Graphite Lenses",
+          "sku": "SK-1001237-01",
+          "gtin": "8056262721414",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-polarized-graphite-gradient-gen-2/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 409,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1295239735559607&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1468870020982240&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=718069751264072&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1099811395579786&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1044995594376020&version=1777898940&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=745123238409605&version=1777898940&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Polar Gradient Graphite Lenses "
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Cosmic Blue Transitions® Sapphire Lenses",
+          "sku": "SK-1001242-01",
+          "gtin": "8056262721445",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-cosmic-blue-sapphire-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Cosmic Blue"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=725681097232401&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1337808127944421&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1307723237141402&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1486038889341062&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=821953123620625&version=1783666450&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Cosmic Blue Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Cosmic Blue Transitions® Sapphire Lenses",
+          "sku": "SK-1001241-01",
+          "gtin": "8056262721438",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-cosmic-blue-sapphire-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Cosmic Blue"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=725681097232401&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1337808127944421&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1307723237141402&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1486038889341062&version=1783666450&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=821953123620625&version=1783666450&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Cosmic Blue Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Black Transitions® Graphite Green Lenses",
+          "sku": "SK-1001251-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-black-green-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=774809324869031&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1279801273591540&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1662091227808580&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1281548450165016&version=1776990625&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Black Transitions® Graphite Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Black Transitions® Graphite Green Lenses",
+          "sku": "SK-1001250-01",
+          "gtin": "8056262721292",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-black-green-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1844558142875605&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=774809324869031&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1279801273591540&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1662091227808580&version=1776990625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1281548450165016&version=1776990625&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Black Transitions® Graphite Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Transitions® Grey Lenses",
+          "sku": "SK-1001247-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-grey-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1071125631895554&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1962853124472559&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1981838685983373&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1068262065422200&version=1777898614&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Matte Black Transitions® Grey Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Transitions® Grey Lenses",
+          "sku": "SK-1001246-01",
+          "gtin": "8056262721377",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-matte-black-grey-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1071125631895554&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1962853124472559&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1981838685983373&version=1777898614&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1068262065422200&version=1777898614&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Matte Black Transitions® Grey Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Transparent Grey Transitions® Sapphire Lenses",
+          "sku": "SK-1001846-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-grey-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Transparent Grey"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1315139473836682&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=948393484293746&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=932011162886561&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2173213390180303&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2099748240815524&version=1778755195&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Large Shiny Transparent Grey Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Transparent Grey Transitions® Sapphire Lenses",
+          "sku": "SK-1001845-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-wayfarer-shiny-grey-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Transparent Grey"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1315139473836682&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=948393484293746&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=932011162886561&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2173213390180303&version=1778755195&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2099748240815524&version=1778755195&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer (Gen 2) Shiny Transparent Grey Transitions® Sapphire Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/wayfarer-shiny-black-plano-g15-green/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/ray-ban-meta-wayfarer",
+          "description": "The Wayfarer glasses combine iconic Hollywood style and technology to keep you fully in the moment.\n          Use your voice to get fast answers with Meta AI,\n          capture memories, make calls, send messages, listen to music, livestream and more.",
+          "name": "Ray-Ban Meta Wayfarer",
+          "url": "https://www.meta.com/ai-glasses/wayfarer/",
+          "productGroupID": "ray-ban-meta-wayfarer",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00607-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1000830-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1000829-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00600-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00605-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00598-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00604-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00597-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00606-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00599-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Clear to G-15 Green Transitions®, Large",
+          "sku": "899-00607-01",
+          "gtin": "8056597988384",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-clear-green-transitions/",
+          "color": [
+            "Lens color:Clear to Green Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=954315176404459&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=372960888906720&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=25901495709449527&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1413078582744745&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=937891630943466&version=1772507320&transcode_extension=webp"
+          ],
+          "description": " The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Clear to Graphite Green Transitions®, Large",
+          "sku": "SK-1000830-01",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-clear-green-transitions/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 284,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1987980731947617&version=1777898609&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1274597674172257&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1016758860271018&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=622359394216697&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1296220581838861&version=1777248763&transcode_extension=webp"
+          ],
+          "description": "Wayfarer Large Matte Black with Clear to Graphite Green Transitions® Lens"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Clear to Graphite Green Transitions®, Standard",
+          "sku": "SK-1000829-01",
+          "gtin": "8056262326787",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-clear-green-transitions/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 284,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1274597674172257&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1016758860271018&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=622359394216697&version=1777248763&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1296220581838861&version=1777248763&transcode_extension=webp"
+          ],
+          "description": "Wayfarer Matte Black with Clear to Graphite Green Transitions® Lens"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Clear to G-15 Green Transitions®, Standard",
+          "sku": "899-00600-01",
+          "gtin": "8056597988384",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-clear-green-transitions/",
+          "color": [
+            "Lens color:Clear to Green Transitions®",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=954315176404459&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=372960888906720&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=25901495709449527&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1413078582744745&version=1772507320&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=937891630943466&version=1772507320&transcode_extension=webp"
+          ],
+          "description": " The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Shiny Black / G15 Green, Large",
+          "sku": "899-00605-01",
+          "gtin": "8056597988377",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-shiny-black-plano-g15-green/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=670719362282606&version=1783670463&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=659540979814092&version=1783670463&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1024501309522478&version=1783670463&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1156318625613975&version=1783670463&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1601714747209251&version=1783670463&transcode_extension=webp"
+          ],
+          "description": "The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Shiny Black / Green, Standard",
+          "sku": "899-00598-01",
+          "gtin": "8056597988377",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-shiny-black-plano-g15-green/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2158065038008881&version=1777251568&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=738034755447150&version=1777251568&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1381331099609952&version=1777251568&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1533038310992446&version=1777251568&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1257716719055410&version=1777251568&transcode_extension=webp"
+          ],
+          "description": " The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Shiny Black / Clear, Large",
+          "sku": "899-00604-01",
+          "gtin": "8056597874816",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-shiny-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=990667589712144&version=1782806555&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=3505650342900708&version=1782806555&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2750063445381220&version=1782806555&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=942115221431162&version=1782806555&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1909028622961994&version=1782806555&transcode_extension=webp"
+          ],
+          "description": " The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Shiny Black / Clear, Standard",
+          "sku": "899-00597-01",
+          "gtin": "8056597769440",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-shiny-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2273350526400967&version=1777248747&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=730854972686573&version=1777248747&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=711412435114977&version=1777248747&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1255957855937355&version=1777248747&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1274649557389898&version=1777248747&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Wayfarer, Shiny Black / Clear, Standard"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Gradient Graphite Polarized, Large",
+          "sku": "899-00606-01",
+          "gtin": "8056597988421",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-graphite-polar-gradient/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 247,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=732922276125620&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=9945739085544012&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1075107451244633&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1917322955694465&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=723444873948915&version=1777251556&transcode_extension=webp"
+          ],
+          "description": "The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        },
+        {
+          "name": "Ray-Ban Meta Wayfarer (Gen 1), Matte Black / Gradient Graphite Polarized, Standard",
+          "sku": "899-00599-01",
+          "gtin": "8056597982788",
+          "url": "https://www.meta.com/ai-glasses/wayfarer-matte-black-graphite-polar-gradient/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 247,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=732922276125620&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=9945739085544012&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1075107451244633&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1917322955694465&version=1777251556&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=723444873948915&version=1777251556&transcode_extension=webp"
+          ],
+          "description": " The next generation of smart glasses. Capture, live-stream and connect with hands-free calls and messages"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/oakley-meta-hstn-curry-brown-transitions/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/Oakley-Meta-HSTN",
+          "name": "Oakley Meta HSTN",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-glasses/",
+          "description": "Shop Oakley Meta HSTN AI glasses in Light Curry with Transitions® Brown lenses. Built for performance with hands-free Meta AI.",
+          "productGroupID": "Oakley-Meta-HSTN",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Oakley-Meta"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001194-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001233-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001195-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001196-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001197-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001193-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001849-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001850-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Oakley Meta HSTN, Black / Clear to Amethyst Transitions® ",
+          "sku": "SK-1001194-01",
+          "gtin": "0888392682857",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-black-amethyst-transitions/",
+          "color": [
+            "Lens color:Clear to Amethyst Transitions®",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 479,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1183928677032852"
+          ],
+          "description": "Oakley Meta HSTN, Black / Clear to Amethyst Transitions® "
+        },
+        {
+          "name": "Oakley Meta HSTN, Black / Clear ",
+          "sku": "SK-1001233-01",
+          "gtin": "0888392682901",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 399,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=25491113953855396"
+          ],
+          "description": "Oakley Meta HSTN, Black / Clear "
+        },
+        {
+          "name": "Oakley Meta HSTN, Black / Prizm Black Polarized",
+          "sku": "SK-1001195-01",
+          "gtin": "0888392682864",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-black-prizm-black-polarized/",
+          "color": [
+            "Lens color:Prizm™ Black Polarized",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 449,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=852706397234188"
+          ],
+          "description": "Oakley Meta HSTN, Black / Prizm Black Polarized"
+        },
+        {
+          "name": "Oakley Meta HSTN, Clear / Clear to Grey Transitions®",
+          "sku": "SK-1001196-01",
+          "gtin": "0888392682888",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-clear-grey-transitions/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Clear"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 479,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1789907521674194"
+          ],
+          "description": "Oakley Meta HSTN, Clear / Clear to Grey Transitions®"
+        },
+        {
+          "name": "Oakley Meta HSTN, Brown Smoke / Prizm Deep Water Polarized",
+          "sku": "SK-1001197-01",
+          "gtin": "0888392682895",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-light-brown-prizm-deep-water-polarized/",
+          "color": [
+            "Lens color:Prizm™ Deep Water Polarized",
+            "Frame color:Brown Smoke"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 449,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=834172739307488"
+          ],
+          "description": "Oakley Meta HSTN, Brown Smoke / Prizm Deep Water Polarized"
+        },
+        {
+          "name": "Oakley Meta HSTN, Warm Grey / Prizm Ruby ",
+          "sku": "SK-1001193-01",
+          "gtin": "0888392682871",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-warm-grey-ruby-prizm/",
+          "color": [
+            "Lens color:Prizm™ Ruby",
+            "Frame color:Warm Grey"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 399,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1368242471670831"
+          ],
+          "description": "Oakley Meta HSTN, Warm Grey / Prizm Ruby "
+        },
+        {
+          "name": "Oakley Meta HSTN Light Curry Transitions® Brown Lenses ",
+          "sku": "SK-1001849-01",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-curry-brown-transitions/",
+          "color": [
+            "Lens color:Clear to Brown Transitions®",
+            "Frame color:Light Curry"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 479,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=924453640482133"
+          ],
+          "description": "Oakley Meta HSTN Light Curry Transitions® Brown Lenses "
+        },
+        {
+          "name": "Oakley Meta HSTN Black Prizm™  Dark Golf Lenses ",
+          "sku": "SK-1001850-01",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-hstn-black-prizm-dark-golf/",
+          "color": [
+            "Lens color:Prizm™ Dark Golf",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 399,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1957608858193932"
+          ],
+          "description": "Oakley Meta HSTN Black Prizm™  Dark Golf Lenses "
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/skyler-shiny-black-g15-green-standard/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/ray-ban-meta-skyler",
+          "description": "Inspired by an era of jet-set style, the Skyler glasses help keep you\n          fully in the moment. Use your voice to get fast answers with Meta AI,\n          capture memories, make calls, send messages, listen to music, livestream and more.",
+          "name": "Ray-Ban Meta Skyler",
+          "url": "https://www.meta.com/ai-glasses/skyler/",
+          "productGroupID": "ray-ban-meta-skyler",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1000380-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001166-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001167-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/899-00697-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 1), Shiny Chalky Gray / Clear to Sapphire Transitions®, Standard",
+          "sku": "SK-1000380-01",
+          "gtin": "8056262526262",
+          "url": "https://www.meta.com/ai-glasses/skyler-shiny-chalky-gray-sapphire-transitions/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Chalky Gray"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 284,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=630114089865626&version=1772507355&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1353843275949978&version=1772507355&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1371286230986033&version=1772507355&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1296204388345537&version=1772507355&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=626647493468229&version=1772507355&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler, Shiny Chalky Gray  / Clear to Sapphire Transitions®, Standard"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 1), Shiny Black / G15 Green, Standard",
+          "sku": "SK-1001166-01",
+          "gtin": "8056262043790",
+          "url": "https://www.meta.com/ai-glasses/skyler-shiny-black-g15-green-standard/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1095864802444997&version=1772548875&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1305616790931663&version=1772548875&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1409343450315737&version=1772548875&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1441337423754001&version=1772548875&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=605813755456449&version=1772548875&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler, Shiny Black / G15 Green, Standard"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 1), Shiny Black / Clear, Standard",
+          "sku": "SK-1001167-01",
+          "gtin": "8056597983563",
+          "url": "https://www.meta.com/ai-glasses/skyler-shiny-black-clear/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 224,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1371785157261710&version=1772520760&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1066452152219529&version=1772520760&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1061292346141004&version=1772520760&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1719795268908560&version=1772520760&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1450469982620025&version=1772520760&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1432002074398703&version=1772520760&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler, Shiny Black / Clear, Standard"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 1), Shiny Black / Cerulean Blue Transitions®, Standard",
+          "sku": "899-00697-01",
+          "gtin": "8056262166185",
+          "url": "https://www.meta.com/ai-glasses/skyler-shiny-black-blue-transitions/",
+          "color": [
+            "Lens color:Tint to Cerulean Blue Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 284,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1480167503141800&version=1772520766&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=3974342876228443&version=1772520766&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=4222348708041219&version=1772520766&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=9854128694650324&version=1772520766&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=708864838662955&version=1772520766&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler, Shiny Black / Cerulean Blue Transitions®, Standard"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-green-gen-2/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/ray-ban-meta-skyler-gen-2",
+          "description": "Inspired by an era of jet-set style, the Skyler glasses help keep you\n          fully in the moment. Use your voice to get fast answers with Meta AI,\n          capture memories, make calls, send messages, listen to music, livestream and more.",
+          "name": "Ray-Ban Meta Skyler (Gen 2)",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-gen-2/",
+          "productGroupID": "ray-ban-meta-skyler-gen-2",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001235-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001240-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001244-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001249-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001254-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001370-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001253-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001848-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Green Lenses",
+          "sku": "SK-1001235-01",
+          "gtin": "8056262721230",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-green-gen-2/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=787529633933347&version=1772517899&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=771820005403215&version=1772517899&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1287585659550364&version=1772517899&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=619748411194266&version=1772517899&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1977067453109943&version=1772517899&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Polar Gradient Graphite Lenses",
+          "sku": "SK-1001240-01",
+          "gtin": "8056262721254",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-polarized-black-gen-2/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 409,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=612938268285690&version=1772634528&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=686049897775167&version=1772634528&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1741797900042407&version=1772634528&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2200781057029547&version=1772634528&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=788254313542670&version=1772634528&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Polar Gradient Graphite Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Mystic Violet Transitions® Amethyst Lenses",
+          "sku": "SK-1001244-01",
+          "gtin": "8056262758175",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-mystic-violet-amethyst-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Amethyst Transitions®",
+            "Frame color:Shiny Mystic Violet"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1472724670471892&version=1772548103&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1314049840426701&version=1772548103&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1546791133349233&version=1772548103&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=24416746601341095&version=1772548103&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=24264068236605250&version=1772548103&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Mystic Violet Transitions® Amethyst Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Chalky Gray Transitions® Sapphire Lenses",
+          "sku": "SK-1001249-01",
+          "gtin": "8056262721261",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-chalky-gray-sapphire-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Chalky Gray"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=749968657899932&version=1772520742&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1386611032440987&version=1772520742&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1066457552355842&version=1772520742&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2482938688752623&version=1772520742&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1699717610726985&version=1772520742&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Chalky Gray Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Transitions® Graphite Green Lenses",
+          "sku": "SK-1001254-01",
+          "gtin": "8056262721223",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-green-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=730743319877961&version=1772517920&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=744604411682068&version=1772517920&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2219231381887854&version=1772517920&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=755433497435738&version=1772517920&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Transitions® Graphite Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Clear Lenses",
+          "sku": "SK-1001370-01",
+          "gtin": "8056262729953",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1009317567307292&version=1772546537&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=890537543161139&version=1772546537&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=975223664802215&version=1772546537&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1183374196490677&version=1772546537&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=642614491829999&version=1772546537&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=511636752002448&version=1772546537&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Transitions® Amethyst Lenses",
+          "sku": "SK-1001253-01",
+          "gtin": "8056262721247",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-black-amethyst-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Amethyst Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=618968671019858&version=1772548084&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=674639214914412&version=1772548084&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=8730695610365016&version=1772548084&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Black Transitions® Amethyst Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Skyler (Gen 2) Shiny Transparent Peach Transitions® Brown Lenses",
+          "sku": "SK-1001848-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-skyler-shiny-peach-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Brown Transitions®",
+            "Frame color:Shiny Transparent Peach"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1638945970626939&version=1776657281&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1599665134646821&version=1776657281&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1585055899275628&version=1776657281&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=932990705876560&version=1776657281&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1404142925091207&version=1776657281&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Skyler (Gen 2) Shiny Transparent Peach Transitions® Brown Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-black-prizm-black/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/Oakley-Meta-Vanguard",
+          "name": "Oakley Meta Vanguard",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-glasses/",
+          "description": "Shop Oakley Meta Vanguard AI glasses in Black with Prizm™ Black lenses. Uncompromising clarity and performance with built-in Meta AI.",
+          "productGroupID": "Oakley-Meta-Vanguard",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Oakley-Meta"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001204-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001205-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001206-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001207-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001854-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001852-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001853-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Oakley Meta Vanguard Black Prizm™ 24K ",
+          "sku": "SK-1001204-01",
+          "gtin": "0888392690371",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-black-prizm-24k/",
+          "color": [
+            "Lens color:Prizm™ 24K",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1167904954867266"
+          ],
+          "description": "Oakley Meta Vanguard Black Prizm™ 24K "
+        },
+        {
+          "name": "Oakley Meta Vanguard White Prizm™ Black ",
+          "sku": "SK-1001205-01",
+          "gtin": "0888392690388",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-white-prizm-black/",
+          "color": [
+            "Lens color:Prizm™ Black",
+            "Frame color:White"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2827981104259781"
+          ],
+          "description": "Oakley Meta Vanguard White Prizm™ Black "
+        },
+        {
+          "name": "Oakley Meta Vanguard Black Prizm™ Road",
+          "sku": "SK-1001206-01",
+          "gtin": "0888392690418",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-black-prizm-road/",
+          "color": [
+            "Lens color:Prizm™ Road",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1403761311182634"
+          ],
+          "description": "Oakley Meta Vanguard Black Prizm™ Road"
+        },
+        {
+          "name": "Oakley Meta Vanguard White Prizm™ Sapphire ",
+          "sku": "SK-1001207-01",
+          "gtin": "0888392690395",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-white-prizm-sapphire/",
+          "color": [
+            "Lens color:Prizm™ Sapphire",
+            "Frame color:White"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=831464769489155"
+          ],
+          "description": "Oakley Meta Vanguard White Prizm™ Sapphire "
+        },
+        {
+          "name": "Oakley Meta Vanguard White Prizm™ Rose Gold Lens ",
+          "sku": "SK-1001854-01",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-white-prizm-rose-gold/",
+          "color": [
+            "Lens color:Prizm™ Rose Gold",
+            "Frame color:White"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2396251010788455"
+          ],
+          "description": "Oakley Meta Vanguard White Prizm™ Rose Gold Lens "
+        },
+        {
+          "name": "Oakley Meta Vanguard Black Prizm™ Black Lens",
+          "sku": "SK-1001852-01",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-black-prizm-black/",
+          "color": [
+            "Lens color:Prizm™ Black",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=26428719990117333"
+          ],
+          "description": "Oakley Meta Vanguard Black Prizm™ Black Lens"
+        },
+        {
+          "name": "Oakley Meta Vanguard Black Prizm™ Transitions® Ember Lens ",
+          "sku": "SK-1001853-01",
+          "url": "https://www.meta.com/ai-glasses/oakley-meta-vanguard-black-prizm-transitions/",
+          "color": [
+            "Lens color:Prizm™ Transitions® Ember",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 579,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1314412587191389"
+          ],
+          "description": "Oakley Meta Vanguard Black Prizm™ Transitions® Ember Lens "
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-matte-peach-transitions-gen-2/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/ray-ban-meta-headliner-gen-2",
+          "description": "A hybrid of the Wayfarer and the Round, the Headliner glasses allow\n          you to make the most of every moment. Use your voice to get fast\n          answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream and more.",
+          "name": "Ray-Ban Meta Headliner (Gen 2)",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-gen-2/",
+          "productGroupID": "ray-ban-meta-headliner-gen-2",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001201-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001239-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001236-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001234-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001252-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001243-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001245-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001248-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001847-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Matte Black Clear Lenses",
+          "sku": "SK-1001201-01",
+          "gtin": "8056262721322",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-matte-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1288760276293503&version=1772546526&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1255229842520994&version=1772546526&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=763905139929274&version=1772546526&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1317564693225571&version=1772546526&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1095787918675608&version=1772546526&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Matte Black Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Matte Black Polar Gradient Graphite Lenses",
+          "sku": "SK-1001239-01",
+          "gtin": "8056262721353",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-matte-black-polarized-black-gen-2/",
+          "color": [
+            "Lens color:Gradient Graphite",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 409,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=750614671081271&version=1772599979&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2845661425823643&version=1772599979&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1457068128888309&version=1772599979&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=773345628515345&version=1772599979&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=734324439372080&version=1772599979&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Matte Black Polar Gradient Graphite Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Low Bridge Fit Shiny Black Green Lenses",
+          "sku": "SK-1001236-01",
+          "gtin": "8056262720011",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-black-green-gen-2/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, low bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1551720389334383&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1447513996509159&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1841708640560468&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2418642965199334&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1925818708275442&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=651588717606501&version=1772507332&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Low Bridge Fit Shiny Black Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Green Lenses",
+          "sku": "SK-1001234-01",
+          "gtin": "8056262721285",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-black-green-gen-2/",
+          "color": [
+            "Lens color:Green",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 379,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1551720389334383&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1447513996509159&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1841708640560468&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2418642965199334&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1925818708275442&version=1772507332&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=651588717606501&version=1772507332&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Transitions® Graphite Green Lenses",
+          "sku": "SK-1001252-01",
+          "gtin": "8056262721278",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-black-green-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Graphite Green Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1954598385373991&version=1772515446&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=736075889396400&version=1772515446&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=660403733057255&version=1772515446&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=749765924477603&version=1772515446&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Transitions® Graphite Green Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Shiny Asteroid Grey Transitions Emerald Lenses",
+          "sku": "SK-1001243-01",
+          "gtin": "8056262721360",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-asteroid-grey-emerald-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Emerald Transitions®",
+            "Frame color:Shiny Asteroid Grey"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1096955562395171&version=1772548024&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2226420221130382&version=1772548024&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=759493976786081&version=1772548024&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=728588356742224&version=1772548024&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Shiny Asteroid Grey Transitions Emerald Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Low Bridge Fit Shiny Black Transitions® Sapphire Lenses",
+          "sku": "SK-1001245-01",
+          "gtin": "8056262720042",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-black-sapphire-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, low bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1823880794831934&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1013587640716711&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1469868607372940&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=660753803011481&version=1772548888&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Low Bridge Fit Shiny Black Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Transitions® Sapphire Lenses",
+          "sku": "SK-1001248-01",
+          "gtin": "8056262721315",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-shiny-black-sapphire-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Sapphire Transitions®",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1823880794831934&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1013587640716711&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1469868607372940&version=1772548888&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=660753803011481&version=1772548888&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Shiny Black Transitions® Sapphire Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Headliner (Gen 2) Matte Transparent Peach Transitions® Grey Lenses",
+          "sku": "SK-1001847-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-headliner-matte-peach-transitions-gen-2/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Matte Transparent Peach"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 459,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2093985337842359&version=1776657284&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2021089575141098&version=1776657284&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1634956051291550&version=1776657284&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1415390136457585&version=1776657284&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=2106066150187140&version=1776657284&transcode_extension=webp"
+          ],
+          "description": "Ray-Ban Meta Headliner (Gen 2) Matte Transparent Peach Transitions® Grey Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-matte-black-clear-gen-2/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/blayzer-optics",
+          "description": "Lightweight, statement-making AI glasses designed for prescription wearers. The Blayzer Optics are built for all-day comfort with adjustable temple tips, interchangeable nose pads, and over 8 hours of battery life. Use your voice to get fast answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream, and more.",
+          "name": "Ray-Ban Optics Blayzer",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-optics-gen-2/",
+          "productGroupID": "blayzer-optics",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001962-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001961-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001811-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001807-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001810-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001814-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001808-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001812-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001813-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001809-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Havana, Clear Lenses",
+          "sku": "SK-1001962-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-havana-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Havana"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2173229606772677"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Havana, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Havana, Clear Lenses",
+          "sku": "SK-1001961-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-havana-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Havana"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1602443980837041"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Havana, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Matte Black, Clear Lenses",
+          "sku": "SK-1001811-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-matte-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=938517928614727"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Matte Black, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Matte Black, Clear Lenses",
+          "sku": "SK-1001807-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-matte-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2698495497179266"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Matte Black, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Matte Transparent Ice Grey, Clear Lenses",
+          "sku": "SK-1001810-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-matte-grey-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Transparent Ice Grey"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1419016806687840"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Matte Transparent Ice Grey, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Matte Transparent Ice Grey, Clear Lenses",
+          "sku": "SK-1001814-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-matte-grey-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Matte Transparent Ice Grey"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1597753331470597"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Matte Transparent Ice Grey, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Shiny Transparent Black, Clear Lenses",
+          "sku": "SK-1001808-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-shiny-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1275257121178326"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Shiny Transparent Black, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Shiny Transparent Black, Clear Lenses",
+          "sku": "SK-1001812-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-shiny-black-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1233538458334100"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Shiny Transparent Black, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Shiny Transparent Dark Olive, Clear Lenses ",
+          "sku": "SK-1001813-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-shiny-olive-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Dark Olive"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=765104260008538"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Large Shiny Transparent Dark Olive, Clear Lenses "
+        },
+        {
+          "name": "Ray-Ban Meta Blayzer Optics (Gen 2), Shiny Transparent Dark Olive, Clear Lenses ",
+          "sku": "SK-1001809-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-blayzer-shiny-olive-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Dark Olive"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2900214786836407"
+          ],
+          "description": "Ray-Ban Meta Blayzer Optics (Gen 2), Shiny Transparent Dark Olive, Clear Lenses "
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-solid-shiny-black-gen-2/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/scriber-optics",
+          "description": "Our sleekest AI glasses yet, designed for prescription wearers. The Scriber Optics are built for all-day comfort with adjustable temple tips, interchangeable nose pads, and over 8 hours of battery life. Use your voice to get fast answers with Meta AI, capture memories, make calls, send messages, listen to music, livestream, and more.",
+          "name": "Ray-Ban Optics Scriber",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-optics-gen-2/",
+          "productGroupID": "scriber-optics",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001816-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001963-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001818-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001817-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001815-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Black, Clear Lenses",
+          "sku": "SK-1001816-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-clear-shiny-black-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1582350436352763"
+          ],
+          "description": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Black, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Scriber Optics (Gen 2), Havana, Clear Lenses",
+          "sku": "SK-1001963-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-havana-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Havana"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1005544922156147"
+          ],
+          "description": "Ray-Ban Meta Scriber Optics (Gen 2), Havana, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Stone Beige, Clear Lenses ",
+          "sku": "SK-1001818-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-shiny-beige-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Stone Beige"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1388728762495031"
+          ],
+          "description": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Stone Beige, Clear Lenses "
+        },
+        {
+          "name": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Umber, Clear Lenses",
+          "sku": "SK-1001817-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-shiny-umber-clear-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Transparent Umber"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1565935748093728"
+          ],
+          "description": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Transparent Umber, Clear Lenses"
+        },
+        {
+          "name": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Black, Clear Lenses",
+          "sku": "SK-1001815-01",
+          "url": "https://www.meta.com/ai-glasses/ray-ban-meta-scriber-solid-shiny-black-gen-2/",
+          "color": [
+            "Lens color:Clear",
+            "Frame color:Shiny Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 499,
+          "currency": "USD",
+          "availability": "https://schema.org/InStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1391180158888189"
+          ],
+          "description": "Ray-Ban Meta Scriber Optics (Gen 2), Shiny Black, Clear Lenses"
+        }
+      ]
+    },
+    {
+      "source": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-sand/",
+      "groups": [
+        {
+          "@type": "ProductGroup",
+          "@id": "https://www.meta.com/#/schema/ProductGroup/meta-ray-ban-display",
+          "description": "Meta Ray-Ban Display",
+          "name": "Meta Ray-Ban Display",
+          "url": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band/",
+          "productGroupID": "meta-ray-ban-display",
+          "brand": {
+            "@id": "https://www.meta.com/#/schema/Organization/Ray-Ban-Meta"
+          },
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": 13,
+            "suggestedGender": "unisex"
+          },
+          "variesBy": [
+            "https://schema.org/price",
+            "https://schema.org/color",
+            "https://schema.org/size"
+          ],
+          "hasVariant": [
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001159-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001158-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001226-01"
+            },
+            {
+              "@id": "https://www.meta.com/#/schema/Product/SK-1001225-01"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "Meta Ray-Ban Display (Large, Shiny Black, Transitions)",
+          "sku": "SK-1001159-01",
+          "url": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-black/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Black"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 799,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=1082667953635138"
+          ],
+          "description": "Meta Ray-Ban Display (Large, Shiny Black, Transitions)"
+        },
+        {
+          "name": "Meta Ray-Ban Display (Standard, Shiny Black, Transitions)",
+          "sku": "SK-1001158-01",
+          "gtin": "0815820026730",
+          "url": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-black/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Black"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 799,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1461173835007151&version=1787645625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=24472637559019334&version=1787645625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=3722699927861798&version=1787645625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1214228410746495&version=1787645625&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1832714121008737&version=1787645625&transcode_extension=webp"
+          ],
+          "description": "Meta Ray-Ban Display (Standard, Shiny Black, Transitions)"
+        },
+        {
+          "name": "Meta Ray-Ban Display (Large, Shiny Sand, Transitions)",
+          "sku": "SK-1001226-01",
+          "gtin": "0815820027003",
+          "url": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-sand/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Sand"
+          ],
+          "size": "Large frame, high bridge",
+          "price": 799,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1257755708959495&version=1787645604&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=655019850957538&version=1787645604&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1304349788007241&version=1787645604&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=709388345430932&version=1787645604&transcode_extension=webp",
+            "https://lookaside.fbsbx.com/elementpath/media/?media_id=1453593852348268&version=1787645604&transcode_extension=webp"
+          ],
+          "description": "Meta Ray-Ban Display (Large, Shiny Sand, Transitions)"
+        },
+        {
+          "name": "Meta Ray-Ban Display (Standard, Shiny Sand, Transitions)",
+          "sku": "SK-1001225-01",
+          "url": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-sand/",
+          "color": [
+            "Lens color:Clear to Grey Transitions®",
+            "Frame color:Sand"
+          ],
+          "size": "Standard frame, high bridge",
+          "price": 799,
+          "currency": "USD",
+          "availability": "https://schema.org/OutOfStock",
+          "images": [
+            "https://lookaside.fbsbx.com/catalog_manager/media/?image_id=2079368712593171"
+          ],
+          "description": "Meta Ray-Ban Display (Standard, Shiny Sand, Transitions)"
+        }
+      ]
+    }
+  ]
+}

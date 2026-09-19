@@ -11,12 +11,16 @@ vm.runInContext(
 const { TG_CATALOG: catalog, TG_STORE: store } = context;
 const plain = (value) => JSON.parse(JSON.stringify(value));
 
-test("only active products and current retail prices are used", () => {
-  assert.deepEqual(plain(catalog.map(({ id, price }) => ({ id, price }))), [
-    { id: "clear", price: 280 },
-    { id: "chameleon", price: 350 },
-    { id: "whoop", price: 355 },
-  ]);
+test("official US prices plus $30 apply to every glasses SKU; all are on request", () => {
+  assert.equal(catalog.length, 104);
+  assert.equal(new Set(catalog.filter(p=>p.category==='glasses').map(p=>p.family)).size,13);
+  for (const p of catalog) {
+    assert.equal(p.availability,'on_request');
+    if(p.category==='glasses') { assert.equal(p.price,p.sourcePrice+30); assert.match(p.source,/^https:\/\/www.meta.com\//); }
+  }
+  assert.equal(store.findProduct('clear').price,254);
+  assert.equal(store.findProduct('chameleon').price,314);
+  assert.equal(store.findProduct('whoop').price,355);
   assert.equal(store.findProduct("21").id, "clear");
   assert.equal(store.findProduct("59").id, "whoop");
   assert.equal(store.findProduct("1"), undefined);
@@ -35,7 +39,7 @@ test("untrusted persisted cart data cannot change prices or add unavailable item
   assert.deepEqual(plain(store.validateCart(input)), [
     { id: "clear", quantity: 3 },
   ]);
-  assert.equal(store.cartTotal(input), 840);
+  assert.equal(store.cartTotal(input), 762);
   assert.deepEqual(plain(store.validateCart({ id: "clear", quantity: 1 })), []);
 });
 
@@ -58,9 +62,9 @@ test("Telegram draft is explicit, localized, and uses canonical totals", () => {
     { id: "whoop", quantity: 1 },
   ];
   const ru = store.orderDraft(cart, "ru");
-  assert.match(ru, /Итого: \$915/);
+  assert.match(ru, /Итого: \$863/);
   assert.match(ru, /итоговую сумму в сумах/);
-  assert.match(ru, /Shiny Clear/);
-  assert.match(store.orderDraft(cart, "uz"), /Jami: \$915/);
+  assert.match(ru, /Shiny Black \/ Clear/);
+  assert.match(store.orderDraft(cart, "uz"), /Jami: \$863/);
   assert.equal(store.orderDraft([], "ru"), "");
 });

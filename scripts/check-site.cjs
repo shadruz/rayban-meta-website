@@ -72,8 +72,8 @@ const context = vm.createContext({});
 vm.runInContext(read("catalog.js"), context, { filename: "catalog.js" });
 const catalog = context.TG_CATALOG;
 assert(
-  Array.isArray(catalog) && catalog.length === 3,
-  "catalog.js: exactly three confirmed in-stock products are expected",
+  Array.isArray(catalog) && catalog.length > 3 && catalog.every(p => p.availability === 'on_request'),
+  "catalog.js: expected expanded on-request catalog",
 );
 assert(
   new Set(catalog.map((product) => product.id)).size === catalog.length,
@@ -96,6 +96,9 @@ const schemaByFile = new Map();
 const canonicalByFile = new Map();
 for (const file of htmlFiles) {
   const html = read(file);
+  for (const script of ['catalog.js','catalog-ui.js','storefront.js']) {
+    assert((html.match(new RegExp(`src="/${script.replace('.', '\\.') }"`, 'g')) || []).length <= 1, `${file}: duplicate runtime script ${script}`);
+  }
   for (const tag of html.matchAll(
     /<(?:a|link|img|script|source|video)\b[^>]*>/gi,
   )) {
@@ -171,8 +174,8 @@ const cards = [
   ...homepage.matchAll(/<article\b[^>]*\bdata-product-id=["']([^"']+)["']/g),
 ].map((match) => match[1]);
 assert(
-  cards.length === 3 && catalog.every((product) => cards.includes(product.id)),
-  "index.html: in-stock cards do not match catalog.js",
+  cards.length === new Set(catalog.map(p => p.family)).size && cards.every(id => context.TG_STORE.findProduct(id)),
+  "index.html: model cards do not match catalog.js",
 );
 const feed = read("merchant-feed.xml");
 const feedItems = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(
@@ -212,7 +215,7 @@ for (const product of catalog) {
     ),
   ];
   assert(
-    prices.length > 0 &&
+    (prices.length > 0 || homepage.includes(`value="${product.id}"`)) &&
       prices.every(
         (match) => Number(match[1].replace(/[^\d.]/g, "")) === product.price,
       ),
@@ -222,7 +225,7 @@ for (const product of catalog) {
   for (const route of Object.values(product.url)) {
     const file = resolveLocal(route, "catalog.js");
     const nodes = schemaByFile.get(file) || [];
-    const schemaProduct = nodes.find((node) =>
+    const schemaProduct = nodes.find((node) => node.sku === product.sku &&
       (Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]]).includes(
         "Product",
       ),
@@ -240,14 +243,11 @@ for (const product of catalog) {
       `${file}: Product Offer price differs from catalog.js`,
     );
     assert(
-      offer?.availability === "https://schema.org/InStock",
-      `${file}: product must be InStock`,
+      offer?.availability === "https://schema.org/OutOfStock",
+      `${file}: on-request enquiries must not claim stock`,
     );
     if (fs.existsSync(path.join(root, file))) {
-      const visiblePrice =
-        /class=["']product-price["'][^>]*>\s*<strong>\$(\d+(?:\.\d+)?)<\/strong>/.exec(
-          read(file),
-        );
+      const visiblePrice = new RegExp(`<option value="${product.id}"[^>]*>[^<]* — \\$(\\d+(?:\\.\\d+)?)</option>`).exec(read(file));
       assert(
         visiblePrice && Number(visiblePrice[1]) === product.price,
         `${file}: visible retail price differs from catalog.js`,
@@ -266,11 +266,11 @@ for (const product of catalog) {
       `merchant-feed.xml: price mismatch for ${product.sku}`,
     );
     assert(
-      feedField(item, "availability") === "in_stock",
+      feedField(item, "availability") === "out_of_stock",
       `merchant-feed.xml: availability mismatch for ${product.sku}`,
     );
     assert(
-      feedField(item, "link") === origin + product.url.ru,
+      feedField(item, "link")?.replace(/&amp;/g, '&') === origin + product.url.ru,
       `merchant-feed.xml: product URL mismatch for ${product.sku}`,
     );
     checkReference(feedField(item, "image_link"), "merchant-feed.xml");

@@ -463,7 +463,7 @@
   }
 
   function filterProducts(value) {
-    if (!["all", "rayban", "whoop"].includes(value)) return;
+    if (!["all", "glasses", "fitness"].includes(value)) return;
     let shown = 0;
     selectAll(".product-card[data-category]").forEach(function (card) {
       const match = value === "all" || card.dataset.category === value;
@@ -478,6 +478,7 @@
     setText("filterStatus", text("found") + ": " + shown);
   }
 
+  document.addEventListener("techgeek:variant-changed", updatePrices);
   document.addEventListener("click", function (click) {
     const target =
       click.target instanceof Element
