@@ -300,14 +300,15 @@ section[id] {
   margin-right: 11px;
   width: 32px;
   height: 32px;
-  background: var(--blue);
+  background: url('/brand-icon.svg') center / contain no-repeat;
+  flex-shrink: 0;
   color: white;
   border-radius: 8px;
   font-size: 23px;
   font-weight: 700;
   letter-spacing: -3px;
-  padding-right: 4px;
-  padding-bottom: 4px;
+  padding-right: 0;
+  padding-bottom: 0;
   transform: rotate(-6deg);
 }
 .brand-mark span {

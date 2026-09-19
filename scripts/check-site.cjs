@@ -182,7 +182,7 @@ const feedItems = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(
   (match) => match[1],
 );
 assert(
-  feedItems.length === catalog.length,
+  feedItems.length === catalog.filter(p=>p.price!==null).length,
   "merchant-feed.xml: product count differs from catalog.js",
 );
 const feedField = (item, field) =>
@@ -202,7 +202,7 @@ for (const item of feedItems) {
 
 for (const product of catalog) {
   assert(
-    Number.isFinite(product.price) && product.price > 0,
+    (product.family === 'display' && product.price === null) || (Number.isFinite(product.price) && product.price > 0),
     `catalog.js: invalid price for ${product.id}`,
   );
   checkReference(product.image, "catalog.js");
@@ -217,7 +217,7 @@ for (const product of catalog) {
   assert(
     (prices.length > 0 || homepage.includes(`value="${product.id}"`)) &&
       prices.every(
-        (match) => Number(match[1].replace(/[^\d.]/g, "")) === product.price,
+        (match) => product.price === null ? match[1] === "$???" : Number(match[1].replace(/[^\d.]/g, "")) === product.price,
       ),
     `index.html: visible ${product.id} price differs from catalog.js`,
   );
@@ -232,6 +232,11 @@ for (const product of catalog) {
     );
     assert(schemaProduct, `${file}: missing Product structured data`);
     const offer = schemaProduct?.offers;
+    if (product.price === null) {
+      assert(!offer, file + ': quote-only product must not publish a priced offer');
+      assert(read(file).includes('$???'), file + ': missing quote price');
+      continue;
+    }
     assert(
       offer?.shippingDetails?.shippingRate?.currency === offer?.priceCurrency,
       `${file}: shipping currency must match offer currency`,
@@ -258,6 +263,7 @@ for (const product of catalog) {
   const item = feedItems.find(
     (entry) => feedField(entry, "id") === product.sku,
   );
+  if (product.price === null) {assert(!item, 'Quote-only product in Merchant feed'); continue;}
   assert(item, `merchant-feed.xml: missing ${product.sku}`);
   if (item) {
     const price = /^(\d+(?:\.\d+)?) USD$/.exec(feedField(item, "price") || "");

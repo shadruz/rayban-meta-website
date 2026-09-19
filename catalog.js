@@ -3041,7 +3041,7 @@
     "family": "display",
     "model": "Display",
     "generation": 0,
-    "price": 829,
+    "price": null,
     "sourcePrice": 799,
     "source": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-black/",
     "sourceCheckedAt": "2026-09-19T06:58:15.959Z",
@@ -3072,7 +3072,7 @@
     "family": "display",
     "model": "Display",
     "generation": 0,
-    "price": 829,
+    "price": null,
     "sourcePrice": 799,
     "source": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-black/",
     "sourceCheckedAt": "2026-09-19T06:58:15.959Z",
@@ -3103,7 +3103,7 @@
     "family": "display",
     "model": "Display",
     "generation": 0,
-    "price": 829,
+    "price": null,
     "sourcePrice": 799,
     "source": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-sand/",
     "sourceCheckedAt": "2026-09-19T06:58:15.959Z",
@@ -3133,7 +3133,7 @@
     "family": "display",
     "model": "Display",
     "generation": 0,
-    "price": 829,
+    "price": null,
     "sourcePrice": 799,
     "source": "https://www.meta.com/ai-glasses/meta-ray-ban-display-glasses-and-neural-band-sand/",
     "sourceCheckedAt": "2026-09-19T06:58:15.959Z",
@@ -3215,6 +3215,7 @@
   }
 
   function cartTotal(cart) {
+    if (validateCart(cart).some(line => findProduct(line.id).price === null)) return null;
     return validateCart(cart).reduce(function (sum, line) {
       return sum + findProduct(line.id).price * line.quantity;
     }, 0);
@@ -3226,6 +3227,7 @@
     if (!valid.length) return "";
     const lines = valid.map(function (line) {
       const product = findProduct(line.id);
+      if (product.price === null) return product.name + " — " + product.variant + "\n" + line.quantity + (isUz ? " dona · Narx so‘rov bo‘yicha" : " шт. · Цена по запросу");
       return (
         product.name +
         " — " +
@@ -3245,7 +3247,7 @@
       "",
       lines.join("\n\n"),
       "",
-      (isUz ? "Jami: $" : "Итого: $") + cartTotal(valid),
+      cartTotal(valid) === null ? (isUz ? "Yakuniy narx kelishiladi." : "Итоговая цена согласовывается.") : (isUz ? "Jami: $" : "Итого: $") + cartTotal(valid),
       isUz
         ? "O‘zbekiston bo‘ylab yetkazib berish bepul."
         : "Бесплатная доставка по Узбекистану.",

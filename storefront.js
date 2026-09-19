@@ -18,7 +18,7 @@
       quantity: "Количество",
       loading: "Получаем курс ЦБ Узбекистана…",
       unavailable: "Курс ЦБ сейчас недоступен. Цены показаны в долларах.",
-      approximate: "Сумма в сумах ориентировочная. Итог подтвердим при заказе.",
+      approximate: "Пересчёт в сумы ориентировочный. Итоговая цена согласовывается перед оформлением.",
       source: "Курс ЦБ Узбекистана",
       empty: "Сначала добавьте товар в корзину.",
       limit: "Для партии больше 99 штук напишите нам за оптовой ценой.",
@@ -105,6 +105,7 @@
   }
 
   function formatPrice(value) {
+    if (value === null) return "$???";
     if (currency === "UZS" && rate) {
       const amount = Math.round(value * rate.value);
       return (
@@ -211,7 +212,7 @@
         element(
           "p",
           "cart-item-price",
-          formatPrice(product.price * line.quantity),
+          formatPrice(product.price === null ? null : product.price * line.quantity),
         ),
       );
       const controls = element("div", "cart-item-controls");
@@ -312,7 +313,7 @@
     selectAll("[data-price]").forEach(function (node) {
       const product = store.findProduct(node.dataset.price);
       const value = product ? product.price : Number(node.dataset.price);
-      if (Number.isFinite(value) && value >= 0)
+      if (value === null || (Number.isFinite(value) && value >= 0))
         node.textContent = formatPrice(value);
     });
     selectAll("[data-currency]").forEach(function (button) {

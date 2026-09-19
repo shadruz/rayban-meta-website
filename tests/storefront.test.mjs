@@ -11,12 +11,24 @@ vm.runInContext(
 const { TG_CATALOG: catalog, TG_STORE: store } = context;
 const plain = (value) => JSON.parse(JSON.stringify(value));
 
+test('Display quote prices never become zero or a fixed cart total', () => {
+  for (const p of catalog.filter(p=>p.family==='display')) {
+    assert.equal(p.price,null);
+    const cart=[{id:p.id,quantity:2},{id:'clear',quantity:1}];
+    assert.equal(store.cartTotal(cart),null);
+    assert.match(store.orderDraft(cart,'ru'),/Цена по запросу/);
+    assert.match(store.orderDraft(cart,'ru'),/Итоговая цена согласовывается/);
+    assert.doesNotMatch(store.orderDraft(cart,'ru'),/\$null|\$0|\$829/);
+    assert.match(store.orderDraft(cart,'uz'),/Narx so‘rov bo‘yicha/);
+  }
+});
+
 test("official US prices plus $30 apply to every glasses SKU; all are on request", () => {
   assert.equal(catalog.length, 104);
   assert.equal(new Set(catalog.filter(p=>p.category==='glasses').map(p=>p.family)).size,13);
   for (const p of catalog) {
     assert.equal(p.availability,'on_request');
-    if(p.category==='glasses') { assert.equal(p.price,p.sourcePrice+30); assert.match(p.source,/^https:\/\/www.meta.com\//); }
+    if(p.category==='glasses') { assert.equal(p.price,p.family==='display'?null:p.sourcePrice+30); assert.match(p.source,/^https:\/\/www.meta.com\//); }
   }
   assert.equal(store.findProduct('clear').price,254);
   assert.equal(store.findProduct('chameleon').price,314);
