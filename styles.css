@@ -62,10 +62,16 @@
   box-sizing: border-box;
 }
 html {
+  /* Contain decorative/off-canvas elements without blocking vertical scroll or zoom. */
+  overflow-x: hidden;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
   scroll-behavior: smooth;
   scroll-padding-top: 108px;
 }
 body {
+  overflow-x: hidden;
+  overflow-x: clip;
   margin: 0;
   background: var(--paper);
   color: var(--ink);
