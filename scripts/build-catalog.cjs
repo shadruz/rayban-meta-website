@@ -75,7 +75,9 @@ const feed=products.filter(p=>p.price!==null).map(p=>`<item><g:id>${e(p.sku)}</g
 write('merchant-feed.xml',`<?xml version="1.0" encoding="UTF-8"?><rss xmlns:g="http://base.google.com/ns/1.0" version="2.0"><channel><title>TechGeek.uz</title><link>${origin}</link><description>Catalog on request</description>${feed}</channel></rss>\n`);
 function htmlFiles(dir=''){return fs.readdirSync(dir||'.',{withFileTypes:true}).flatMap(x=>x.name.startsWith('.')||['node_modules','scripts','tests','data'].includes(x.name)?[]:x.isDirectory()?htmlFiles(path.join(dir,x.name)):x.name.endsWith('.html')?[path.join(dir,x.name)]:[])}
 const urls=htmlFiles().map(file=>{const s=fs.readFileSync(file,'utf8');return /<link\s+rel="canonical"\s+href="([^"]+)"/.exec(s)?.[1]}).filter(Boolean);
-write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...new Set(urls)].map(url=>`<url><loc>${url}</loc><lastmod>${products[0].sourceCheckedAt.slice(0,10)}</lastmod></url>`).join('')}</urlset>\n`);
+// Record meaningful editorial changes without refreshing every URL on each build.
+const editorialDates = { [origin + '/']: '2026-09-21' };
+write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...new Set(urls)].map(url=>`<url><loc>${url}</loc><lastmod>${editorialDates[url] || products[0].sourceCheckedAt.slice(0,10)}</lastmod></url>`).join('')}</urlset>\n`);
 console.log('Built '+families.length+' model pages per language, '+products.length+' SKUs.');
 require('./migrate-order-copy.cjs');
 require('./polish-storefront.cjs');
