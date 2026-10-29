@@ -15,5 +15,5 @@ test('broad positioning retains specific catalog links and bilingual order safeg
   assert.match(section, /не является оплатой или подтверждённой покупкой/);
   assert.match(section, /data-uz=/);
   const sitemap = fs.readFileSync('sitemap.xml', 'utf8');
-  assert.match(sitemap, /<loc>https:\/\/www\.techgeek\.uz\/<\/loc><lastmod>2026-09-21<\/lastmod>/);
+  assert.match(sitemap, /<loc>https:\/\/www\.techgeek\.uz\/<\/loc><lastmod>2026-10-30<\/lastmod>/);
 });

@@ -7,7 +7,10 @@ const seeds = [
  'skyler-shiny-black-g15-green-standard', 'ray-ban-meta-skyler-shiny-black-green-gen-2',
  'oakley-meta-vanguard-black-prizm-black', 'ray-ban-meta-headliner-matte-peach-transitions-gen-2',
  'ray-ban-meta-blayzer-matte-black-clear-gen-2', 'ray-ban-meta-scriber-solid-shiny-black-gen-2',
- 'meta-ray-ban-display-glasses-and-neural-band-sand'
+ 'meta-ray-ban-display-glasses-and-neural-band-sand',
+ 'ray-ban-meta-gen-3-wayfarer-matte-black-clear', 'ray-ban-meta-gen-3-aviator-havana-brown',
+ 'ray-ban-meta-gen-3-zena-shiny-black-clear', 'ray-ban-meta-audio-burbank-matte-black-clear',
+ 'ray-ban-meta-audio-clubmaster-shiny-black-clear'
 ];
 async function main() {
  const families=[];

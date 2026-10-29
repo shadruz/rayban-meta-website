@@ -16,12 +16,15 @@ Website prices are retail prices per unit. Wholesale pricing for a batch is avai
 - Delivery: free across Uzbekistan, usually within 24 hours of order confirmation
 - Languages: Russian and Uzbek
 
-## Products currently in stock
+## Catalog (on request, only variants currently sold by Meta)
 
-- [Ray-Ban Meta Gen 1 Clear — Russian](https://www.techgeek.uz/ray-ban-meta-gen-1-clear/)
-- [Ray-Ban Meta Gen 1 Clear — Uzbek](https://www.techgeek.uz/uz/ray-ban-meta-gen-1-clear/)
-- [Ray-Ban Meta Gen 1 Chameleon — Russian](https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/)
-- [Ray-Ban Meta Gen 1 Chameleon — Uzbek](https://www.techgeek.uz/uz/ray-ban-meta-gen-1-chameleon/)
+- [Smart glasses catalog — Russian](https://www.techgeek.uz/smart-glasses/)
+- [Smart glasses catalog — Uzbek](https://www.techgeek.uz/uz/smart-glasses/)
+- [Ray-Ban Meta Wayfarer Gen 3](https://www.techgeek.uz/smart-glasses/wayfarer-gen-3/)
+- [Ray-Ban Meta Aviator Gen 3](https://www.techgeek.uz/smart-glasses/aviator-gen-3/)
+- [Ray-Ban Meta Zena Gen 3](https://www.techgeek.uz/smart-glasses/zena-gen-3/)
+- [Ray-Ban Meta Audio Burbank (no camera)](https://www.techgeek.uz/smart-glasses/audio-burbank/)
+- [Ray-Ban Meta Audio Clubmaster (no camera)](https://www.techgeek.uz/smart-glasses/audio-clubmaster/)
 - [WHOOP MG Life 5.0 — Russian](https://www.techgeek.uz/whoop-mg-life/)
 - [WHOOP MG Life 5.0 — Uzbek](https://www.techgeek.uz/uz/whoop-mg-life/)
 
