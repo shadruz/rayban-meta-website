@@ -1,13 +1,13 @@
 # TechGeek.uz
 
-On-request retail catalog in Tashkent: 13 smart-glasses families (103 size/color SKUs) and WHOOP MG Life. Nothing is advertised as locally in stock. Production: https://www.techgeek.uz/
+On-request retail catalog in Tashkent: 18 smart-glasses families (145 size/color SKUs) and WHOOP MG Life. Nothing is advertised as locally in stock. Production: https://www.techgeek.uz/
 
 ## Catalog source and regeneration
 
 - `data/meta-source.json`: dated public Meta Store US snapshot; `data/families.cjs`: model-specific RU/UZ editorial content; `data/catalog.json`: normalized variants. Glasses use the source price + USD 30; WHOOP retains its separately authorized USD 355 price.
-- `node scripts/import-meta-catalog.cjs` retrieves the 13 observed official families. `node scripts/prepare-catalog.cjs` validates USD prices and downloads correctly matched product imagery. Both require network and deliberate human review of the resulting diff; they are NOT scheduled price updates.
-- `npm run build:catalog` builds the runtime catalog, model pages, homepage cards, sitemap and merchant feed from the checked-in data. Run `npm run check` and `npm test` afterward. Archived Gen 1 G15 Transitions SKUs are excluded because Meta's current selector exposes their Graphite Green replacements instead.
-- Categories: glasses / fitness. Glasses have brand, family, generation, color and size. One model page groups its variants; existing Clear/Chameleon/WHOOP URLs remain valid. `/smart-glasses/` is the category hub, `/smart-glasses/{family}/` model pages, `/uz/` their Uzbek equivalents.
+- `node scripts/import-meta-catalog.cjs` retrieves the 18 observed official families (one seed URL per family; new Meta lines are added as seeds there and as editorial entries in `data/families.cjs`, same order). `node scripts/prepare-catalog.cjs` validates USD prices and downloads correctly matched product imagery. Both require network and deliberate human review of the resulting diff; they are NOT scheduled price updates.
+- `npm run build:catalog` builds the runtime catalog, model pages, homepage cards, sitemap and merchant feed from the checked-in data. Run `npm run check` and `npm test` afterward. Only variants Meta currently lists as InStock are imported (OutOfStock and PreOrder are skipped; Display is kept per frame colour/size while a matching Neural Band bundle is in stock). Archived Gen 1 G15 Transitions SKUs are excluded because Meta's current selector exposes their Graphite Green replacements instead. The retired Gen 1 Clear/Chameleon pages redirect (vercel.json) to the Wayfarer Gen 1 model page; their header/footer template lives in `scripts/templates/product-base.html`.
+- Categories: glasses / fitness. Glasses have brand (rayban, audio = camera-free Ray-Ban Meta Audio, oakley, meta, display), family, generation (1–3), color and size. One model page groups its variants; existing Clear/Chameleon/WHOOP URLs remain valid. `/smart-glasses/` is the category hub, `/smart-glasses/{family}/` model pages, `/uz/` their Uzbek equivalents.
 - All transactions start as enquiries, not paid or confirmed purchases. Supply dates are not invented. Merchant feed and schema use OutOfStock while fulfillment is unconfirmed; do not switch to backorder without a real visible dispatch date. Source availability is not TechGeek stock.
 
 ## Local development

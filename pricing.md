@@ -1,25 +1,19 @@
 # TechGeek.uz pricing
 
-Last updated: 2026-09-19
+Last updated: 2026-10-30
 
 All items are on request, with no confirmed local stock. Glasses: dated Meta Store US price + USD 30 per SKU, including published sale prices. Full source and variant mapping: data/meta-source.json and data/catalog.json. Custom lenses are excluded. No automated price refresh runs in production.
 
 Website prices below are retail prices per unit. Wholesale pricing for a batch is available on request.
 Exact stock and delivery terms are confirmed before an order.
 
-## Ray-Ban Meta Gen 1 Wayfarer Clear
+## Smart glasses (18 model families, 145 variants)
 
-- Retail price: USD 254 per unit (Meta USD 224 + USD 30)
-- Stock: on request; supply and timing must be confirmed
-- Sizes: 50 and 53, subject to availability
-- Product page: https://www.techgeek.uz/ray-ban-meta-gen-1-clear/
-
-## Ray-Ban Meta Gen 1 Wayfarer Matte Chameleon
-
-- Retail price: USD 314 per unit (Meta USD 284 + USD 30)
-- Stock: on request; supply and timing must be confirmed
-- Sizes: 50 and 53, subject to availability
-- Product page: https://www.techgeek.uz/ray-ban-meta-gen-1-chameleon/
+- Retail price: Meta Store US price + USD 30 per SKU (snapshot 2026-10-29)
+- Only variants Meta currently sells (in stock) are listed; Display price is on request
+- New in this update: Ray-Ban Meta Gen 3 Wayfarer (from USD 479), Aviator (from USD 479), Zena (from USD 479); Ray-Ban Meta Audio Burbank and Clubmaster, no camera (from USD 379)
+- Removed: Gen 1 Wayfarer Clear (USD 254) and Matte Chameleon (USD 314) — no longer sold by Meta
+- Catalog: https://www.techgeek.uz/smart-glasses/
 
 ## WHOOP MG Life 5.0 with 12-month membership
 
