@@ -24,8 +24,8 @@ test('Display quote prices never become zero or a fixed cart total', () => {
 });
 
 test("official US prices plus $30 apply to every glasses SKU; all are on request", () => {
-  assert.equal(catalog.length, 146);
-  assert.equal(new Set(catalog.filter(p=>p.category==='glasses').map(p=>p.family)).size,18);
+  assert.equal(catalog.length, 144);
+  assert.equal(new Set(catalog.filter(p=>p.category==='glasses').map(p=>p.family)).size,16);
   for (const p of catalog) {
     assert.equal(p.availability,'on_request');
     if(p.category==='glasses') { assert.equal(p.sourceAvailability,'InStock'); assert.equal(p.price,p.family==='display'?null:p.sourcePrice+30); assert.match(p.source,/^https:\/\/www.meta.com\//); }

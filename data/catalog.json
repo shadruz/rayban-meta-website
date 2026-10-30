@@ -1302,36 +1302,6 @@
     "aliases": []
   },
   {
-    "id": "sk-1000830-01",
-    "sku": "SK-1000830-01",
-    "manufacturerSku": "SK-1000830-01",
-    "name": "Ray-Ban Meta Wayfarer Gen 1",
-    "variant": "Matte Black / Clear to Graphite Green Transitions®, Large",
-    "category": "glasses",
-    "brand": "rayban",
-    "family": "wayfarer-gen-1",
-    "model": "Wayfarer",
-    "generation": 1,
-    "price": 314,
-    "sourcePrice": 284,
-    "source": "https://www.meta.com/ai-glasses/wayfarer-matte-black-clear-green-transitions/",
-    "sourceCheckedAt": "2026-10-29T23:11:52.767Z",
-    "sourceAvailability": "InStock",
-    "size": "Large frame, high bridge",
-    "color": [
-      "Lens color:Clear to Graphite Green Transitions®",
-      "Frame color:Matte Black"
-    ],
-    "image": "/images/catalog/f185cb267c824be5.webp",
-    "availability": "on_request",
-    "url": {
-      "ru": "/smart-glasses/wayfarer-gen-1/?variant=sk-1000830-01",
-      "uz": "/uz/smart-glasses/wayfarer-gen-1/?variant=sk-1000830-01"
-    },
-    "legacyIds": [],
-    "aliases": []
-  },
-  {
     "id": "sk-1001194-01",
     "sku": "SK-1001194-01",
     "manufacturerSku": "SK-1001194-01",
@@ -1573,37 +1543,6 @@
     "url": {
       "ru": "/smart-glasses/hstn/?variant=sk-1001850-01",
       "uz": "/uz/smart-glasses/hstn/?variant=sk-1001850-01"
-    },
-    "legacyIds": [],
-    "aliases": []
-  },
-  {
-    "id": "sk-1000380-01",
-    "sku": "SK-1000380-01",
-    "manufacturerSku": "SK-1000380-01",
-    "gtin": "8056262526262",
-    "name": "Ray-Ban Meta Skyler Gen 1",
-    "variant": "Shiny Chalky Gray / Clear to Sapphire Transitions®, Standard",
-    "category": "glasses",
-    "brand": "rayban",
-    "family": "skyler-gen-1",
-    "model": "Skyler",
-    "generation": 1,
-    "price": 314,
-    "sourcePrice": 284,
-    "source": "https://www.meta.com/ai-glasses/skyler-shiny-chalky-gray-sapphire-transitions/",
-    "sourceCheckedAt": "2026-10-29T23:11:52.767Z",
-    "sourceAvailability": "InStock",
-    "size": "Standard frame, high bridge",
-    "color": [
-      "Lens color:Clear to Sapphire Transitions®",
-      "Frame color:Shiny Chalky Gray"
-    ],
-    "image": "/images/catalog/d124ba3061861a22.webp",
-    "availability": "on_request",
-    "url": {
-      "ru": "/smart-glasses/skyler-gen-1/?variant=sk-1000380-01",
-      "uz": "/uz/smart-glasses/skyler-gen-1/?variant=sk-1000380-01"
     },
     "legacyIds": [],
     "aliases": []

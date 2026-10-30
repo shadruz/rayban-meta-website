@@ -3,8 +3,7 @@ const fs = require('node:fs');
 const seeds = [
  'meta-glasses/starfire-kylie-black-black', 'meta-glasses/adventurer-tortoise-brown',
  'meta-glasses/fury-racing-green-blue-atlantic', 'ray-ban-meta-wayfarer-matte-black-clear-gen-2',
- 'wayfarer-shiny-black-plano-g15-green', 'oakley-meta-hstn-curry-brown-transitions',
- 'skyler-shiny-black-g15-green-standard', 'ray-ban-meta-skyler-shiny-black-green-gen-2',
+ 'oakley-meta-hstn-curry-brown-transitions', 'ray-ban-meta-skyler-shiny-black-green-gen-2',
  'oakley-meta-vanguard-black-prizm-black', 'ray-ban-meta-headliner-matte-peach-transitions-gen-2',
  'ray-ban-meta-blayzer-matte-black-clear-gen-2', 'ray-ban-meta-scriber-solid-shiny-black-gen-2',
  'meta-ray-ban-display-glasses-and-neural-band-sand',

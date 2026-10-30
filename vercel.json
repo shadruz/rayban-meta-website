@@ -31,42 +31,82 @@
   "redirects": [
     {
       "source": "/ray-ban-meta-gen-1-clear",
-      "destination": "/smart-glasses/wayfarer-gen-1/",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/ray-ban-meta-gen-1-clear/",
-      "destination": "/smart-glasses/wayfarer-gen-1/",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/ray-ban-meta-gen-1-chameleon",
-      "destination": "/smart-glasses/wayfarer-gen-1/",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/ray-ban-meta-gen-1-chameleon/",
-      "destination": "/smart-glasses/wayfarer-gen-1/",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/uz/ray-ban-meta-gen-1-clear",
-      "destination": "/uz/smart-glasses/wayfarer-gen-1/",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/uz/ray-ban-meta-gen-1-clear/",
-      "destination": "/uz/smart-glasses/wayfarer-gen-1/",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/uz/ray-ban-meta-gen-1-chameleon",
-      "destination": "/uz/smart-glasses/wayfarer-gen-1/",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
       "permanent": true
     },
     {
       "source": "/uz/ray-ban-meta-gen-1-chameleon/",
-      "destination": "/uz/smart-glasses/wayfarer-gen-1/",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/smart-glasses/wayfarer-gen-1",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/smart-glasses/wayfarer-gen-1/",
+      "destination": "/smart-glasses/wayfarer-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/smart-glasses/skyler-gen-1",
+      "destination": "/smart-glasses/skyler-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/smart-glasses/skyler-gen-1/",
+      "destination": "/smart-glasses/skyler-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/uz/smart-glasses/wayfarer-gen-1",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/uz/smart-glasses/wayfarer-gen-1/",
+      "destination": "/uz/smart-glasses/wayfarer-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/uz/smart-glasses/skyler-gen-1",
+      "destination": "/uz/smart-glasses/skyler-gen-2/",
+      "permanent": true
+    },
+    {
+      "source": "/uz/smart-glasses/skyler-gen-1/",
+      "destination": "/uz/smart-glasses/skyler-gen-2/",
       "permanent": true
     }
   ]
